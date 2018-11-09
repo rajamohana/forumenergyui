@@ -1,0 +1,30 @@
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .popup-cnt {
+        width: 1000px;
+        background: #fff;
+		position: relative;
+    }
+    .close-icon {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+		z-index: 99;
+    }
+}
+.cur-poi{
+    cursor: pointer;
+}

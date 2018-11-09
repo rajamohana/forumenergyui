@@ -1,0 +1,50 @@
+<div class="inner-container" ng-class="{'compressed': compressedMode}">
+    <div class="trip-val-area">
+        Value:
+        <span class="hovered-val">{{ showTrips ? siteAvgY : 'N.A.' }}</span>
+    </div>
+	<!--checkboxes-->
+	<!-- <div class="checkbox-wrapper">
+		<div class="checkbox-btn-group">
+			<label class="checkbox-button trips-avg-check">
+				<input type="checkbox" name="check" ng-model="showTripsAvg" ng-change="toggleTripsAvgGraph()">
+                <span>
+                    Value Avg
+                    <span class="hovered-val">{{ showTripsAvg ? tripAvgY : 'N.A.' }}</span>
+                </span>
+			</label> 
+			 <label class="checkbox-button trips-check">
+				<input type="checkbox" name="check" ng-model="showTrips" ng-change="toggleTripsGraph()">
+                <span>
+                    Value
+                    <span class="hovered-val">{{ showTrips ? tripY : 'N.A.' }}</span>
+                </span>
+			</label>
+			<label class="checkbox-button optimal-check">
+				<input type="checkbox" name="check" ng-model="showOptimalValue" ng-change="toggleOptimalValueGraph()">
+                <span>
+                    Optimal Value
+                    <span class="hovered-val">{{ showOptimalValue ? (bandMin + ' - ' + bandMax) : 'N.A.' }}</span>
+                </span>
+			</label> 
+			<label class="checkbox-button site-avg-check">
+				<input type="checkbox" name="check" ng-model="showSiteAvg" ng-change="toggleSiteAvgGraph()">
+                <span>
+                    Site Avg
+                    <span class="hovered-val">{{ showSiteAvg ? siteAvgY : 'N.A.' }}</span>
+                </span>
+			</label>
+			<label class="checkbox-button" ng-if="!compressedMode">
+				<input type="checkbox" name="check" style="display: none">
+				<span>
+                    {{ xlabel }}
+                    <span class="hovered-val">{{ xVal }}</span>
+                </span>
+			</label>
+		</div>
+	</div> -->
+	<!--checkboxes end-->
+    <div class="svg-container">
+        <svg></svg>
+    </div>
+</div>

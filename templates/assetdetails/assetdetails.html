@@ -1,0 +1,617 @@
+<div class="truck-expand" ng-show="showView=='overview-expand'">
+    <div ng-if="truck.showTruckDetails">
+        <!--bread crumb-->
+        <div class="site-main-wrap">
+            <div class="sites-wrapper">
+                <section class="truckkdetails-breadcrumbs">
+                    <div class="bread-crumb" ng-class="{'bread-crumb--modified' : scrolledDown}">
+                        <ul>
+                            <li class="">
+                                <a ng-click="navigateToAssetsList()">
+                                    <span class="bread-crumb-label">{{truck.truckData.siteLocation}}</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a>
+                                    <span class="back-arrow-breadcrum">
+                                        <svg>
+                                            <use xlink:href="#forward-arrow"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="truck-svg">
+                                        <svg ng-if="truck.truckData.assetType == 'fracpump'">
+                                            <use xlink:href="#fracpump"></use>
+                                        </svg>
+                                        <svg ng-if="truck.truckData.assetType == 'ironroughneck'">
+                                            <use xlink:href="#iron-neck"></use>
+                                        </svg>
+                                        <svg ng-if="truck.truckData.assetType == 'catwalk'">
+                                            <use xlink:href="#catwalk"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="bread-crumb-label">{{truck.truckData.assetId || 0}}</span>
+                                    <span class="info-icon-wrapper">
+                                        <span class="info-icon" ng-click="toggleToolTip(true)">
+                                            <svg>
+                                                <use xlink:href="#info"></use>
+                                            </svg>
+                                        </span>
+                                        <div class="info-content-wrapper" ng-if="showTooltip">
+                                            <span class="info-content-tip">
+                                                <svg>
+                                                    <use xlink:href="#dropdown"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="info-content-close" ng-click="toggleToolTip(false)">
+                                                <svg>
+                                                    <use xlink:href="#close"></use>
+                                                </svg>
+                                            </span>
+                                            <div class="info-content-subsection">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, fugiat.
+                                            </div>
+                                        </div>
+                                    </span>
+                                </a>
+
+                                <!--                        <span class="goto-Scenario-actionlink"><a class="" ng-click="truck.gotoWhatIfScenario(truck.truckData.truckId)">go to Scenarios</a></span>-->
+                            </li>
+                        </ul>
+
+                        <div class=""></div>
+                    </div>
+                </section>
+                <div class="truckdetails-topsection">
+                    <!--truck header start-->
+
+                    <div class="topsub-status-panel d-flex-align">
+
+                        <!-- <div class="topsub-status-left">
+                    <div class="list-head-column">
+                        <div class="list-head-count list-head-count-heading">Current
+                            <br/>{{ truck.truckData.assetName || '' }}</div>
+                    </div>
+                    <img src="../../assets/images/fracPum/frac-tint.png" style="width:200px; height:auto;" ng-click="switchDetails('catwalk')"
+                    />
+                </div> -->
+                        <div class="topsub-status-right-cat">
+                            <!--indication list table-->
+                            <div class="truck-details-list-head align-for-catwalk" ng-if="truck.truckData.assetType == 'catwalk'">
+                                <div class="top">
+                                    <div class="list-head-column" ng-repeat="eachData in truck.truckData.assetHealthData">
+                                        <div class="list-head-count">
+                                            <span class="asset-detail" ng-if="eachData.displayName == 'Health'">
+                                                <progress-arc class="progress-styles2" progress="eachData.value" type="type2" radius="55" radius-diff="5"
+                                                    hide-pointer="true" label="Health">
+                                                </progress-arc>
+                                            </span>
+                                            <span ng-if="eachData.displayName != 'Health'">
+                                                <span class="list-head-arrow-holder">
+                                                    <span>{{ eachData.value  | setDecimal: (eachData.name == 'ROD' ? 1: 0) |number }}
+                                                        <span ng-if="eachData.units" class="per-left">
+                                                            {{ eachData.units }}
+                                                        </span>
+                                                    </span>
+                                                    <span class="list-head-arrow">
+                                                        <svg ng-if="eachData.trend=='increase'">
+                                                            <use xlink:href="#top-arrow"></use>
+                                                        </svg>
+                                                        <svg ng-if="eachData.trend=='decrease'">
+                                                            <use xlink:href="#down-arrow-circle"></use>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            
+                                            <span ng-show="eachData.name == 'ROD'" class="list-head-arrow fill-warning-graph" ng-click="truckdetails.showRODGraph = true">
+                                                <svg>
+                                                    <use xlink:href="#graph"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                        <div class="head-column-label" ng-if="eachData.displayName != 'Health'">{{ eachData.displayName }}</div>
+                                    </div>
+                                </div>
+                                <!--deterioration graph-->
+                                <popup ng-if="truckdetails.showRODGraph" on-close="truckdetails.showRODGraph = false" class="popup-cnt-main popup-ROD">
+                                    <div class="truck-graph">
+                                        <div class="truck-graph-title">{{ truck.truckData.deteriorationGraphs.graphDisplayName }}</div>
+                                        <div class="rod-graph-container" ng-if="truck.truckData.deteriorationGraphs">
+                                            <life-chart width="800" height="600" style="height: 100%" data="truck.truckData.deteriorationGraphs" today-x="truck.truckData.deteriorationGraphs.xAxisToday"
+                                                today-y="truck.truckData.deteriorationGraphs.yAxisToday" chart-type="ROD"></life-chart>
+                                        </div>
+                                    </div>
+                                </popup>
+                                <div class="bottom">
+                                    <div class="truck-details-panels-list" ng-repeat="eachData in truck.truckData.assetMetaData">
+                                        <div class="truck-details-panels-list-wrapper">
+                                            <div class="details-panels-content">
+                                                <div class="panels-content-iconholder"  ng-if="eachData.name == 'ourProjection'">
+                                                    <span ng-if="eachData.name == 'ourProjection'" class="panels-content-icon">
+                                                        <svg>
+                                                            <use xlink:href="#our-projection"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span ng-if="eachData.name == 'yourPlan'" class="panels-content-icon">
+                                                        <svg>
+                                                            <use xlink:href="#your-plan"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span ng-if="eachData.name == 'manufacturerStats'" class="panels-content-icon">
+                                                        <svg>
+                                                            <use xlink:href="#manufacturer"></use>
+                                                        </svg>
+                                                    </span>
+                                                </div>
+                                                <div class="dpanel-right-content" ng-class="{'pleft-0': eachData.name != 'ourProjection'}">
+                                                    <div class="top-metrics" ng-if="eachData.name == 'ourProjection'">
+                                                        <span class="count">{{(eachData.rul | setDecimal: 0) || 0}}</span>
+                                                        <span ng-if="eachData.units" class="per-left">
+                                                            {{ eachData.units }}
+                                                        </span>
+                                                        <!-- <span class="top-metrics-timestamp">{{(eachData.life | dateToString) || '-'}}</span> -->
+                                                        <!-- <span class="top-metrics-timestamp">{{(eachData.life) | date:'dd -MM- yyyy' || '-'}}</span> -->
+                                                    </div>
+                                                    <span class="list-head-arrow-holder" ng-if="eachData.name != 'ourProjection'">
+                                                        <span>{{ eachData.value | setDecimal: (eachData.name == 'ROD' ? 1: 0) | number }}
+                                                            <span ng-if="eachData.units" class="per-left">
+                                                                {{ eachData.units }}
+                                                            </span>
+                                                        </span>
+                                                        <span class="list-head-arrow">
+                                                            <svg ng-if="eachData.trend=='increase'">
+                                                                <use xlink:href="#top-arrow"></use>
+                                                            </svg>
+                                                            <svg ng-if="eachData.trend=='decrease'">
+                                                                <use xlink:href="#down-arrow-circle"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </span>
+                                                    <div class="dpanel-right-label">{{ eachData.displayName }}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="truck-details-list-head" ng-if="truck.truckData.assetType != 'catwalk'">
+                            
+                                <div class="list-head-column" ng-repeat="eachData in truck.truckData.assetHealthData">
+                                    <div class="list-head-count">
+                                        <span class="asset-detail" ng-if="eachData.displayName == 'Health'">
+                                            <progress-arc class="progress-styles2" progress="eachData.value" type="type2" radius="55" radius-diff="5" hide-pointer="true"
+                                                label="Health">
+                                            </progress-arc>
+                                        </span>
+                                        <span ng-if="eachData.displayName != 'Health'">
+                                            <span class="list-head-arrow-holder">
+                                                <span>{{ eachData.value }}
+                                                    <span ng-if="eachData.units" class="per-left">
+                                                        {{ eachData.units }}
+                                                    </span>
+                                                </span>
+                                                <span class="list-head-arrow">
+                                                    <svg ng-if="eachData.trend=='increase'">
+                                                        <use xlink:href="#top-arrow"></use>
+                                                    </svg>
+                                                    <svg ng-if="eachData.trend=='decrease'">
+                                                        <use xlink:href="#down-arrow-circle"></use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </span>
+                            
+                                        <span ng-show="eachData.name == 'ROD'" class="list-head-arrow fill-warning-graph" ng-click="truckdetails.showRODGraph = true">
+                                            <svg>
+                                                <use xlink:href="#graph"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="head-column-label" ng-if="eachData.displayName != 'Health'">{{ eachData.displayName }}</div>
+                                </div>
+                                <!--deterioration graph-->
+                                <popup ng-if="truckdetails.showRODGraph" on-close="truckdetails.showRODGraph = false" class="popup-cnt-main popup-ROD">
+                                    <div class="truck-graph">
+                                        <div class="truck-graph-title">{{ truck.truckData.deteriorationGraphs.graphDisplayName }}</div>
+                                        <div class="rod-graph-container" ng-if="truck.truckData.deteriorationGraphs">
+                                            <life-chart width="800" height="600" style="height: 100%" data="truck.truckData.deteriorationGraphs" today-x="truck.truckData.deteriorationGraphs.xAxisToday"
+                                                today-y="truck.truckData.deteriorationGraphs.yAxisToday" chart-type="ROD"></life-chart>
+                                        </div>
+                                    </div>
+                                </popup>
+                                <div class="truck-details-panels-list" ng-repeat="eachData in truck.truckData.assetMetaData">
+                                    <div class="truck-details-panels-list-wrapper">
+                                        <div class="details-panels-content">
+                                            <div class="panels-content-iconholder">
+                                                <span ng-if="eachData.name == 'ourProjection'" class="panels-content-icon">
+                                                    <svg>
+                                                        <use xlink:href="#our-projection"></use>
+                                                    </svg>
+                                                </span>
+                                                <span ng-if="eachData.name == 'yourPlan'" class="panels-content-icon">
+                                                    <svg>
+                                                        <use xlink:href="#your-plan"></use>
+                                                    </svg>
+                                                </span>
+                                                <span ng-if="eachData.name == 'manufacturerStats'" class="panels-content-icon">
+                                                    <svg>
+                                                        <use xlink:href="#manufacturer"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="dpanel-right-content">
+                                                <div class="top-metrics">
+                                                    <span class="count">{{((eachData.rul | setDecimal: 0) |number) || 0}}
+                                                        <span ng-if="eachData.units" class="per-left">
+                                                            {{ eachData.units }}
+                                                        </span>
+                                                    </span>
+                                                    <!-- <span class="top-metrics-timestamp">{{(eachData.life | dateToString) || '-'}}</span> -->
+                                                    <!-- <span class="top-metrics-timestamp">{{(eachData.life) | date:'dd -MM- yyyy' || '-'}}</span> -->
+                                                </div>
+                                                <div class="dpanel-right-label">{{ eachData.displayName }}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--indication list table end-->
+                        </div>
+                    </div>
+                    <!--top sub status end-->
+                </div>
+            </div>
+        </div>
+        <!--truck header end-->
+        <div class="sites-wrapper">
+            <div class="scroll-wrapper scroll-wrapper--modified">
+                <!--truck graph section start-->
+                
+                <div class="usage-trend-section">
+                    <div class="img-preview-section">
+                        <div class="asset-toggle-container">
+                            <div class="asset-toggle-parent" ng-click="showImgSection = !showImgSection">
+                                <div class="asset-toggle-siwtch active" ng-class="{'active': showImgSection}">Asset Details</div>
+                                <div class="asset-toggle-siwtch" ng-class="{'active': !showImgSection}">Usage Trend</div>
+                            </div>
+                        </div>
+                        <div class="asset-preview-image-container" ng-if="showImgSection">
+                            <div id="asset-preview-image" class="{{truck.truckData.assetType}}_preview">
+                                <img src="{{ SensorPositions[truck.truckData.assetType].imageUrl }}" style="width:100%; height:100%;" />
+                                <div class="point-map sensor" ng-style="{'top': eachPump.y,'right': eachPump.x}" ng-repeat="eachPump in SensorPositions[truck.truckData.assetType].sensors" ng-mouseover="switchDetails(eachPump, 'fp')" ng-mouseleave="closeAssetPreviewTooltp(eachPump, 'fp')" ng-class="eachPump.state">
+                                    <svg>
+                                        <use xlink:href="#sensor-fill"></use>
+                                    </svg>
+                                </div>
+                                <div class="point-map consumable " ng-style="{'top': eachPump.y,'right': eachPump.x}" ng-repeat="eachPump in SensorPositions[truck.truckData.assetType].consumables" ng-mouseover="switchDetails(eachPump, 'fp')" ng-mouseleave="closeAssetPreviewTooltp(eachPump, 'fp')" ng-class="eachPump.state">
+                                    <svg>
+                                        <use xlink:href="#consumable-fill"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- <div id="asset-preview-image" ng-if="truck.truckData.assetType == 'catwalk'">
+                                <img src="{{catwalkSensorPositions.imageUrl}}" style="width:100%; height:100%;" ng-click="" />
+                                <div class="point-map inactive" ng-style="{'top': eachWalk.y,'right': eachWalk.x}" ng-repeat="eachWalk in catwalkSensorPositions.sensors" ng-click="switchDetails(eachWalk, 'cw')" ng-class="{'active': true}">
+                                    <svg>
+                                        <use xlink:href="#sensor-fill"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div id="asset-preview-image" ng-if="truck.truckData.assetType != 'ironroughneck'">
+                                <img src="{{ roughneckSensorPositions.imageUrl }}" style="width:100%; height:100%;" ng-click="" />
+                                <div class="point-map inactive" ng-repeat="eachNeck in roughneckSensorPositions.sensors" ng-style="{'top': eachNeck.y,'right': eachNeck.x}" ng-click="switchDetails(eachNeck, 'rn')" ng-class="{'active': true}">
+                                    <svg>
+                                        <use xlink:href="#sensor-fill"></use>
+                                    </svg>
+                                </div>
+                            </div> -->
+                            <div class="asset-preview-tooltip {{truck.truckData.assetType}}_tooltip" ng-style="{top: y, right: x, display: (showPreviewTooltip ? 'inline-block': 'none')}">
+                                <!-- <span class="close cur-poi" ng-click="closeAssetPreviewTooltp('part')">
+                                    <svg>
+                                        <use xlink:href="#close"></use>
+                                    </svg>
+                                </span> -->
+                                <span class="d-flex-align">
+                                    <div class="display-n-blc sen-right">   
+                                        <div class="sensor-heading">{{sensorName}}</div>
+                                    </div>
+                                    
+                                </span>
+                                <span class="tip"></span>
+                            </div>
+                            <div id="overview-legend" class="">
+                                <div class="overview-legend-item">
+                                    <div class="overview-legend-type">
+                                        <span class="part-icon">
+                                            <svg>
+                                                <use xlink:href="#consumables-fill"></use>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Consumables
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <div class="legend-item">
+                                            <div class="legend-point-map good"></div>
+                                            <div>
+                                                Good
+                                            </div>
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="legend-point-map monitor"></div>
+                                            <div>
+                                                Stable
+                                            </div>
+                                        </div>
+                                        <div class="legend-item">
+                                            <div class="legend-point-map critical"></div>
+                                            <div>
+                                                Critical
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overview-legend-item">
+                                    <div class="overview-legend-type">
+                                        <span class="part-icon">
+                                            <svg>
+                                                <use xlink:href="#sensor"></use>
+                                            </svg>
+                                        </span>
+                                        <span>
+                                            Sensors
+                                        </span>
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-point-map active"></div> Active
+                                    </div>
+                                    <div class="legend-item">
+                                        <div class="legend-point-map inactive"></div> Inactive
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="asset-trend-graph-container" ng-if="!showImgSection">
+                            <div class="usage-graph-division" ng-repeat="healthGraphData in truck.healthGraphDatas">
+                                <div class="truck-graph first-clumn">
+                                    <div class="truck-graph-title text-align-right">
+                                        <!-- <span>{{ healthGraphData.graphDisplayName }}</span> -->
+                                        <span class="expand-icon" ng-click="healthGraphData.showRULGraph = true">
+                                            <svg>
+                                                <use xlink:href="#full-expand"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="asset-details-trend-heding">
+                                        {{ healthGraphData.graphDisplayName || "Graph" }}
+                                    </div>
+                                    <div class="rul-graph-container" ng-if="healthGraphData">
+                                        <life-chart width="600" height="300" style="height: 350px;" data="healthGraphData" today-x="healthGraphData.xAxisToday"
+                                            today-y="healthGraphData.yAxisToday" chart-type="RUL"></life-chart>
+                                    </div>
+                                </div>
+                                <popup ng-if="healthGraphData.showRULGraph" on-close="healthGraphData.showRULGraph = false" class="popup-cnt-main popup-RUL">
+                                    <div class="truck-graph first-clumn">
+                                        <div class="truck-graph-title">{{ healthGraphData.graphDisplayName }}</div>
+                                        <div class="rul-graph-container" ng-if="healthGraphData">
+                                            <life-chart width="800" height="600" data="healthGraphData" style="height: 100%;" today-x="healthGraphData.xAxisToday"
+                                                today-y="healthGraphData.yAxisToday" chart-type="RUL"></life-chart>
+                                        </div>
+                                    </div>
+                                </popup>
+                                <!--truck graph section end-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="details-section" ng-if="showImgSection"> -->
+
+                        <!-- <div class="part-details-top-section"> -->
+                            <!-- <div class="part-image" ng-click="openExpandedTruck" style="background-image:url('../assets/images/parts/{{partDetails.partCode}}.png')"></div> -->
+                            <!-- <div class="part-details-wis">
+                                <span class="part-details-wis-img">
+                                    <svg>
+                                        <use xlink:href="#your-plan"></use>
+                                    </svg>
+                                </span>
+                                <span class="part-details-wis-txt">
+                                    What If Scenario
+                                </span>
+                            </div> -->
+                            <!-- <div class="part-name">{{partDetails.name}}</div>-->
+                        <!-- </div> -->
+                        <!-- <div class="part-details-values-section">
+
+
+                            <div class="part-parameters" ng-repeat="param in partDetails.parts">
+                                <div class="part-parameter-name"> {{param.name}}</div>
+                                <div class="part-parameter-value"> {{param.value}} &nbsp;&nbsp;
+                                    <span>{{param.units}}</span>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- By default lets show the health chart and once clicked on a part lets showthing useful -->
+                        <!--
+                            <div class="usage-graph-division">
+                            <div class="truck-graph first-clumn">
+                            <div class="truck-graph-title">
+                            <span>Usage Trend</span>
+                            <span class="expand-icon" ng-click="truckdetails.showRULGraph = true">
+                            <svg><use xlink:href="#full-expand"></use></svg>
+                            </span>
+                            </div>
+                            <div class="rul-graph-container" ng-if="truck.healthGraphData">
+                            <life-chart width="500" height="300" style="height: 350px;" data="truck.healthGraphData" today-x="truck.healthGraphData.xAxisToday" today-y="truck.healthGraphData.yAxisToday" chart-type="RUL"></life-chart>
+                            </div>
+                            </div>
+                            <popup ng-if="truckdetails.showRULGraph" on-close="truckdetails.showRULGraph = false" class="popup-cnt-main popup-RUL">
+                            <div class="truck-graph first-clumn">
+                            <div class="truck-graph-title">Usage Trend</div>
+                            <div class="rul-graph-container" ng-if="truck.healthGraphData">
+                            <life-chart width="800" height="600" data="truck.healthGraphData" style="height: 100%;" today-x="truck.healthGraphData.xAxisToday" today-y="truck.healthGraphData.yAxisToday" chart-type="RUL"></life-chart>
+                            </div>
+                            </div>
+                            </popup>
+                            truck graph section end
+                            -->
+                        <!--                    </div>-->
+                    <!-- </div> -->
+                    <div class="categories-list" >
+                        <div ng-repeat="eachSection in currentCategories.sections">
+                            <div class="category-heading">{{ eachSection.sectionName }}</div>
+                            <div class="truck-categories category-list-items">
+                                <div class="truck-category" ng-repeat="eachCat in eachSection.categories" ng-click="category.status === 'disable' || openInsights($index, null, $parent.$index);">
+                                    <div class="truckdetails-category-title">{{eachCat.categoryName}}</div>
+                                    <div ng-repeat="category in eachCat.variables | limitTo: eachCat.limiting" class="truck-sub-category">
+                                        <span class="feature-card-title">{{category.disName | limitTo: 35}}{{parameter.name.length > 35 ? '...' : ''}}</span>
+
+                                        <span class="card-bottom-left-count">{{category.value | setDecimal: 3}}</span>
+                                        <span class="left-count-sub">{{category.units}}</span>
+                                        <span class="feature-card-arrow" ng-if="category.paramState === 'decrease'">
+                                            <svg>
+                                                <use xlink:href="#down-arrow-circle"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="feature-card-arrow" ng-if="category.paramState === 'increase'">
+                                            <svg>
+                                                <use xlink:href="#top-arrow"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="truckdetails-category-grouplist" ng-click="$event.stopPropagation(); changeLimit(eachCat)" ng-if="$first">
+                                            +{{ eachCat.variables.length - 1 || 0}}
+                                            <span class="truckdetails-category-grouplist-icon" ng-class="{'active': eachCat.limiting>1}">
+                                                <svg>
+                                                    <use xlink:href="#dropdown"></use>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div ng-if="truck.truckData.assetType != 'fracpump'">
+                            <div class="category-heading" >Categories</div>
+                            <div class="truck-categories category-list-items" slimscroll="{slimscrollOption: value}">
+                                <div class="truck-category" ng-repeat="category in truck.mainTruckCategories" ng-click="category.status === 'disable' || openInsights($index);">
+                                    <div class="truckdetails-category-title">{{category.categoryName}}</div>
+                                    <div ng-repeat="parameter in category.paramList | limitTo: category.limiting" class="truck-sub-category">
+                                        <span class="feature-card-title">{{parameter.paramName | limitTo: 23}}{{parameter.paramName.length > 23 ? '...' : ''}}</span>
+                            
+                                        <span class="card-bottom-left-count">{{parameter.paramValue | setDecimal: 3}}</span>
+                                        <span class="left-count-sub">{{parameter.units}}</span>
+                                        <span class="feature-card-arrow" ng-if="parameter.paramState === 'decrease'">
+                                            <svg>
+                                                <use xlink:href="#down-arrow-circle"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="feature-card-arrow" ng-if="parameter.paramState === 'increase'">
+                                            <svg>
+                                                <use xlink:href="#top-arrow"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="truckdetails-category-grouplist" ng-click="$event.stopPropagation(); changeLimit(category)" ng-if="$first">
+                                            +{{ category.paramList.length - 1 || 0}}
+                                            <span class="truckdetails-category-grouplist-icon" ng-class="{'active': category.limiting>1}">
+                                                <svg>
+                                                    <use xlink:href="#dropdown"></use>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-if="truck.truckData.assetType == 'fracpump'">
+                            <div class="category-heading">Power End Categories</div>
+                            <div class="truck-categories category-list-items">
+                                <div class="truck-category" ng-repeat="category in powerEndcat" ng-click="category.status === 'disable' || openInsights($index, null, 'power');">
+                                    <div class="truckdetails-category-title">{{category.categoryName}}</div>
+                                    <div ng-repeat="parameter in category.paramList | limitTo: category.limiting" class="truck-sub-category">
+                                        <span class="feature-card-title">{{parameter.paramName | limitTo: 23}}{{parameter.paramName.length > 23 ? '...' : ''}}</span>
+
+                                        <span class="card-bottom-left-count">{{parameter.paramValue | setDecimal: 3}}</span>
+                                        <span class="left-count-sub">{{parameter.units}}</span>
+                                        <span class="feature-card-arrow" ng-if="parameter.paramState === 'decrease'">
+                                            <svg>
+                                                <use xlink:href="#down-arrow-circle"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="feature-card-arrow" ng-if="parameter.paramState === 'increase'">
+                                            <svg>
+                                                <use xlink:href="#top-arrow"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="truckdetails-category-grouplist" ng-click="$event.stopPropagation(); changeLimit(category)" ng-if="$first">
+                                            +{{ category.paramList.length - 1 || 0}}
+                                            <span class="truckdetails-category-grouplist-icon" ng-class="{'active': category.limiting>1}">
+                                                <svg>
+                                                    <use xlink:href="#dropdown"></use>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category-heading">Fluid End Categories</div>
+                            <div class="truck-categories category-list-items">
+                                <div class="truck-category" ng-repeat="category in fluidEndCat" ng-click="category.status === 'disable' || openInsights($index, null, 'fluid');">
+                                    <div class="truckdetails-category-title">{{category.categoryName}}</div>
+                                    <div ng-repeat="parameter in category.paramList | limitTo: category.limiting" class="truck-sub-category">
+                                        <span class="feature-card-title">{{parameter.paramName | limitTo: 23}}{{parameter.paramName.length > 23 ? '...' : ''}}</span>
+
+                                        <span class="card-bottom-left-count">{{parameter.paramValue | setDecimal: 3}}</span>
+                                        <span class="left-count-sub">{{parameter.units}}</span>
+                                        <span class="feature-card-arrow" ng-if="parameter.paramState === 'decrease'">
+                                            <svg>
+                                                <use xlink:href="#down-arrow-circle"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="feature-card-arrow" ng-if="parameter.paramState === 'increase'">
+                                            <svg>
+                                                <use xlink:href="#top-arrow"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="truckdetails-category-grouplist" ng-click="$event.stopPropagation(); changeLimit(category)" ng-if="$first">
+                                            +{{ category.paramList.length - 1 || 0}}
+                                            <span class="truckdetails-category-grouplist-icon" ng-class="{'active': category.limiting>1}">
+                                                <svg>
+                                                    <use xlink:href="#dropdown"></use>
+                                                </svg>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="more-categories">
+                            <div uib-dropdown>
+                                <div uib-dropdown-toggle>
+                                    <span>{{ truck.otherTruckCategories.length || 0}} more categories</span>
+                                    <span class="icon-truck icon-dropdown shadowed morelist-icon-truck">
+                                        <svg>
+                                            <use xlink:href="#dropdown"></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                    <span class="icon-truck icon-mark morelist-icon-truck-tip">
+                                        <svg>
+                                            <use xlink:href="#dropdown"></use>
+                                        </svg>
+                                    </span>
+                                    <li ng-repeat="category in truck.otherTruckCategories">
+                                        <span class="more-categories-list-name">{{ category.categoryName }}</span>
+                                        <span class="more-categories-paramlist">(+{{ category.paramList.length || 0}} variables)</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

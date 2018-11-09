@@ -1,0 +1,10 @@
+<div class="popup-overlay" ng-click="onClose()">
+    <div class="popup-cnt" ng-click="$event.stopPropagation()">
+        <div class="close-icon" ng-click="onClose()">
+            <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+            </svg>
+        </div>
+        <div ng-transclude></div>
+    </div>
+</div>

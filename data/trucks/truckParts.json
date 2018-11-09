@@ -1,0 +1,171 @@
+{
+    "result": [
+        {
+            "assetId": "asset@123",
+            "name": "asset123",
+            "img": "imgUrl",
+            "parts": [
+                {
+                    "name": "part1",
+                    "value": "Active",
+                    "img": "partUrl",
+                    "parts": [
+                        {
+                            "name": "param1",
+                            "value": "value1",
+                            "units": "unit1"
+                        },
+                        {
+                            "name": "param2",
+                            "value": "value2",
+                            "units": "unit2"
+                        },
+                        {
+                            "name": "param3",
+                            "value": "value3",
+                            "units": "unit3"
+                        },
+                        {
+                            "name": "param4",
+                            "value": "value4",
+                            "units": "unit4"
+                        },
+                        {
+                            "name": "param5",
+                            "value": "value5",
+                            "units": "unit5"
+                        }
+                    ]
+                },
+                {
+                    "name": "part2",
+                    "value": "Critical",
+                    "img": "partUrl",
+                    "parts": [
+                        {
+                            "name": "param12",
+                            "value": "value1",
+                            "units": "unit1"
+                        },
+                        {
+                            "name": "param22",
+                            "value": "value2",
+                            "units": "unit2"
+                        },
+                        {
+                            "name": "param32",
+                            "value": "value3",
+                            "units": "unit3"
+                        },
+                        {
+                            "name": "param42",
+                            "value": "value4",
+                            "units": "unit4"
+                        },
+                        {
+                            "name": "param52",
+                            "value": "value5",
+                            "units": "unit5"
+                        }
+                    ]
+                },
+                {
+                    "name": "part3",
+                    "value": "Moderate",
+                    "img": "partUrl",
+                    "parts": [
+                        {
+                            "name": "param13",
+                            "value": "value1",
+                            "units": "unit1"
+                        },
+                        {
+                            "name": "param23",
+                            "value": "value2",
+                            "units": "unit2"
+                        },
+                        {
+                            "name": "param33",
+                            "value": "value3",
+                            "units": "unit3"
+                        },
+                        {
+                            "name": "param43",
+                            "value": "value4",
+                            "units": "unit4"
+                        },
+                        {
+                            "name": "param53",
+                            "value": "value5",
+                            "units": "unit5"
+                        }
+                    ]
+                },
+                {
+                    "name": "part4",
+                    "value": "Active",
+                    "img": "partUrl",
+                    "parts": [
+                        {
+                            "name": "param14",
+                            "value": "value1",
+                            "units": "unit1"
+                        },
+                        {
+                            "name": "param24",
+                            "value": "value2",
+                            "units": "unit2"
+                        },
+                        {
+                            "name": "param34",
+                            "value": "value3",
+                            "units": "unit3"
+                        },
+                        {
+                            "name": "param44",
+                            "value": "value4",
+                            "units": "unit4"
+                        },
+                        {
+                            "name": "param54",
+                            "value": "value5",
+                            "units": "unit5"
+                        }
+                    ]
+                },
+                {
+                    "name": "part5",
+                    "value": "Active",
+                    "img": "partUrl",
+                    "parts": [
+                        {
+                            "name": "param15",
+                            "value": "value1",
+                            "units": "unit1"
+                        },
+                        {
+                            "name": "param25",
+                            "value": "value2",
+                            "units": "unit2"
+                        },
+                        {
+                            "name": "param35",
+                            "value": "value3",
+                            "units": "unit3"
+                        },
+                        {
+                            "name": "param45",
+                            "value": "value4",
+                            "units": "unit4"
+                        },
+                        {
+                            "name": "param55",
+                            "value": "value5",
+                            "units": "unit5"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

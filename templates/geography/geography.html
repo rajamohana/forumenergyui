@@ -1,0 +1,78 @@
+<!--sites main container-->
+<div class="allsites-container">
+    <div class="loading-holder" data-loading></div>
+    <!-- layout sub wrapper -->
+    <section class="geo-sites-subwrapper" ng-class="{'expand-truck' : expandTruck, 'collapse-expanded' : collapseExpanded}">
+        <div class="geo-filter">
+            <div class="geo-filter-header">
+                <span>
+                    <svg>
+                        <use xlink:href="#filter"></use>
+                    </svg>
+                </span>
+                <span>
+                    Filters
+                </span>
+            </div><!--
+            --><div class="geo-filter-body">
+                <div>
+                    <div class="geo-filter-body-heading">View:</div>
+                    <select class="view" style="margin-left: 20px;
+    border-radius: 5px;
+    border: 5px solid #dedede;
+    padding: 3px;">
+                        <option ng-repeat="x in mapviews" value="{{x.name}}">{{x.displayName}}</option>
+                    </select>
+                </div>
+                <div>
+                    <div class="geo-filter-body-heading">Show by: </div>
+                    <div class="geo-filter-body-item " ng-click="changeLocation(wData)" ng-class="{'active': wData.current}">
+                        <span>
+                            <svg>
+                                <use xlink:href="#map-pin"></use>
+                            </svg>
+                        </span>
+                        <span>
+                            All Locations
+                        </span>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="geo-filter-body-heading filter-border">Filter by: </div>
+                    <div  class="geo-filter-body-item" ng-repeat="ed in [fpData, cwData]"  ng-click="changeLocation(ed)"  ng-class="{'active': ed.current}">
+                        <span>
+                            <svg ng-if="ed.name == 'fracpump'">
+                                <use xlink:href="#frac-pump"></use>
+                            </svg>
+                            
+                            <svg ng-if="ed.name == 'catwalk'">
+                                <use xlink:href="#catwalk"></use>
+                            </svg>
+                        </span>
+                        <span>
+                            {{ed.displayName}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="geo-site-summary">
+            <div class="geo-site-summary-heading">
+                Sites {{ geoData.length }}
+            </div>
+            <div class="geo-site-summary-body">
+                <div class="geo-site-summary-item" ng-repeat="ed in [fpData, cwData]">
+                    <div class="name">{{ed.displayName}}</div>
+                    <div class="value">
+                        <span class="val">{{ ed.critical }}/{{ ed.total }}</span><span class="label">Critical</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="geo-locating-img">
+            <div id="map" style="height: 89.5vh"></div>
+            <div>               
+        </div>
+    </section>
+    <!--subwrapper end-->
+</div>

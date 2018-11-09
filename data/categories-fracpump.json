@@ -1,0 +1,454 @@
+{
+    "result": [
+      {
+        "categoryName": "Pressure Sensors",
+        "status": "enable",
+        "categoryDuration": "17 June 2014 - 23 June 2014",
+        "id": "category1",
+        "paramList": [
+          {
+            "paramName": "InletPressure_Scale_Real",
+            "paramName2": "CBM_InletPressure_Scale_Real",
+            "paramType": "total",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 958.21,
+            "paramState": "increase",
+            "siteMin": 636.25,
+            "siteMax": 1057.451613,
+            "siteAvg": 1011.5,
+            "optimalMin": 769.9372,
+            "optimalMax": 1058.933,
+            "units": "hours",
+            "id": "InletPressure_Scale_Real",
+            "siteLevelValue": 915.4653154,
+            "type": "fluidend"
+          },
+          {
+            "paramName": "OutletPressure_Scale_Real",
+            "paramName2": "CBM_OutletPressure_Scale_Real",
+            "paramType": "overload",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 1.8,
+            "paramState": "increase",
+            "siteMin": 0.53,
+            "siteMax": 4.524,
+            "siteAvg": 1.8,
+            "optimalMin": 1.2,
+            "optimalMax": 3,
+            "units": "  ",
+            "siteLevelValue": 2.798230088,
+            "id": "OutletPressure_Scale_Real",
+            "type": "fluidend"
+          }
+        ]
+      },
+      {
+        "categoryName": "Temperature Sensorss",
+        "status": "enable",
+        "categoryDuration": "17 June 2014 - 23 June 2014",
+        "id": "category2",
+        "paramList": [
+          {
+            "paramName": "InletTemp_Scale_Real",
+            "paramName2": "CBM_InletTemp_Scale_Real",
+            "paramType": "avg",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 48.638,
+            "paramState": "increase",
+            "siteMin": 39.25,
+            "siteMax": 56.0544086,
+            "siteAvg": 48.63,
+            "optimalMin": 45.95623,
+            "optimalMax": 50.94506,
+            "units": "deg Celsius",
+            "siteLevelValue": 46.32053478,
+            "id": "InletTemp_Scale_Real",
+            "type": "powerend"
+          },
+          {
+            "paramName": "OutletTemp_Scale_Real",
+            "paramName2": "CBM_OutletTemp_Scale_Real",
+            "paramType": "avg",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 29.885,
+            "paramState": "increase",
+            "siteMin": 21.25,
+            "siteMax": 32.46236559,
+            "siteAvg": 29.5,
+            "optimalMin": 22.79756,
+            "optimalMax": 33.86445,
+            "units": "deg Celsius",
+            "siteLevelValue": 27.41697593,
+            "id": "OutletTemp_Scale_Real",
+            "type": "powerend"
+          }
+        ]
+      },
+      {
+        "categoryName": "Vibration Sensors",
+        "status": "enable",
+        "categoryDuration": "17 June 2014 - 23 June 2014",
+        "id": "category3",
+        "paramList": [
+          {
+            "paramName": "Vibration01_Scale_Real",
+            "paramName2": "CBM_Vibration01_Scale_Real",
+            "paramType": "avg",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 2.514,
+            "paramState": "increase",
+            "siteMin": 0,
+            "siteMax": 3.6,
+            "siteAvg": 1.2,
+            "optimalMin": 0,
+            "optimalMax": 2.5,
+            "units": "  ",
+            "siteLevelValue": 2.123893805,
+            "id": "Vibration01_Scale_Real",
+            "type": "fluidend"
+          },
+          {
+            "paramName": "Vibration02_Scale_Real",
+            "paramName2": "CBM_Vibration02_Scale_Real",
+            "paramType": "total",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 0,
+            "paramState": "decrease",
+            "siteMin": 0,
+            "siteMax": 1.046666667,
+            "siteAvg": 0.07,
+            "optimalMin": 0,
+            "optimalMax": 0.1,
+            "units": "percentage",
+            "siteLevelValue": 0.494100295,
+            "id": "Vibration02_Scale_Real",
+            "type": "fluidend"
+          }
+        ]
+      },
+      {
+        "categoryName": "Acoustic Sensors",
+        "status": "disable",
+        "categoryDuration": "17 June 2014 - 23 June 2014",
+        "id": "category4",
+        "paramList": [
+          {
+            "paramName": "Acoustic01_Scale_Real",
+            "paramName2": "CBM_Acoustic01_Scale_Real",
+            "paramType": "total",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 5,
+            "paramState": "increase",
+            "siteMin": 1,
+            "siteMax": 8,
+            "siteAvg": 4,
+            "optimalMin": 0,
+            "optimalMax": 6,
+            "units": "  ",
+            "siteLevelValue": 5,
+            "id": "Acoustic01_Scale_Real",
+            "type": "fluidend"
+          },
+          {
+            "paramName": "Acoustic02_Scale_Real",
+            "paramName2": "CBM_Acoustic02_Scale_Real",
+            "paramType": "overload",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 6,
+            "paramState": "increase",
+            "siteMin": 0,
+            "siteMax": 12,
+            "siteAvg": 5,
+            "optimalMin": 0,
+            "optimalMax": 10,
+            "units": "  ",
+            "siteLevelValue": 7.522123894,
+            "id": "Acoustic02_Scale_Real",
+            "type": "fluidend"
+          }
+        ]
+      },{
+        "categoryName": "Vibration and pressure Sensors",
+        "status": "disable",
+        "categoryDuration": "17 June 2014 - 23 June 2014",
+        "id": "category5",
+        "paramList": [
+          {
+            "paramName": "LubePressure_Scale_Real",
+            "paramName2": "CBM_LubePressure_Scale_Real",
+            "paramType": "overload",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 1.8,
+            "paramState": "increase",
+            "siteMin": 0.53,
+            "siteMax": 4.524,
+            "siteAvg": 1.8,
+            "optimalMin": 1.2,
+            "optimalMax": 3,
+            "units": "  ",
+            "siteLevelValue": 2.798230088,
+            "id": "LubePressure_Scale_Real",
+            "type": "powerend"
+          },
+          {
+            "paramName": "Vibration03_Scale_Real",
+            "paramName2": "CBM_Vibration03_Scale_Real",
+            "paramType": "total",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 0,
+            "paramState": "decrease",
+            "siteMin": 0,
+            "siteMax": 1.030666667,
+            "siteAvg": 0.046,
+            "optimalMin": 0,
+            "optimalMax": 0.1,
+            "units": "  ",
+            "siteLevelValue": 0.47640118,
+            "id": "Vibration03_Scale_Real",
+            "type": "powerend"
+          },
+          {
+            "paramName": "Vibration04_Scale_Real",
+            "paramName2": "CBM_Vibration04_Scale_Real",
+            "paramType": "total",
+            "overloadCount_0_20_percent": 6,
+            "overloadcount_20_100_percent": 0,
+            "paramValue": 0,
+            "paramState": "decrease",
+            "siteMin": 0,
+            "siteMax": 1.030666667,
+            "siteAvg": 0.046,
+            "optimalMin": 0,
+            "optimalMax": 0.1,
+            "units": "  ",
+            "siteLevelValue": 0.47640118,
+            "id": "Vibration04_Scale_Real",
+            "type": "powerend"
+          }
+        ]
+      }
+      
+    ],
+    "keyDataPoints": [
+        {
+            "categoryName": "OutletPressure_Scale_Real",
+            "status": "enable",
+            "categoryDuration": "17 June 2014 - 23 June 2014",
+            "id": "category2",
+            "paramList": [
+                {
+                    "paramName": "Cycles Data 1",
+                    "paramName2": "CBM_InletTemp_Scale_Real",
+                    "paramType": "avg",
+                    "overloadCount_0_20_percent": 6,
+                    "overloadcount_20_100_percent": 0,
+                    "paramValue": 48.638,
+                    "paramState": "increase",
+                    "siteMin": 39.25,
+                    "siteMax": 56.0544086,
+                    "siteAvg": 48.63,
+                    "optimalMin": 45.95623,
+                    "optimalMax": 50.94506,
+                    "units": "deg Celsius",
+                    "siteLevelValue": 46.32053478,
+                    "id": "InletTemp_Scale_Real",
+                    "type": "powerend"
+                },
+                {
+                    "paramName": "Cycles Data 2",
+                    "paramName2": "CBM_OutletTemp_Scale_Real",
+                    "paramType": "avg",
+                    "overloadCount_0_20_percent": 6,
+                    "overloadcount_20_100_percent": 0,
+                    "paramValue": 29.885,
+                    "paramState": "increase",
+                    "siteMin": 21.25,
+                    "siteMax": 32.46236559,
+                    "siteAvg": 29.5,
+                    "optimalMin": 22.79756,
+                    "optimalMax": 33.86445,
+                    "units": "deg Celsius",
+                    "siteLevelValue": 27.41697593,
+                    "id": "OutletTemp_Scale_Real",
+                    "type": "powerend"
+                }
+            ]
+        },
+        {
+            "categoryName": "InletTemp_Scale_Real",
+            "status": "disable",
+            "categoryDuration": "17 June 2014 - 23 June 2014",
+            "id": "category5",
+            "paramList": [
+                {
+                    "paramName": "Make-Up Torque Data 1",
+                    "paramName2": "CBM_LubePressure_Scale_Real",
+                    "paramType": "overload",
+                    "overloadCount_0_20_percent": 6,
+                    "overloadcount_20_100_percent": 0,
+                    "paramValue": 1.8,
+                    "paramState": "increase",
+                    "siteMin": 0.53,
+                    "siteMax": 4.524,
+                    "siteAvg": 1.8,
+                    "optimalMin": 1.2,
+                    "optimalMax": 3,
+                    "units": "  ",
+                    "siteLevelValue": 2.798230088,
+                    "id": "LubePressure_Scale_Real",
+                    "type": "powerend"
+                },
+                {
+                    "paramName": "Make-Up Torque Data 2",
+                    "paramName2": "CBM_Vibration03_Scale_Real",
+                    "paramType": "total",
+                    "overloadCount_0_20_percent": 6,
+                    "overloadcount_20_100_percent": 0,
+                    "paramValue": 0,
+                    "paramState": "decrease",
+                    "siteMin": 0,
+                    "siteMax": 1.030666667,
+                    "siteAvg": 0.046,
+                    "optimalMin": 0,
+                    "optimalMax": 0.1,
+                    "units": "  ",
+                    "siteLevelValue": 0.47640118,
+                    "id": "Vibration03_Scale_Real",
+                    "type": "powerend"
+                },
+                {
+                    "paramName": "Make-Up Torque Data 3",
+                    "paramName2": "CBM_Vibration04_Scale_Real",
+                    "paramType": "total",
+                    "overloadCount_0_20_percent": 6,
+                    "overloadcount_20_100_percent": 0,
+                    "paramValue": 0,
+                    "paramState": "decrease",
+                    "siteMin": 0,
+                    "siteMax": 1.030666667,
+                    "siteAvg": 0.046,
+                    "optimalMin": 0,
+                    "optimalMax": 0.1,
+                    "units": "  ",
+                    "siteLevelValue": 0.47640118,
+                    "id": "Vibration04_Scale_Real",
+                    "type": "powerend"
+                }
+            ]
+        },
+        {
+            "categoryName": "OutletTemp_Scale_Real",
+            "status": "disable",
+            "categoryDuration": "17 June 2014 - 23 June 2014",
+            "id": "category5",
+            "paramList": [
+                {
+                    "paramName": "Break-Out Torque Data 1",
+                    "paramName2": "CBM_LubePressure_Scale_Real",
+                    "paramType": "overload",
+                    "overloadCount_0_20_percent": 6,
+                    "overloadcount_20_100_percent": 0,
+                    "paramValue": 1.8,
+                    "paramState": "increase",
+                    "siteMin": 0.53,
+                    "siteMax": 4.524,
+                    "siteAvg": 1.8,
+                    "optimalMin": 1.2,
+                    "optimalMax": 3,
+                    "units": "  ",
+                    "siteLevelValue": 2.798230088,
+                    "id": "LubePressure_Scale_Real",
+                    "type": "powerend"
+                }
+            ]
+        },
+        {
+            "categoryName": "Ambient Temp",
+            "status": "disable",
+            "categoryDuration": "17 June 2014 - 23 June 2014",
+            "id": "category5",
+            "paramList": [
+                {
+                    "paramName": "Ambient Temp Data1",
+                    "paramName2": "CBM_LubePressure_Scale_Real",
+                    "paramType": "overload",
+                    "overloadCount_0_20_percent": 6,
+                    "overloadcount_20_100_percent": 0,
+                    "paramValue": 1.8,
+                    "paramState": "increase",
+                    "siteMin": 0.53,
+                    "siteMax": 4.524,
+                    "siteAvg": 1.8,
+                    "optimalMin": 1.2,
+                    "optimalMax": 3,
+                    "units": "  ",
+                    "siteLevelValue": 2.798230088,
+                    "id": "LubePressure_Scale_Real",
+                    "type": "powerend"
+                }
+            ]
+        },
+        {
+            "categoryName": "Filter Monitoring",
+            "status": "disable",
+            "categoryDuration": "17 June 2014 - 23 June 2014",
+            "id": "category5",
+            "paramList": [
+                {
+                    "paramName": "Filter Monitoring Data 1",
+                    "paramName2": "CBM_LubePressure_Scale_Real",
+                    "paramType": "overload",
+                    "overloadCount_0_20_percent": 6,
+                    "overloadcount_20_100_percent": 0,
+                    "paramValue": 1.8,
+                    "paramState": "increase",
+                    "siteMin": 0.53,
+                    "siteMax": 4.524,
+                    "siteAvg": 1.8,
+                    "optimalMin": 1.2,
+                    "optimalMax": 3,
+                    "units": "  ",
+                    "siteLevelValue": 2.798230088,
+                    "id": "LubePressure_Scale_Real",
+                    "type": "powerend"
+                }
+            ]
+        },
+        {
+            "categoryName": "Slip Detection",
+            "status": "disable",
+            "categoryDuration": "17 June 2014 - 23 June 2014",
+            "id": "category5",
+            "paramList": [
+                {
+                    "paramName": "Slip Detection Data 1",
+                    "paramName2": "CBM_LubePressure_Scale_Real",
+                    "paramType": "overload",
+                    "overloadCount_0_20_percent": 6,
+                    "overloadcount_20_100_percent": 0,
+                    "paramValue": 1.8,
+                    "paramState": "increase",
+                    "siteMin": 0.53,
+                    "siteMax": 4.524,
+                    "siteAvg": 1.8,
+                    "optimalMin": 1.2,
+                    "optimalMax": 3,
+                    "units": "  ",
+                    "siteLevelValue": 2.798230088,
+                    "id": "LubePressure_Scale_Real",
+                    "type": "powerend"
+                }
+            ]
+        }
+    ]
+  }

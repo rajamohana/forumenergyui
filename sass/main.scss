@@ -1,0 +1,241 @@
+@import "colors";
+html, body {
+	height: 100%;
+}
+body[state^="cyient.protected.dashboard"] {
+  background: $darkgray;
+}
+body[state^="cyient.protected.sitedetails"] {
+  background: #e8e7e3;
+    background-image: linear-gradient(to left, #e8e7e3 calc((100% - 1366px)/2), transparent 0 ),
+        linear-gradient(to right, #e8e7e3 calc((100% - 1366px)/2), #F5F4EF 0);
+	background-image: -moz-linear-gradient(to left, #e8e7e3 -moz-calc((100% - 1366px)/2), transparent 0 ),
+        linear-gradient(to right, #e8e7e3 -moz-calc((100% - 1366px)/2), #F5F4EF 0);
+	background-image: -ms-linear-gradient(to left, #e8e7e3 -ms-calc((100% - 1366px)/2), transparent 0 ),
+        -ms-linear-gradient(to right, #e8e7e3 -ms-calc((100% - 1366px)/2), #F5F4EF 0);
+}
+#footer[state^="cyient.protected.dashboard"] {
+  background: $darkgray;
+	color:rgba(255,255,255,0.7);
+	height: 50px;
+	text-align: center;
+	padding: 10px;
+}
+#footer[state^="cyient.protected.sitedetails"] {
+  background: #dbe0e6;
+    height: 50px;
+    text-align: center;
+    padding: 17px 0;
+    color: $darkgray;
+}
+body[state^="cyient.protected.truckreport"]{
+	background: #f5f4ef;
+}
+.expand-container[state^="cyient.protected.sitedetails.truckdetails"],
+.expand-container[state^="cyient.protected.allassets.truckdetails"],
+.expand-container[state^="cyient.protected.allassets.insights"]
+{
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 0;
+}
+body[state^="cyient.protected.sitedetails.overview"],
+body[state^="cyient.protected.allsites.siteoverview"],
+body[state^="cyient.protected.allassets.overview"],
+body[state^="cyient.protected.sitedetails.truckdetails"],
+body[state^="cyient.protected.allassets.truckdetails"],
+body[state^="cyient.protected.allassets.insights"],
+body[state="cyient.protected.allassets.whatifscenario"]{
+	.topsection{
+		display: none;
+	}
+}
+
+#footer{
+	display: none;
+}
+.pointer.default {
+  cursor: default;
+}
+.pointer.hand {
+  cursor: pointer;
+}
+
+/* imports start */
+@import "fonts";
+@import "variables";
+@import "reset";
+@import "checkboxes";
+@import "login";
+@import "siteoverview";
+@import "../directives/progressBar/progressbar";
+@import "../directives/progressArc/progressarc";
+@import "../directives/areaChart/_areachart";
+@import "../directives/lifeChart/lifechart";
+@import "../directives/miniLifeChart/miniLifeChart";
+@import "../directives/dropdown/dropdown";
+@import "../directives/genericDropdown/genericDropdown";
+@import "../directives/loader/loader";
+@import "../directives/slider/slider";
+@import "../directives/popup/popup";
+@import "../directives/donut/donut";
+@import "../directives/barChartHoriz/barcharthoriz";
+@import "../directives/lineDashedLine/linedashedline";
+@import "../directives/histogram/histogram";
+@import "sitedetails";
+@import "allsites";
+@import "geography";
+@import "sitedetailsExpanded";
+@import "insights";
+/* imports end */
+.global-header{
+	width: 100%;
+	background: $darkgray;
+    position: fixed;
+	top:0;
+	z-index: 999;
+	
+	&.global-header--modified{
+    	box-shadow: 0 0px 7px 1px rgba(0,0,0,0.4);
+	}
+}
+.header-logo-svg{
+	width:133px;
+	height: 55px;
+	display: inline-block;
+	fill: rgba(255, 255, 255, 0.7);
+	transition: height 0.5s ease;
+	&.header-logo-svg--modified {
+		height: 45px;
+	}
+}
+.dashboard-logo a{
+	display: inline-block;
+}
+.header-search{
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	vertical-align:middle;
+	margin-right: 25px;
+	svg{
+		fill:rgba(255,255,255,0.7);
+	}
+}
+
+.header-search-main{
+	width: 0px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+
+	input[type="text"]{
+		@include placeHolder(){
+			color: #ABB9CC;
+		}
+		color: #ABB9CC;
+	}
+	&.expand-active{
+		width:200px;
+		transition: width 2s ease-out;
+		-webkit-transition: width 2s ease-out;
+		input[type="text"]{
+			width: 150px;
+		}
+	}
+}
+.icon-dropdown {
+	width: 10px;
+	height: 7px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.icon-mark {
+	position: absolute;
+  top: -13px;
+  right: 6px;
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#000', Opacity='0.5')";
+	filter: url(#drop-shadow);
+	-webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+	filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+}
+.user-info-details{
+	display: inline-block;
+	vertical-align: middle;
+}
+.height100 {
+	height: 100%;
+}
+.options-dropdown-menu {
+    position: absolute;
+    // left: -15px;
+    right: 10px;
+    top: 28px;
+    min-width: 196px;
+    z-index: 1000;
+    padding: 15px 14px;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.options-icon-dropdown {
+	width: 10px;
+	height: 7px;
+	display: inline-block;
+	vertical-align: middle;
+	fill: #41464b;
+	margin: 0 5px;
+}
+.options-icon-mark {
+    position: absolute;
+    top: -13px;
+    right: 26px;
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#000', Opacity='0.5')";
+    filter: url(#drop-shadow);
+    -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.5));
+}
+.sort-dropdown-list{
+	right: 0px;
+    min-width: 196px;
+    /* right: 10px; */
+}
+/*common classes for colors*/
+.warning{
+	fill: $warningf48d79;
+}
+.fill-warning-lighter{
+	fill: #ffb8c2;
+}
+.down-growth{
+	fill: #00a89c;
+}
+.grey{
+	fill: $clr9b9d9d;
+}
+.d-inline-block {
+	display: inline-block;
+}
+
+.d-flex-align {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.text-align-right {
+	text-align: right;
+}
+.pleft-0 {
+	padding-left: 0 !important;
+}
+/*.main-scroll {
+    height: calc(100% - 93px);
+    overflow: auto;
+}*/
+@import "mediaqueries";

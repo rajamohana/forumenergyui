@@ -1,0 +1,705 @@
+@import "colors";
+body[state^="cyient.protected.dashboard"] {
+  background: $darkgray;
+}
+body[state^="cyient.protected.sitedetails"] {
+  background: #e8e7e3;
+    background-image: linear-gradient(to left, #e8e7e3 calc((100% - 1366px)/2), transparent 0 ),
+        linear-gradient(to right, #e8e7e3 calc((100% - 1366px)/2), #F5F4EF 0);
+	background-image: -moz-linear-gradient(to left, #e8e7e3 -moz-calc((100% - 1366px)/2), transparent 0 ),
+        linear-gradient(to right, #e8e7e3 -moz-calc((100% - 1366px)/2), #F5F4EF 0);
+	background-image: -ms-linear-gradient(to left, #e8e7e3 -ms-calc((100% - 1366px)/2), transparent 0 ),
+        -ms-linear-gradient(to right, #e8e7e3 -ms-calc((100% - 1366px)/2), #F5F4EF 0);
+}
+#footer[state^="cyient.protected.dashboard"] {
+  background: $darkgray;
+	color:rgba(255,255,255,0.7);
+	height: 50px;
+	text-align: center;
+	padding: 10px;
+}
+#footer[state^="cyient.protected.sitedetails"] {
+  background: #dbe0e6;
+    height: 50px;
+    text-align: center;
+    padding: 17px 0;
+    color: $darkgray;
+}
+.sitesdetail-container {
+    background: #e8e7e3;
+}
+
+.sites-subwrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 135px 0px 28px 0px;
+    margin-top: 70px;
+    background: #f5f4ef;
+    overflow: hidden;
+    height: 100%;
+}
+
+.topsection {
+    padding: 15px 28px 0 28px;
+    position: fixed;
+    top: 70px;
+    max-width: 1366px;
+    background: #F5F4EF;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 99;
+    transition: box-shadow 1s ease, top 0.5s ease;
+    &.topsection--modified {
+        top: 58px;
+        box-shadow: 0 7px 5px -5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.bread-crumb {
+    padding-bottom: 15px;
+    transition: padding 0.5s ease;
+    ul {
+        display: block;
+        font-size: 0;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            a {
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 4px;
+                color: $darkgray;
+                font-family: $openreg;
+                font-size: 18px;
+                cursor: pointer;
+                .back-arrow-breadcrum {
+                    height: 14px;
+                    width: 7px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    fill: #f0efea;
+                }
+                .bread-crumb-label {
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 18px;
+                }
+            }
+            &.active {
+                a {
+                    font-family: $openbold;
+                    font-size: 20px;
+                    color: $clr4bb3ba;
+                    cursor: default;
+                    .back-arrow-breadcrum {
+                        fill: #f0efea;
+                    }
+                    .bread-crumb-label {}
+                }
+                .goto-Scenario-actionlink {
+                    a {
+                        font-size: 14px;
+                        color: #404b5a;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    &.bread-crumb--modified {}
+}
+
+.goto-Scenario-actionlink {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 4px;
+        text-decoration: underline;
+        color: #404b5a;
+        font-family: $openreg;
+        font-size: 14px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+
+/*navigation css*/
+
+.tab-navigation {
+    width: 100%;
+    display: table;
+    margin-bottom: 10px;
+    &.tab-navigation--modified {}
+}
+
+.left-tabs,
+.right-tabs {
+    display: inline-block;
+    ;
+    vertical-align: middle;
+}
+
+
+/*tab navigation*/
+
+.left-tabs {
+    li {
+        display: table-cell;
+        vertical-align: middle;
+        border: 1px solid #979ca1;
+        border-right: 0;
+        background: #F5F4EF;
+        a {
+            background: transparent;
+            display: inline-block;
+            color: #41464b;
+            padding: 12px 30px 12px 30px;
+            .icon-truck-tab {
+                fill: #41464b;
+            }
+            .icon-sites-stable,
+            .icon-sites-all,
+            .icon-sites-good {
+                svg {
+                    stroke: #41464b;
+                    stroke-width: 2px;
+                }
+            }
+        }
+        &:hover,
+        &.active {
+            background: #ffdd33;
+            a {
+                .icon-truck-tab {
+                    //fill: #fff;
+                }
+            }
+        }
+        &:nth-last-child(1) {
+            border-right: 1px solid #979ca1;
+        }
+    }
+}
+
+.tab-inner-left,
+.tab-inner-right {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tab-inner-left {
+    padding-right: 10px;
+}
+
+.tab-count {
+    display: block;
+    font-size: 23px;
+    font-family: $openbold;
+}
+
+.tab-inner-content {
+    display: block;
+    font-size: 12px;
+}
+
+
+/*sort panel*/
+
+.sort-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.sort-wrapper {
+    border: 1px solid #979ca1;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px 18px 6px 13px;
+    width: 194px;
+}
+
+.sort-option-content {
+    width: 92px;
+    display: inline-block;
+}
+
+.divider-sort {
+    display: inline-block;
+    height: 49px;
+    vertical-align: middle;
+    background: #979ca1;
+    width: 1px;
+    margin-right: 20px;
+}
+
+.sort-dropdown {
+    display: inline-block;
+    vertical-align: middle;
+    //	border-right: 1px solid #d0d1d0;
+    text-align: left;
+    width: 112px;
+    cursor: pointer;
+    select {
+        border: none;
+        background: #F5F4EF;
+        height: 37px;
+        font-family: $opensembold;
+        font-size: 14px;
+        color: #41464b;
+        &:focus {
+            outline: none;
+        }
+    }
+    .selectedOption {
+        color: #4bb3ba;
+    }
+}
+
+.sitesdetails-left-dropdown {
+    height: 48px;
+}
+
+.sort-arrow {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    svg {}
+    .down {
+        display: none;
+    }
+    &.active {
+        .down {
+            display: inline-block;
+        }
+        .up {
+            display: none;
+        }
+    }
+}
+
+.right-tabs {
+    text-align: right;
+    float: right;
+}
+
+
+/*tab icons*/
+
+.icon-truck-tab {
+    width: 32px;
+    height: 30px;
+    display: inline-block;
+}
+
+.icon-sites-all {
+    width: 32px;
+    height: 34px;
+}
+
+.icon-sites-critical {
+    width: 23px;
+    height: 26px;
+}
+
+.icon-sites-stable {
+    width: 34px;
+    height: 34px;
+}
+
+.icon-sites-good {
+    width: 32px;
+    height: 34px;
+}
+
+
+/*truck card section css*/
+
+.sites-card {
+    border-bottom: 1px solid #c3c5c6;
+    display: table;
+    width: 100%;
+    padding: 20px 28px 20px 28px;
+    margin: 0 0 0 0;
+    position: relative;
+    background: #F5F4EF;
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+    &:hover {
+        background: rgba(203, 225, 212, 0.3);
+        border-bottom: 1px solid #c3c5c6;
+    }
+    &:first-child {
+        border-top: 1px solid transparent;
+        &:hover {
+            border-top: 1px solid transparent;
+        }
+    }
+}
+
+.truck-column {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    &:nth-last-child(2) {
+        //		vertical-align: middle;
+        padding-bottom: 4px;
+    }
+    &:nth-last-child(1) {
+        text-align: right;
+        padding-right: 0;
+        vertical-align: middle;
+        width: 200px;
+    }
+}
+
+.small-view {
+    display: table-cell;
+    padding-right: 0;
+}
+
+
+/*fixied width for details card*/
+
+.first-col {
+    width: 175px;
+    padding-right: 25px;
+}
+
+.second-col {
+    width: 175px;
+    padding-bottom: 1px;
+}
+
+.third-col {
+    //	width: 95px;
+}
+
+.fourth-col {
+    //	width: 80px;
+}
+
+.fifth-col {
+    //	padding-right: 30px;
+}
+
+.sixth-col {
+    width: 160px;
+    padding-bottom: 0px;
+}
+
+.last-col {
+    //width: 100px;
+}
+
+.seventh-model-col {
+    text-align: center;
+}
+
+.model-confidence-holder {
+    padding-bottom: 10px;
+    min-width: 70px;
+}
+
+.model-confidence-count,
+.model-confidence {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: $openreg;
+    color: $darkgray;
+}
+
+.model-confidence {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    color: $darkgray;
+    width: 24px;
+    height: 24px;
+    span {
+        display: block;
+    }
+}
+
+.sites-card-arrowHolder {
+    position: relative;
+}
+
+.sites-card-downarrow {
+    position: absolute;
+    margin-left: 6px;
+    top: 2px;
+    width: 24px;
+    height: 24px;
+    left: 100%;
+}
+
+.expand-panel {
+    left: 100%;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    overflow: hidden;
+    -webkit-transition: left 0s;
+    -moz-transition: left 0s;
+    -o-transition: left 0s;
+    transition: left 0s;
+    background-color: #f5f4ef;
+}
+
+.sites-card-section {
+    width: 100%;
+    max-width: 1366px;
+    -webkit-transition: width 0s;
+    -moz-transition: width 0s;
+    -o-transition: width 0s;
+    transition: width 0s;
+}
+
+.sitecards-wrapper {
+    max-width: 1366px;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: width 0s;
+    -moz-transition: width 0s;
+    -o-transition: width 0s;
+    transition: width 0s;
+}
+
+.active {
+    &.sites-card-section {
+        width: 220px;
+        vertical-align: top;
+        display: inline-block;
+        float: left;
+    }
+    .first-col {
+        width: 100%;
+    }
+    .truck-column {
+        display: none;
+    }
+    .small-view {
+        display: inline-block;
+        padding-right: 0;
+    }
+    .sites-card {
+        width: 220px;
+        border-right: 1px solid #c3c5c6;
+        background: #E0E1DE;
+        &.selected {
+            background: #F5F4EF;
+        }
+    }
+}
+
+.sites-card-container {
+    position: relative;
+    min-width: 1024px;
+    max-width: 1366px;
+    margin: 0 auto;
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.sites-small-button {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    padding: 0 10px;
+    font-family: $openreg;
+    background: transparent;
+    border: 1px solid #4bb3ba;
+    color: #4bb3ba;
+    width: 100px;
+    cursor: pointer;
+    &:focus {
+        outline: none;
+    }
+}
+
+.sites-truck-title {
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 100%;
+}
+
+.sites-progress-mini-arc {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+.icon-truck-fill {
+    width: 26px;
+    height: 15px;
+    fill: $darkgray;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.sites-truck-name {
+    color: #545456;
+    font-size: 18px;
+    font-family: $openbold;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.truck-expected-date {
+    font-size: 14px;
+    font-family: $opensembold;
+    color: $darkgray;
+    margin-bottom: 5px;
+}
+
+.truck-purshase-date {
+    //	margin-bottom: 5px;
+}
+
+.truck-purshase-date,
+.truck-warranty-date {
+    color: rgba(58, 69, 84, 0.8);
+    font-size: 12px;
+}
+
+.sites-smh-count,
+.sites-rul-count {
+    font-size: 20px;
+    color: #41464b;
+    margin-bottom: 5px;
+}
+
+.sites-smh-label,
+.sites-rul-label {
+    font-size: 12px;
+    color: #4d5964;
+}
+
+.graph-panel {
+    display: inline-block;
+    .progress-styles2 {
+        display: inline-block;
+    }
+}
+
+
+/*site details progress bar styles*/
+
+.progress-styles2 {
+    .progress-percent {
+        font-family: $openreg;
+        font-size: 20px;
+        color: $darkgray;
+    }
+    .progress-health {
+        fill: $darkgray;
+        font-size: 12px;
+    }
+    .startpoint,
+    .endpoint {
+        font-size: 11px;
+        fill: $darkgray;
+    }
+}
+
+.selected {
+    background: #f5f4ef;
+    .sites-truck-name,
+    .truck-expected-date {
+        color: #ffdd33;
+    }
+    .icon-truck-fill {
+        fill: #ffdd33;
+    }
+}
+
+
+/*two-column-layout css*/
+
+.two-column-view {
+    width: 100%;
+    max-width: 220px;
+    display: none;
+}
+
+.collaps-icon-holder {
+    background: #ffdd33;
+    width: 100%;
+    text-align: right;
+}
+
+.collapse-truck {
+    display: inline-block;
+}
+
+.expand-collapse-truck {
+    display: none;
+}
+
+.collaps-menu {
+    width: auto;
+    ul {
+        li {
+            display: inline-block;
+            width: 100%;
+            border: 1px solid #d0d1d0;
+            border-bottom: none;
+            &:last-child {
+                border-bottom: 1px solid #d0d1d0;
+            }
+            &:hover {
+                background: rgba(255, 221, 51, 0.25);
+            }
+        }
+    }
+}
+
+.sitesdetails-left-dropdown {
+    .left-tabs {
+        li {
+            a {
+                padding-left: 36px;
+                display: block;
+                &:hover {
+                    color: $darkgray;
+                    fill: $darkgray;
+                }
+                .icon-truck-tab {
+                    fill: $darkgray;
+                }
+            }
+            &:hover {
+                color: $darkgray;
+                fill: $darkgray;
+            }
+        }
+    }
+    .tab-inner-left {
+        width: 36px;
+        text-align: right;
+    }
+    .fixed-left-dropdown {
+        width: 36px;
+        padding-right: 4px;
+        display: inline-block;
+    }
+    .tab-inner-right {
+        padding-left: 16px;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,8 @@
+<div>
+    <div ng-repeat="row in data" class="bar-cnt">
+        <div class="color-box"
+             ng-style="{background: row.color, width: (row.val * 100 / sumVal)}">
+        </div>
+        <div class="row-label" ng-bind-html="renderHTML(row.label)"></div>
+    </div>
+</div>

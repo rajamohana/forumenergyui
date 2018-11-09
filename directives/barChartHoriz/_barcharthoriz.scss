@@ -1,0 +1,17 @@
+
+bar-chart-horiz {
+    display: block;
+    .bar-cnt {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+    .color-box {
+        height: 8px;
+    }
+    .row-label {
+        margin-left: 10px;
+		font-size: 10px;
+    }
+}
+

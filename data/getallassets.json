@@ -1,0 +1,1124 @@
+{
+    "result": [
+        {
+            "assetId": "t259",
+            "assetName": "Frac Pump",
+            "assettype": "fracpump",
+            "siteName": "Forum Frac Spread 1",
+            "siteId": "site123",
+            "category": "Stable",
+            "RUL": 8110,
+            "ROD": 0.01,
+            "SMH": 1234,
+            "expectedLife": 1870,
+            "purchaseDate": "11/08/2012",
+            "healthPercentage": 4.36363636363637,
+            "siteAvgHealth": 65,
+            "siteData": [
+                {
+                    "name ": "RUL ",
+                    "displayName": "RUL (Hours)",
+                    "value": 8110
+                },
+                {
+                    "name ": "ROD",
+                    "displayName": "Deterioration Rate",
+                    "value": 0.01,
+                    "trend": "increase",
+                    "showChange": true,
+                    "units": "percentage"
+                }
+            ],
+            "progressGraph": {
+                "graphData": [
+                    {
+                        "xAxis": 0,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9772759838111111
+                    },
+                    {
+                        "xAxis": 1,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9362742085199998
+                    },
+                    {
+                        "xAxis": 2,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.89109954929
+                    },
+                    {
+                        "xAxis": 3,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8521976409499998
+                    },
+                    {
+                        "xAxis": 4,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8120133774699999
+                    },
+                    {
+                        "xAxis": 5,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.76400827414
+                    },
+                    {
+                        "xAxis": 6,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.7136849676300001
+                    },
+                    {
+                        "xAxis": 7,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6614587106300001
+                    },
+                    {
+                        "xAxis": 8,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6053576673700001
+                    },
+                    {
+                        "xAxis": 9,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.54613545184
+                    },
+                    {
+                        "xAxis": 10,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.48539850253
+                    },
+                    {
+                        "xAxis": 11,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.42555577275999995
+                    },
+                    {
+                        "xAxis": 12,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.36654432764
+                    },
+                    {
+                        "xAxis": 13,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.30718407055
+                    },
+                    {
+                        "xAxis": 14,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.24747266975999999
+                    },
+                    {
+                        "xAxis": 15,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.18888498336
+                    },
+                    {
+                        "xAxis": 16,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.13058075828
+                    },
+                    {
+                        "xAxis": 17,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.07251096805
+                    },
+                    {
+                        "xAxis": 18,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.012715949649999999
+                    },
+                    {
+                        "xAxis": 19,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.047656053229999995
+                    },
+                    {
+                        "xAxis": 20,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.0734400398
+                    }
+                ],
+                "xAxisToday": 13,
+                "yAxisToday": 0.6941196534
+            }
+        },
+         {
+            "assetId": "t264",
+            "assetName": "fracpumps",
+            "siteName": "Forum Frac Spread 5",
+            "siteId": "site123",
+            "category": "Stable",
+            "RUL": 8110,
+            "ROD": 0.01,
+            "SMH": 1234,
+            "expectedLife": 1870,
+            "purchaseDate": "11/08/2012",
+            "healthPercentage": 80.36363636363637,
+            "siteAvgHealth": 65,
+            "siteData": [
+                {
+                    "name ": "RUL ",
+                    "displayName": "RUL (Hours)",
+                    "value": 8110
+                },
+                {
+                    "name ": "ROD",
+                    "displayName": "Deterioration Rate",
+                    "value": 0.01,
+                    "trend": "increase",
+                    "showChange": true,
+                    "units": "percentage"
+                }
+            ],
+            "progressGraph": {
+                "graphData": [
+                    {
+                        "xAxis": 0,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9772759838111111
+                    },
+                    {
+                        "xAxis": 1,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9362742085199998
+                    },
+                    {
+                        "xAxis": 2,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.89109954929
+                    },
+                    {
+                        "xAxis": 3,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8521976409499998
+                    },
+                    {
+                        "xAxis": 4,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8120133774699999
+                    },
+                    {
+                        "xAxis": 5,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.76400827414
+                    },
+                    {
+                        "xAxis": 6,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.7136849676300001
+                    },
+                    {
+                        "xAxis": 7,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6614587106300001
+                    },
+                    {
+                        "xAxis": 8,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6053576673700001
+                    },
+                    {
+                        "xAxis": 9,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.54613545184
+                    },
+                    {
+                        "xAxis": 10,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.48539850253
+                    },
+                    {
+                        "xAxis": 11,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.42555577275999995
+                    },
+                    {
+                        "xAxis": 12,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.36654432764
+                    },
+                    {
+                        "xAxis": 13,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.30718407055
+                    },
+                    {
+                        "xAxis": 14,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.24747266975999999
+                    },
+                    {
+                        "xAxis": 15,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.18888498336
+                    },
+                    {
+                        "xAxis": 16,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.13058075828
+                    },
+                    {
+                        "xAxis": 17,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.07251096805
+                    },
+                    {
+                        "xAxis": 18,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.012715949649999999
+                    },
+                    {
+                        "xAxis": 19,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.047656053229999995
+                    },
+                    {
+                        "xAxis": 20,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.0734400398
+                    }
+                ],
+                "xAxisToday": 13,
+                "yAxisToday": 0.6941196534
+            }
+        }, {
+            "assetId": "t259",
+            "assetName": "fracpumps",
+            "siteName": "Forum Frac Spread 1",
+            "siteId": "site123",
+            "category": "Stable",
+            "RUL": 8110,
+            "ROD": 0.01,
+            "SMH": 1234,
+            "expectedLife": 1870,
+            "purchaseDate": "11/08/2012",
+            "healthPercentage": 4.36363636363637,
+            "siteAvgHealth": 65,
+            "siteData": [
+                {
+                    "name ": "RUL ",
+                    "displayName": "RUL (Hours)",
+                    "value": 8110
+                },
+                {
+                    "name ": "ROD",
+                    "displayName": "Deterioration Rate",
+                    "value": 0.01,
+                    "trend": "increase",
+                    "showChange": true,
+                    "units": "percentage"
+                }
+            ],
+            "progressGraph": {
+                "graphData": [
+                    {
+                        "xAxis": 0,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9772759838111111
+                    },
+                    {
+                        "xAxis": 1,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9362742085199998
+                    },
+                    {
+                        "xAxis": 2,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.89109954929
+                    },
+                    {
+                        "xAxis": 3,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8521976409499998
+                    },
+                    {
+                        "xAxis": 4,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8120133774699999
+                    },
+                    {
+                        "xAxis": 5,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.76400827414
+                    },
+                    {
+                        "xAxis": 6,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.7136849676300001
+                    },
+                    {
+                        "xAxis": 7,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6614587106300001
+                    },
+                    {
+                        "xAxis": 8,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6053576673700001
+                    },
+                    {
+                        "xAxis": 9,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.54613545184
+                    },
+                    {
+                        "xAxis": 10,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.48539850253
+                    },
+                    {
+                        "xAxis": 11,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.42555577275999995
+                    },
+                    {
+                        "xAxis": 12,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.36654432764
+                    },
+                    {
+                        "xAxis": 13,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.30718407055
+                    },
+                    {
+                        "xAxis": 14,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.24747266975999999
+                    },
+                    {
+                        "xAxis": 15,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.18888498336
+                    },
+                    {
+                        "xAxis": 16,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.13058075828
+                    },
+                    {
+                        "xAxis": 17,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.07251096805
+                    },
+                    {
+                        "xAxis": 18,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.012715949649999999
+                    },
+                    {
+                        "xAxis": 19,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.047656053229999995
+                    },
+                    {
+                        "xAxis": 20,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.0734400398
+                    }
+                ],
+                "xAxisToday": 13,
+                "yAxisToday": 0.6941196534
+            }
+        },
+        {
+            "assetId": "t260",
+            "assetName": "catwalk",
+            "siteName": "Forum Drilling Rig 200",
+            "siteId": "site123",
+            "category": "Stable",
+            "RUL": 8210,
+            "ROD": 0.015,
+            "SMH": 1234,
+            "expectedLife": 1870,
+            "purchaseDate": "11/09/2011",
+            "healthPercentage": 48.36363636363637,
+            "siteAvgHealth": 65,
+            "siteData": [
+                {
+                    "name ": "RUL ",
+                    "displayName": "RUL (Cycles)",
+                    "value": 8210
+                },
+                {
+                    "name ": "ROD",
+                    "displayName": "Deterioration Rate",
+                    "value": 0.015,
+                    "trend": "increase",
+                    "showChange": true,
+                    "units": "percentage"
+                }
+            ],
+            "progressGraph": {
+                "graphData": [
+                    {
+                        "xAxis": 0,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9772759838111111
+                    },
+                    {
+                        "xAxis": 1,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9362742085199998
+                    },
+                    {
+                        "xAxis": 2,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.89109954929
+                    },
+                    {
+                        "xAxis": 3,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8521976409499998
+                    },
+                    {
+                        "xAxis": 4,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8120133774699999
+                    },
+                    {
+                        "xAxis": 5,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.76400827414
+                    },
+                    {
+                        "xAxis": 6,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.7136849676300001
+                    },
+                    {
+                        "xAxis": 7,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6614587106300001
+                    },
+                    {
+                        "xAxis": 8,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6053576673700001
+                    },
+                    {
+                        "xAxis": 9,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.54613545184
+                    },
+                    {
+                        "xAxis": 10,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.48539850253
+                    },
+                    {
+                        "xAxis": 11,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.42555577275999995
+                    },
+                    {
+                        "xAxis": 12,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.36654432764
+                    },
+                    {
+                        "xAxis": 13,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.30718407055
+                    },
+                    {
+                        "xAxis": 14,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.24747266975999999
+                    },
+                    {
+                        "xAxis": 15,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.18888498336
+                    },
+                    {
+                        "xAxis": 16,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.13058075828
+                    },
+                    {
+                        "xAxis": 17,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.07251096805
+                    },
+                    {
+                        "xAxis": 18,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.012715949649999999
+                    },
+                    {
+                        "xAxis": 19,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.047656053229999995
+                    },
+                    {
+                        "xAxis": 20,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.0734400398
+                    }
+                ],
+                "xAxisToday": 13,
+                "yAxisToday": 0.6941196534
+            }
+        },
+        {
+            "assetId": "t642",
+            "assetName": "fracpumps",
+            "siteName": "Forum Frac Spread 2",
+            "siteId": "site123",
+            "category": "Stable",
+            "RUL": 8110,
+            "ROD": 0.01,
+            "SMH": 1234,
+            "expectedLife": 1870,
+            "purchaseDate": "11/08/2012",
+            "healthPercentage": 46.36363636363637,
+            "siteAvgHealth": 65,
+            "siteData": [
+                {
+                    "name ": "RUL ",
+                    "displayName": "RUL (Hours)",
+                    "value": 8110
+                },
+                {
+                    "name ": "ROD",
+                    "displayName": "Deterioration Rate",
+                    "value": 0.01,
+                    "trend": "increase",
+                    "showChange": true,
+                    "units": "percentage"
+                }
+            ],
+            "progressGraph": {
+                "graphData": [
+                    {
+                        "xAxis": 0,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9772759838111111
+                    },
+                    {
+                        "xAxis": 1,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9362742085199998
+                    },
+                    {
+                        "xAxis": 2,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.89109954929
+                    },
+                    {
+                        "xAxis": 3,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8521976409499998
+                    },
+                    {
+                        "xAxis": 4,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8120133774699999
+                    },
+                    {
+                        "xAxis": 5,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.76400827414
+                    },
+                    {
+                        "xAxis": 6,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.7136849676300001
+                    },
+                    {
+                        "xAxis": 7,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6614587106300001
+                    },
+                    {
+                        "xAxis": 8,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6053576673700001
+                    },
+                    {
+                        "xAxis": 9,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.54613545184
+                    },
+                    {
+                        "xAxis": 10,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.48539850253
+                    },
+                    {
+                        "xAxis": 11,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.42555577275999995
+                    },
+                    {
+                        "xAxis": 12,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.36654432764
+                    },
+                    {
+                        "xAxis": 13,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.30718407055
+                    },
+                    {
+                        "xAxis": 14,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.24747266975999999
+                    },
+                    {
+                        "xAxis": 15,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.18888498336
+                    },
+                    {
+                        "xAxis": 16,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.13058075828
+                    },
+                    {
+                        "xAxis": 17,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.07251096805
+                    },
+                    {
+                        "xAxis": 18,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.012715949649999999
+                    },
+                    {
+                        "xAxis": 19,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.047656053229999995
+                    },
+                    {
+                        "xAxis": 20,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.0734400398
+                    }
+                ],
+                "xAxisToday": 13,
+                "yAxisToday": 0.6941196534
+            }
+        },
+        {
+            "assetId": "t266",
+            "assetName": "catwalk",
+            "siteName": "Forum Drilling Rig 203",
+            "siteId": "site123",
+            "category": "Stable",
+            "RUL": 8210,
+            "ROD": 0.015,
+            "SMH": 1234,
+            "expectedLife": 1870,
+            "purchaseDate": "11/09/2011",
+            "healthPercentage": 48.36363636363637,
+            "siteAvgHealth": 65,
+            "siteData": [
+                {
+                    "name ": "RUL ",
+                    "displayName": "RUL (Cycles)",
+                    "value": 8210
+                },
+                {
+                    "name ": "ROD",
+                    "displayName": "Deterioration Rate",
+                    "value": 0.015,
+                    "trend": "increase",
+                    "showChange": true,
+                    "units": "percentage"
+                }
+            ],
+            "progressGraph": {
+                "graphData": [
+                    {
+                        "xAxis": 0,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9772759838111111
+                    },
+                    {
+                        "xAxis": 1,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9362742085199998
+                    },
+                    {
+                        "xAxis": 2,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.89109954929
+                    },
+                    {
+                        "xAxis": 3,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8521976409499998
+                    },
+                    {
+                        "xAxis": 4,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8120133774699999
+                    },
+                    {
+                        "xAxis": 5,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.76400827414
+                    },
+                    {
+                        "xAxis": 6,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.7136849676300001
+                    },
+                    {
+                        "xAxis": 7,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6614587106300001
+                    },
+                    {
+                        "xAxis": 8,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6053576673700001
+                    },
+                    {
+                        "xAxis": 9,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.54613545184
+                    },
+                    {
+                        "xAxis": 10,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.48539850253
+                    },
+                    {
+                        "xAxis": 11,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.42555577275999995
+                    },
+                    {
+                        "xAxis": 12,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.36654432764
+                    },
+                    {
+                        "xAxis": 13,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.30718407055
+                    },
+                    {
+                        "xAxis": 14,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.24747266975999999
+                    },
+                    {
+                        "xAxis": 15,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.18888498336
+                    },
+                    {
+                        "xAxis": 16,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.13058075828
+                    },
+                    {
+                        "xAxis": 17,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.07251096805
+                    },
+                    {
+                        "xAxis": 18,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.012715949649999999
+                    },
+                    {
+                        "xAxis": 19,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.047656053229999995
+                    },
+                    {
+                        "xAxis": 20,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.0734400398
+                    }
+                ],
+                "xAxisToday": 13,
+                "yAxisToday": 0.6941196534
+            }
+        },
+        {
+            "assetId": "t272",
+            "assetName": "catwalk",
+            "siteName": "Forum Drilling Rig 205",
+            "siteId": "site123",
+            "category": "Stable",
+            "RUL": 8210,
+            "ROD": 0.015,
+            "SMH": 1234,
+            "expectedLife": 1870,
+            "purchaseDate": "11/09/2011",
+            "healthPercentage": 48.36363636363637,
+            "siteAvgHealth": 65,
+            "siteData": [
+                {
+                    "name ": "RUL ",
+                    "displayName": "RUL (Cycles)",
+                    "value": 8210
+                },
+                {
+                    "name ": "ROD",
+                    "displayName": "Deterioration Rate",
+                    "value": 0.015,
+                    "trend": "increase",
+                    "showChange": true,
+                    "units": "percentage"
+                }
+            ],
+            "progressGraph": {
+                "graphData": [
+                    {
+                        "xAxis": 0,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9772759838111111
+                    },
+                    {
+                        "xAxis": 1,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9362742085199998
+                    },
+                    {
+                        "xAxis": 2,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.89109954929
+                    },
+                    {
+                        "xAxis": 3,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8521976409499998
+                    },
+                    {
+                        "xAxis": 4,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8120133774699999
+                    },
+                    {
+                        "xAxis": 5,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.76400827414
+                    },
+                    {
+                        "xAxis": 6,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.7136849676300001
+                    },
+                    {
+                        "xAxis": 7,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6614587106300001
+                    },
+                    {
+                        "xAxis": 8,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6053576673700001
+                    },
+                    {
+                        "xAxis": 9,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.54613545184
+                    },
+                    {
+                        "xAxis": 10,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.48539850253
+                    },
+                    {
+                        "xAxis": 11,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.42555577275999995
+                    },
+                    {
+                        "xAxis": 12,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.36654432764
+                    },
+                    {
+                        "xAxis": 13,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.30718407055
+                    },
+                    {
+                        "xAxis": 14,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.24747266975999999
+                    },
+                    {
+                        "xAxis": 15,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.18888498336
+                    },
+                    {
+                        "xAxis": 16,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.13058075828
+                    },
+                    {
+                        "xAxis": 17,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.07251096805
+                    },
+                    {
+                        "xAxis": 18,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.012715949649999999
+                    },
+                    {
+                        "xAxis": 19,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.047656053229999995
+                    },
+                    {
+                        "xAxis": 20,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.0734400398
+                    }
+                ],
+                "xAxisToday": 13,
+                "yAxisToday": 0.6941196534
+            }
+        },
+        {
+            "assetId": "t604",
+            "assetName": "roughneck",
+            "siteName": "Forum Drilling Rig 209",
+            "siteId": "site123",
+            "category": "Stable",
+            "RUL": 8115,
+            "ROD": 0.07,
+            "SMH": 1234,
+            "expectedLife": 1870,
+            "purchaseDate": "1/08/2011",
+            "healthPercentage": 78.36363636363637,
+            "siteAvgHealth": 65,
+            "siteData": [
+                {
+                    "name ": "RUL ",
+                    "displayName": "RUL (Hours)",
+                    "value": 8115
+                },
+                {
+                    "name ": "ROD",
+                    "displayName": "Deterioration Rate",
+                    "value": 0.07,
+                    "trend": "increase",
+                    "showChange": true,
+                    "units": "percentage"
+                }
+            ],
+            "progressGraph": {
+                "graphData": [
+                    {
+                        "xAxis": 0,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9772759838111111
+                    },
+                    {
+                        "xAxis": 1,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.9362742085199998
+                    },
+                    {
+                        "xAxis": 2,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.89109954929
+                    },
+                    {
+                        "xAxis": 3,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8521976409499998
+                    },
+                    {
+                        "xAxis": 4,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.8120133774699999
+                    },
+                    {
+                        "xAxis": 5,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.76400827414
+                    },
+                    {
+                        "xAxis": 6,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.7136849676300001
+                    },
+                    {
+                        "xAxis": 7,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6614587106300001
+                    },
+                    {
+                        "xAxis": 8,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.6053576673700001
+                    },
+                    {
+                        "xAxis": 9,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.54613545184
+                    },
+                    {
+                        "xAxis": 10,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.48539850253
+                    },
+                    {
+                        "xAxis": 11,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.42555577275999995
+                    },
+                    {
+                        "xAxis": 12,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.36654432764
+                    },
+                    {
+                        "xAxis": 13,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.30718407055
+                    },
+                    {
+                        "xAxis": 14,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.24747266975999999
+                    },
+                    {
+                        "xAxis": 15,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.18888498336
+                    },
+                    {
+                        "xAxis": 16,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.13058075828
+                    },
+                    {
+                        "xAxis": 17,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.07251096805
+                    },
+                    {
+                        "xAxis": 18,
+                        "xAxisDate": "123234345",
+                        "yAxis": 0.012715949649999999
+                    },
+                    {
+                        "xAxis": 19,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.047656053229999995
+                    },
+                    {
+                        "xAxis": 20,
+                        "xAxisDate": "123234345",
+                        "yAxis": -0.0734400398
+                    }
+                ],
+                "xAxisToday": 13,
+                "yAxisToday": 0.6941196534
+            }
+        }
+    ]
+}

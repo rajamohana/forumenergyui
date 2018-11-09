@@ -1,0 +1,56 @@
+{
+  "status": "success",
+  "data": {
+    "rul": "",
+    "graphData": [
+      {
+        "smh": "",
+        "health": ""
+      },
+      {
+        "smh": "",
+        "health": ""
+      }
+    ],
+    "payload": {
+      "Min": "",
+      "Max": "",
+      "cur": "",
+      "Start": "",
+      "End": "",
+      "Step": ""
+    },
+    "fuelConsumption": {
+      "Min": "",
+      "Max": "",
+      "Cur": "",
+      "Start": "",
+      "End": "",
+      "Step": ""
+    },
+    "gearShiftCount": {
+      "Min": "",
+      "Max": "",
+      "Cur": "",
+      "Start": "",
+      "End": "",
+      "Step": ""
+    },
+    "variable4": {
+      "Min": "",
+      "Max": "",
+      "Cur": "",
+      "Start": "",
+      "End": "",
+      "Step": ""
+    },
+    "variable5": {
+      "Min": "",
+      "Max": "",
+      "Cur": "",
+      "Start": "",
+      "End": "",
+      "Step": ""
+    }
+  }
+}

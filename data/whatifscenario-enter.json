@@ -1,0 +1,11 @@
+{
+    "result": [
+        {
+            "scenarioName": "scenario1",
+            "payload": 50,
+            "fuelConsumption": 90,
+            "gearShiftCount": 60,
+            "truckNumber": "t896"
+        }
+    ]
+}

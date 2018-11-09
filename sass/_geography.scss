@@ -1,0 +1,284 @@
+.geo-sites-subwrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    // padding: 135px 0px 28px 0px;
+    position: relative;
+    // margin-top: 70px;
+    top: 70px;
+    // height: calc(100% - 70px);
+    position: relative;
+    top: 70px;
+    background: #f5f4ef;
+    // overflow: hidden;
+    max-width: 1366px;
+    // height: calc(100vh - 70px);
+    // background-image: url('../assets/images/map.jpg')
+}
+.geo-filter {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    z-index: 9999 !important;
+    svg {
+        width: 16px;
+        height: 16px;
+        fill: #003946;
+    }
+    .geo-filter-header {
+        background-color: #003946;
+        padding: 10px 20px;
+        color: #f5f4ef;
+        svg {
+            fill: #f5f4ef;
+        }
+    }
+    .geo-filter-body {
+        font-family: $opensembold;
+        background-color: #f5f4ef;
+        padding-bottom: 10px;
+        color: #003946;
+        .geo-filter-body-heading {
+            font-size: 12px;
+            color: #717070;
+            margin: 0px 20px;
+            padding: 10px 5px 5px 5px;
+            &.filter-border {
+                border-top: 1px solid #d7d6d2;
+                // padding: 0px;
+                // padding-top: 10px;
+                // margin: 10px 20px;
+            }
+        }
+        .geo-filter-body-item {
+            cursor: pointer;
+            padding: 5px 20px;
+            margin: 5px 0;
+            &.active {
+                background-color: #f6ca2a;
+            }
+        }
+    }
+}
+
+.geo-site-summary {
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 9999 !important;
+    left: 35px;
+    top: 60vh;
+    background-color: #e7e9e5;
+    font-family: $opensembold;
+    .geo-site-summary-heading {
+        font-size: 16px;
+        color: #00395a;
+        padding: 0 5px;
+    }
+    .geo-site-summary-item {
+        padding: 10px 5px;
+        border-bottom: 1px solid #8ba3ad;
+        color: #4d4d4d;
+        &:last-child {
+            border-bottom: none;
+        }
+        .name {
+            font-size: 12px;
+        }
+        .value {
+            .val {
+                font-size: 14px;
+                color: #00395a;
+            }
+            .label {
+                font-size: 11px;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.geo-locating-pointer {
+    &:hover ~ .map-tooltip {
+        display: inline-block;
+    }
+    .pointer-loc {
+        svg {
+            width: 30px;
+            height: 40px;
+        }
+    }
+    position: absolute;
+    &.fracpump, &.catwalk, &.roughneck, &.frac, &.rig {
+        opacity: 1;
+        &::after {
+            content: "";
+            // background-image: url(../assets/images/fp.png);
+            display: inline-block;
+            width: 25px;
+            height: 16px;
+            position: absolute;
+            bottom: -10px;
+            background-size: cover;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &.Stable {
+        svg {
+            fill: yellow;
+        }
+    }
+    &.Good {
+        svg {
+            fill: green;
+        }
+    }
+    &.Critical {
+        svg {
+            fill: red;
+        }
+    }
+    &.dull {
+        opacity: 0.3;
+        pointer-events: none;
+    }
+    &.all {
+        opacity: 1;
+    }
+    &.p1 {
+        top: 70px;
+        left: 50px;
+    }
+    &.p2 {
+        top: 75px;
+        left: 914px;
+    }
+    &.p3 {
+        top: 57px;
+        left: 145px;
+    }
+    &.p4 {
+        top: 321px;
+        left: 95px;
+    }
+    &.p5 {
+        top: 258px;
+        left: 654px;
+    }
+    &.p6 {
+        top: 564px;
+        left: 235px;
+    }
+    &.p7 {
+        top: 387px;
+        left: 877px;;
+    }
+    &.p8 {
+        top: 123px;
+        left: 243px;
+    }
+    &.p9 {
+        top:234px;
+        left: 365px;
+    }
+    &.p10 {
+        top: 65px;
+        left: 567px;
+    }
+    &.p11 {
+        top: 78px;
+        left: 289px;
+    }
+    &.p12 {
+        top: 444px;
+        left: 576px;
+    }
+}
+.geo-locating-img {
+    .geo-locationg-img-val {
+        width: 100%;
+    }
+}
+.map-tooltip {
+    color: #003946;
+    &.right-tip {
+        .tip {
+            display: none;
+        }
+        .tip-right {
+            display: inline-block;
+         }
+    }
+    .tip {
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: 10px solid #fff;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        pointer-events: none;
+    }
+    .tip-right {
+        display: none;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: 10px solid #fff;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        top: 50%;
+        left: 0;
+        transform: translate(-100%, -50%);
+        pointer-events: none;
+    }
+}
+.map-tooltip{
+    color: #003946;
+    &.right-show {
+        transform: translate(100%, 100%) !important;
+    }
+    .map-tl-name, {
+        padding-bottom: 5px;
+    }
+    .map-tl-loc{
+        padding-bottom: 5px;
+    }
+    .map-tl-data{
+        padding-bottom: 5px;
+    }
+    .in-da{
+        padding-bottom: 5px;
+    }
+    .map-tooltip-location {
+        svg {
+            width: 15px;
+            height: 20px;
+        }
+    }
+    .map-tt-heading {
+        font-size: 12px;
+    }
+    .map-tt-value {
+        font-size: 12px;
+        font-family: $opensembold;
+    }
+    .map-tooltip-section {
+        margin: 5px 0;
+        &.heading {
+            display: flex;
+            align-items: flex-end;
+            font-family: $opensembold;
+        }
+        .map-tooltip-location {
+            margin-left: 5px;
+        }
+    }
+}

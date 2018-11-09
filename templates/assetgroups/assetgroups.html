@@ -1,0 +1,234 @@
+<!--sites main container-->
+<div class="allsites-container">
+    <div class="loading-holder" data-loading></div>
+    <!-- layout sub wrapper -->
+    <section class="sites-subwrapper" ng-class="{'expand-truck' : expandTruck, 'collapse-expanded' : collapseExpanded}">
+        <!--topsection -->
+        <div class="topsection" ng-class="{'topsection--modified' : scrolledDown}">
+            <!--tab navigation end-->
+            <div class="as-tab-navigation deactive" ng-class="{'tab-navigation--modified' : scrolledDown }">
+                <ul class="left-tabs">
+                    <li ng-class="{'active': tabs.activeTab === 'All'}" ng-click="filterAssets('All', 'All')">
+                        <a href="">
+                            <span class="tab-inner-left">
+                                <span class="icon-truck-tab icon-sites-all">
+                                    <svg>
+                                        <use xlink:href="#assetgroup"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                            <span class="tab-inner-right">
+                                <span class="tab-count new-tab-count">{{ tabs.all || 0}}</span>
+                                <span class="tab-inner-content new-tab-content">All Asset Groups</span>
+                            </span>
+                        </a>
+                    </li>
+                    <!-- TODO: this has to change once the data property changes to -->
+                    <li ng-class="{'active': tabs.activeTab === 'fracpump'}" ng-click="filterAssets('asset', 'fracpump')">
+                        <a href="">
+                            <!--icons-->
+                            <span class="tab-inner-left">
+                                <span class="icon-truck-tab icon-sites-critical">
+                                    <svg>
+                                        <use xlink:href="#frac-pump"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                            <!--right content-->
+                            <span class="tab-inner-right">
+                                <span class="tab-count">{{ tabs.fracpumps || 0}}</span>
+                                <span class="tab-inner-content">Frac Pumps</span>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li ng-class="{'active': tabs.activeTab === 'catwalk'}" ng-click="filterAssets('asset', 'catwalk')">
+                        <a href="">
+                            <!--icons-->
+                            <span class="tab-inner-left">
+                                <span class="icon-truck-tab icon-sites-critical icon-sites-catwalk">
+                                    <svg>
+                                        <use xlink:href="#catwalk"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                            <!--right content-->
+                            <span class="tab-inner-right">
+                                <span class="tab-count">{{ tabs.catwalk || 0}}</span>
+                                <span class="tab-inner-content">Catwalks</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li ng-class="{'active': tabs.activeTab === 'critical'}" ng-click="filterAssets('health', 'critical')">
+                        <a href="">
+                            <!--icons-->
+                            <span class="tab-inner-left">
+                                <span class="icon-truck-tab icon-sites-critical">
+                                    <svg>
+                                        <use xlink:href="#criticalnew"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                            <!--right content-->
+                            <span class="tab-inner-right">
+                                <span class="tab-count">{{ tabs.critical || 0}}</span>
+                                <span class="tab-inner-content">Critical</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li ng-class="{'active': tabs.activeTab === 'monitor'}" ng-click="filterAssets('health', 'monitor')">
+                        <a href="">
+                            <!--icons-->
+                            <span class="tab-inner-left">
+                                <span class="icon-truck-tab icon-sites-stable">
+                                    <svg>
+                                        <use xlink:href="#monitor"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                            <!--right content-->
+                            <span class="tab-inner-right">
+                                <span class="tab-count">{{ tabs.monitor || 0}}</span>
+                                <span class="tab-inner-content">Monitor</span>
+                            </span>
+                        </a>
+                    </li>
+                    <!--tab-->
+                    <li ng-class="{'active': tabs.activeTab === 'good'}" ng-click="filterAssets('health', 'good')">
+                        <a href="">
+                            <!--icons-->
+                            <span class="tab-inner-left">
+                                <span class="icon-truck-tab icon-sites-good">
+                                    <svg>
+                                        <use xlink:href="#goodnew"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                            <!--right content-->
+                            <span class="tab-inner-right">
+                                <span class="tab-count">{{ tabs.good || 0}}</span>
+                                <span class="tab-inner-content">Good</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <!--right navigation-->
+                <div class="right-tabs">
+                    <div class="sort-grp-wrapper">
+                        <span class="sort-arrow" ng-class="{'active': trucks.isOrder}" ng-click="toggleOrder()">
+                            <svg class="up">
+                                <use xlink:href="#toggle-up"></use>
+                            </svg>
+                            <svg class="down">
+                                <use xlink:href="#toggle-down"></use>
+                            </svg>
+                        </span>
+                        <div class="sort-title">Sort by : </div>
+                        <div class="sort-wrapper-2">
+                            <span class="sort-dropdown-2">
+                                <div uib-dropdown>
+                                    <div uib-dropdown-toggle class="d-flex-align">
+                                        <span class="sort-option-content">{{ trucks.selectedText }}</span>
+                                        <span class="icon-truck options-icon-dropdown">
+                                            <svg>
+                                                <use xlink:href="#dropdown"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <ul class="options-dropdown-menu sort-dropdown-list" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                                        <span class="icon-truck options-icon-mark">
+                                            <svg>
+                                                <use xlink:href="#mark"></use>
+                                            </svg>
+                                        </span>
+                                        <!-- <li>
+                                            <a ng-click="trucks.selectedOption('fracpumps', 'Frac Pumps')" ng-class="{'selectedOption': trucks.selectedType === 'fracpumps'}">
+                                                Frac Pumps
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a ng-click="trucks.selectedOption('catwalk', 'Catwalk')" ng-class="{'selectedOption': trucks.selectedType === 'catwalk'}">
+                                                Catwalk
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a ng-click="trucks.selectedOption('roughneck', 'Roughneck')" ng-class="{'selectedOption': trucks.selectedType === 'roughneck'}">
+                                                Iron Roughnecks
+                                            </a>
+                                        </li> -->
+                                        <li>
+                                            <a ng-click="trucks.selectedOption('operationalDate', 'Operational Date')" ng-class="{'selectedOption': trucks.selectedType === 'operationalDate'}">
+                                                Operational Date
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a ng-click="trucks.selectedOption('healthPercentage', 'Health')" ng-class="{'selectedOption': trucks.selectedType === 'healthPercentage'}">
+                                                Health
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--right navigation-->
+            </div>
+            <!--tab navigation end-->
+        </div>
+        <!--topsection end-->
+        <!--contect section-->
+        <div class="sites-card-container deactive">
+            <div class="sites-wrapper">
+                <div class="sites-card-section" fixed-sidebar="siteCardSectionActive" ng-class="{'active' : siteCardSectionActive, 'deactive' : !siteCardSectionActive, 'sites-card-section--modified': scrolledDown }">
+                    <div class="scroll-body" slimscroll="{slimscrollOption: value}">
+                        <!-- ng-repeat starts -->
+                        <div class="loading-holder" data-loading></div>
+                        <div class="sitecards-wrapper" ng-repeat="truck in trucks.list | orderBy: trucks.orderSymbol + trucks.selectedType | filter:filterTrucks">
+                            <!--card start-->
+                            <div class="as-sites-card sites-card" ng-class="{selected: trucks.activeMenuItem === $index}" ng-click='openExpandedTruck(truck); trucks.setActive($index);'>
+                                <!--first column-->
+                                <div class="dummy-as">
+                                    <div class="truck-column first-col allsites small-view">
+                                        <div class="sites-truck-title">{{ truck.assetGrpName }}</div>
+                                        <div class="truck-expected-date">{{:: truck.assetGrpLocation}}</div>
+                                        <div class="truck-purshase-date">Operational Start Date: {{:: truck.operationalDate | dateToString}}</div>
+                                    </div>
+                                    <!--graph column-->
+                                    <div class="truck-column second-col">
+                                        <div class="graph-panel">
+                                            <progress-arc class="progress-styles2" progress="truck.healthPercentage" type="type2" radius="55" radius-diff="5" hide-pointer="true"
+                                                label="Health">
+                                            </progress-arc>
+                                        </div>
+                                    </div>
+                                    <div ng-repeat="eachData in truck.assets" class="truck-column allsites" ng-if="eachData.value > 0">
+                                        <div>
+                                            <div class="sites-rul-count">
+                                                <span class="sites-card-arrowHolder">{{:: eachData.value }}</span>
+                                            </div>
+                                            <div class="sites-rul-label" >{{eachData.displayName}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--button column-->
+                            </div>
+                            <!--card end-->
+                        </div>
+                        <!-- ng-repeat ends -->
+                    </div>
+                    <!-- scroll ends -->
+                </div>
+            </div>
+
+            <!--cards section end-->
+            <div class="expand-panel">
+                <div class="expand-container" state="{{$state.current.name}}">
+                    <div class="sitedetails-expand height100" ng-if="showView=='sitedetails-expand'" ui-view="sitedetails"></div>
+                </div>
+            </div>
+        </div>
+        <!--sites cards section main end-->
+    </section>
+    <!--subwrapper end-->
+</div>

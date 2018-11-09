@@ -1,0 +1,32 @@
+<div>
+    <div class="graph-results repair-graph-results">
+        <div class="graph-result repair-graph-result">
+            <div class="result-value "><span class="result-name">1 June'14:</span></div>
+        </div>
+        <div class="graph-result repair-graph-result">
+            <div class="result-value">Failures<span class="result-name">40%</span></div>
+        </div>
+        <div class="graph-result repair-graph-result">
+            <div class="result-value">Bellows<span class="result-name">10</span></div>
+        </div>
+        <div class="graph-result repair-graph-result">
+            <div class="result-value">Hose<span class="result-name">5</span></div>
+        </div>
+        <div class="graph-result repair-graph-result">
+            <div class="result-value">Switch<span class="result-name">5</span></div>
+        </div>
+    </div>
+    <div class="checkbox-wrapper">
+		<div class="checkbox-btn-group">
+			<label class="checkbox-button part-failure-check">
+				<input type="checkbox" name="check" ng-model="showTripsAvg" ng-change="toggleTripsAvgGraph()">
+                <span>Part Failure</span>
+			</label>
+			<label class="checkbox-button non-part-failure-check">
+				<input type="checkbox" name="check" ng-model="showTrips" ng-change="toggleTripsGraph()">
+                <span>Non Part Failure</span>
+			</label>
+		</div>
+	</div>
+    <svg></svg>
+</div>

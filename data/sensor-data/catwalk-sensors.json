@@ -1,0 +1,126 @@
+{
+    "sections": [
+      {
+        "sectionName": "Key Data Points",
+        "categories": [
+          {
+            "categoryName": "",
+            "variables": [
+              {
+                "name": "CBM_Hydraulic_Flow_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_HydroElec_Efficiency_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_Volumetric_Efficiency_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_MainArm_Angle_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_Hydraulic_Fluid_Level",
+                "value": 0
+              },
+              {
+                "name": "CBM_Asset_Temperature",
+                "value": 0
+              },
+              {
+                "name": "CBM_Skate_Position",
+                "value": 0
+              },
+              {
+                "name": "CBM_Trough_Load",
+                "value": 0
+              },
+              {
+                "name": "CBM_Main_Pressure_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_Main_Arm_Cylinder_Pressure_1",
+                "value": 0
+              },
+              {
+                "name": "CBM_Main_Arm_Cylinder_Pressure_2",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionName": "Sensor Categories",
+        "categories": [
+          {
+            "categoryName": "Temperatures",
+            "variables": [
+              {
+                "name": "CBM_Ambient_Temp_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_Asset_Temperature",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "categoryName": "Pressures",
+            "variables": [
+              {
+                "name": "CBM_Auxiliary_Pressure_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_Return_Pressure_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_MainFilter_Pressure_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_AuxFilter_Pressure_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_Main_Arm_Cylinder_Pressure_1",
+                "value": 0
+              },
+              {
+                "name": "CBM_Main_Arm_Cylinder_Pressure_2",
+                "value": 0
+              },
+              {
+                "name": "CBM_Return_Filter_Pressure",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "categoryName": "Other Sensors",
+            "variables": [
+              {
+                "name": "CBM_System_Current_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_Hydraulic_Flow_Value",
+                "value": 0
+              },
+              {
+                "name": "CBM_Hydraulic_Fluid_Level",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,47 @@
+<!--login main -->
+<div class="login-main">
+	<!--login-left-->
+	<div class="login-left">
+<!--
+		<img ng-src="{{ getPath('login-truck') }}" class="login-left-large">
+		<img ng-src="{{ getPath('login-truck-small') }}" class="login-left-small">
+-->
+	</div>
+	<!--login-right-->
+	<div class="login-right">
+		<div class="logo">
+			<a href="">
+				<!--<img ng-src="{{ getPath('login-logo') }}" alt="Cyient" title="Cyient" />-->
+				<span class="login-logo-svg">
+					<svg>
+						<use xlink:href="#logo"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+		<div class="login-title">
+			<div class="sub-title">PAMP</div>
+			<div class="sub-title-type">Predictive Asset Management Platform</div>
+		</div>
+		<div class="login-form" ng-submit="login()" novalidate>
+			<form role="form" name="loginForm">
+				<div class="login-btn-row">
+					<button class="button large-button" ng-attr-type="submit" ng-disabled="loginForm.$invalid">
+						<span>Login</span>
+						<!--small loder for login page-->
+						<div id="circularL" ng-show="messages.isLoginProgress" class="login-load">
+							<div id="circularL_1" class="circularL"></div>
+							<div id="circularL_2" class="circularL"></div>
+							<div id="circularL_3" class="circularL"></div>
+							<div id="circularL_4" class="circularL"></div>
+							<div id="circularL_5" class="circularL"></div>
+							<div id="circularL_6" class="circularL"></div>
+							<div id="circularL_7" class="circularL"></div>
+							<div id="circularL_8" class="circularL"></div>
+						</div>
+					</button>
+                </div>
+			</form>
+		</div>
+	</div>
+</div>

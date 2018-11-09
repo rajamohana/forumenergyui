@@ -1,0 +1,98 @@
+{
+    "sections": [
+      {
+        "sectionName": "Key Data Points",
+        "categories": [
+          {
+            "categoryName": "",
+            "variables": [
+              {
+                "name": "Cycles_Per_Day",
+                "value": 0
+              },
+              {
+                "name": "MakeUp_Torque",
+                "value": 0
+              },
+              {
+                "name": "BreakOut_Torque",
+                "value": 0
+              },
+              {
+                "name": "Ambient_Temperature",
+                "value": 0
+              },
+              {
+                "name": "Slip_Detection",
+                "value": 0
+              },
+              {
+                "name": "MakeUp_Pressure",
+                "value": 0
+              },
+              {
+                "name": "BreakUp_Pressure",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sectionName": "Sensor Categories",
+        "categories": [
+          {
+            "categoryName": "Temperatures",
+            "variables": [
+              {
+                "name": "Ambient_Temperature",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "categoryName": "Pressures",
+            "variables": [
+              {
+                "name": "MakeUp_Pressure",
+                "value": 0
+              },
+              {
+                "name": "BreakUp_Pressure",
+                "value": 0
+              },
+              {
+                "name": "System_Pressure",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "categoryName": "Other Sensors",
+            "variables": [
+              {
+                "name": "Slew_Encoder",
+                "value": 0
+              },
+              {
+                "name": "Horz_Encoder",
+                "value": 0
+              },
+              {
+                "name": "Vert_Encoder",
+                "value": 0
+              },
+              {
+                "name": "Spinner_RPM",
+                "value": 0
+              },
+              {
+                "name": "Filter_Health",
+                "value": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

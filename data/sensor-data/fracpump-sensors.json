@@ -1,0 +1,81 @@
+{
+	"sections": [{
+		"sectionName": "Key Data Points",
+		"categories": [{
+			"categoryName" : "",
+			"variables": [{
+				"name": "Pump_Efficiency",
+				"value": 0
+			},{
+				"name": "Piston_Accumulated_Travel",
+				"value": 0
+			},{
+				"name": "CBM_InletPressure_Scale_Real",
+				"value": 0
+			},{
+				"name": "CBM_LubePressure_Scale_Real",
+				"value": 0
+			},{
+				"name": "CBM_InletTemp_Scale_Real",
+				"value": 0
+			},{
+				"name": "CBM_OutletTemp_Scale_Real",
+				"value": 0
+			},{
+				"name": "CBM_OutletPressure_Scale_Real",
+				"value": 0
+			}]
+		}]  		
+	},{
+		"sectionName": "Power End Categories",
+		"categories": [{
+			"categoryName" : "Temperatures",
+			"variables": [{
+				"name": "CBM_InletTemp_Scale_Real",
+				"value": 0
+			},{
+				"name": "CBM_OutletTemp_Scale_Real",
+				"value": 0
+			}]
+		},{
+			"categoryName" : "Vibrations",
+			"variables": [{
+				"name": "CBM_Vibration01_Scale_Real",
+				"value": 0
+			},{
+				"name": "CBM_Vibration02_Scale_Real",
+				"value": 0
+			},{
+				"name": "CBM_LubePressure_Scale_Real",
+				"value": 0
+			}]
+		},{
+			"categoryName" : "Pressures",
+			"variables": [{
+				"name": "CBM_LubePressure_Scale_Real",
+				"value": 0
+			}]
+		}]  		
+	},{
+		"sectionName": "Fluid End Categories",
+		"categories": [{
+			"categoryName" : "Pressures",
+			"variables": [{
+				"name": "CBM_InletPressure_Scale_Real",
+				"value": 0
+			},{
+				"name": "CBM_OutletPressure_Scale_Real",
+				"value": 0
+			}]
+		},{
+			"categoryName" : "Vibrations",
+			"variables": [{
+				"name": "CBM_Vibration03_Scale_Real",
+				"value": 0
+			},{
+				"name": "CBM_Vibration04_Scale_Real",
+				"value": 0
+			}]
+		}]  		
+	}]
+}

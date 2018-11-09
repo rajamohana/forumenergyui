@@ -1,0 +1,50 @@
+//colors
+$color_celeste_approx: #f5e7b4;
+$color_pelorous_approx: #f6ca2a;
+$color_grey_approx: #4b5761;
+$color_black_approx: #1c4d55;
+$color_aquablue_approx: #a3914a;
+
+//fonts
+$font_0: $openreg;
+
+.mlifeChartAxis path, .mlifeChartAxis line {
+  fill: none;
+  stroke: $color_black_approx;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.mlifeChartAxis {
+  fill: $darkgray;
+  user-select: none;
+}
+
+.mlifeChartLine {
+	fill: none;
+	stroke: $color_aquablue_approx;
+	stroke-width: 2px;
+}
+.midpointLine {
+  stroke: $color_grey_approx;
+  stroke-width: 1px;
+}
+.mDots {
+  fill: $color_black_approx;
+  stroke: none;
+}
+.mArea1 {
+	fill: $color_celeste_approx;
+	stroke: $color_black_approx;
+	stroke-width: 0px;
+}
+.mArea2 {
+	fill: $color_pelorous_approx;
+	stroke: $color_black_approx;
+	stroke-width: 0px;
+}
+.mlifeChartLabels {
+	font-size: 12px;
+	font-family: $openreg;
+	fill:#4d5964;
+}

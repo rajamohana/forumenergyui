@@ -1,0 +1,90 @@
+histogram {
+    
+    display: block;
+    
+    svg {
+        font: 12px $openreg;
+        fill: #3a4554;
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #3a4554;
+      shape-rendering: crispEdges;
+    }
+
+    .brush .extent {
+      stroke: #fff;
+      fill: white;
+      fill-opacity: 0;
+      shape-rendering: crispEdges;
+    }
+
+    .label-text {
+        font-size: 16px;
+        fill: #3a4554;
+        font-family: $opensembold;
+    }
+
+    .y.axis line {
+        stroke: #3a4554;
+    }
+
+    .main-area {
+        stroke-width: 5px;
+    }
+
+    .band-rect {
+        clip-path: url(#areachart-clip);
+        fill: #a0ca92;
+    }
+
+    .trips-avg-line {
+      fill: none;
+      stroke: #EA148C;
+      stroke-width: 3px;
+      clip-path: url(#areachart-clip);
+    }
+
+    .site-avg-line {
+      fill: none;
+      stroke: #a2a2a1;
+      stroke-dasharray: 2, 2;
+      stroke-width: 2px;
+      clip-path: url(#areachart-clip);
+    }
+
+    .trips-grp {
+      clip-path: url(#areachart-clip);
+    }
+
+    .bar {
+        fill: #14a6fa;
+    }
+
+    .mini-area {
+        fill: #cccccc;
+    }
+
+    .mini-arc {
+        stroke-width: 2px;
+        fill: none;
+        stroke: #ea148c;
+    }
+
+    .brush-lbgc, .brush-rbgc {
+        fill: #000;
+        fill-opacity: 0.2;
+    }
+    .overlay {
+        fill: none;
+        pointer-events: all;
+    }
+
+    .focus circle {
+        fill: none;
+        stroke: steelblue;
+    }
+
+}

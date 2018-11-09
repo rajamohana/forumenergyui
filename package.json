@@ -1,0 +1,39 @@
+{
+  "name": "cyient",
+  "version": "0.1.0",
+  "description": "Project Cyient",
+  "main": "app.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@moria.divami.com:222/diffusion/CYIENT/cyient.git"
+  },
+  "keywords": [
+    "cyient"
+  ],
+  "author": "Divami Design Labs",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-bower": "0.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.0.0",
+    "gulp-install": "^0.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "gulp-sass": "^4.0.1",
+    "ruby": "^0.6.1",
+    "sass": "^1.2.0"
+  }
+}

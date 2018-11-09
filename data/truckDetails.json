@@ -1,0 +1,226 @@
+{
+  "truckNumber":"SSP00642",
+  "scenarioCount":"5",
+  "engineChanged":"no",
+  "purchaseDate":"2014-02-03",
+  "expiryDate":"17000",
+  "healthPercentage":"85.55555555555556",
+  "smh":"15400.0",
+  "rul":"2600.0",
+  "rod":"0.06229141898311008",
+  "usageHours":"110",
+  "totalRepairs":"3",
+  "modelConfidence":"90",
+  "ourProjection":{
+    "rul":"180000",
+    "life":""
+  },
+  "yourPlan":{
+    "rul":"",
+    "life":""
+  },
+  "manufacturerStats":{
+    "rul":"",
+    "life":""
+  },
+  "healthGraphs":{
+    "xLabel":"SMH",
+    "yLabel":"Health",
+    "xMax":20000,
+    "xNumIntervals":2500,
+    "yMax":1,
+    "yNumIntervals":20,
+    "minRUL":12500,
+    "maxRUL":20000,
+    "avgRUL":16500,
+    "todayXvalue":8500,
+    "todayYvalue":1,
+    "minOptimalValue":0.4,
+    "maxOptimalValue":0.6,
+
+    "healthGraph": [
+      {
+        "xValue":0,
+        "yValue":0.98,
+        "varList": [
+          {"varName":"Lorem Ipsum sa", "varValue":123},
+          {"varName":"Lorem Ipsum re", "varValue":421}
+        ]
+      },
+      {
+        "xValue":2500,
+        "yValue":0.68,
+        "varList": [
+          {"varName":"Lorem Ipsum ga", "varValue":421},
+          {"varName":"Lorem Ipsum ma", "varValue":534}
+        ]
+      },
+      {
+        "xValue":5000,
+        "yValue":0.55,
+        "varList": [
+          {"varName":"Lorem Ipsum pa", "varValue":521},
+          {"varName":"Lorem Ipsum da", "varValue":143}
+        ]
+      },
+      {
+        "xValue":7500,
+        "yValue":0.48,
+        "varList": [
+          {"varName":"Lorem Ipsum ni", "varValue":211},
+          {"varName":"Lorem Ipsum da", "varValue":412}
+        ]
+      },
+      {
+        "xValue":10000,
+        "yValue":0.44,
+        "varList": [
+          {"varName":"Lorem Ipsum pa", "varValue":562},
+          {"varName":"Lorem Ipsum ma", "varValue":231}
+        ]
+      },
+      {
+        "xValue":12500,
+        "yValue":0.42,
+        "varList": [
+          {"varName":"Lorem Ipsum ga", "varValue":211},
+          {"varName":" Lorem Ipsum re", "varValue":231}
+        ]
+      },
+      {
+        "xValue":17500,
+        "yValue":0.31,
+        "varList": [
+          {"varName":"Lorem Ipsum sa", "varValue":123},
+          {"varName":"Lorem Ipsum re", "varValue":422}
+        ]
+      },
+      {
+        "xValue":20000,
+        "yValue":0,
+        "varList": [
+          {"varName":"Lorem Ipsum ga", "varValue":222},
+          {"varName":"Lorem Ipsum ma", "varValue":111}
+        ]
+      }
+    ],
+    "trendGraph": [
+      {
+        "xValue":0,
+        "yValue":0.98
+      },
+      {
+        "xValue":2500,
+        "yValue":0.87
+      },
+      {
+        "xValue":5000,
+        "yValue":0.76
+      },
+      {
+        "xValue":7500,
+        "yValue":0.65
+      },
+      {
+        "xValue":10000,
+        "yValue":0.55
+      },
+      {
+        "xValue":12500,
+        "yValue":0.55
+      },
+      {
+        "xValue":17500,
+        "yValue":0.45
+      },
+      {
+        "xValue":20000,
+        "yValue":0.35
+      }
+    ],
+    "siteAvgGraph": [
+        {
+          "xValue":0,
+          "yValue":0.75
+        },
+        {
+          "xValue":2500,
+          "yValue":0.65
+        },
+        {
+          "xValue":5000,
+          "yValue":0.70
+        },
+        {
+          "xValue":7500,
+          "yValue":0.75
+        },
+        {
+          "xValue":10000,
+          "yValue":0.65
+        },
+        {
+          "xValue":12500,
+          "yValue":0.55
+        },
+        {
+          "xValue":17500,
+          "yValue":0.65
+        },
+        {
+          "xValue":20000,
+          "yValue":0.70
+        }
+      ]
+  },
+  "deteriationGraphs":{
+    "xLabel":"",
+    "yLabel":"",
+    "xMax":"",
+    "xNumIntervals":"",
+    "yMax":"",
+    "yNumIntervals":"",
+    "todayXvalue":"",
+    "todayYvalue":"",
+    "minOptimalValue":"",
+    "maxOptimalValue":"",
+    "rodGraph":[
+      {
+        "xValue":"",
+        "yValue":"",
+        "varList": [
+          {"varName":"", "varValue":""},
+          {"varName":"", "varValue":""}
+        ]
+      },
+      {
+        "xValue":"",
+        "yValue":"",
+        "varList": [
+          {"varName":"", "varValue":""},
+          {"varName":"", "varValue":""}
+        ]
+      }
+    ],
+    "trendGraph":[
+      {
+        "xValue":"",
+        "yValue":""
+      },
+      {
+        "xValue":"",
+        "yValue":""
+      }
+    ],
+    "siteAvgGraph":[
+      {
+        "xValue":"",
+        "yValue":""
+      },
+      {
+        "xValue":"",
+        "yValue":""
+      }
+    ]
+  }
+}

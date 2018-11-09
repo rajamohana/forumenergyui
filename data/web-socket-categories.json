@@ -1,0 +1,48 @@
+{
+    "data": [
+      {
+        "key": "InletPressure_Scale_Real",
+        "value": "900"
+      },
+      {
+        "key": "OutletPressure_Scale_Real",
+        "value": "808"
+      },
+      {
+        "key": "InletTemp_Scale_Real",
+        "value": "500"
+      },
+      {
+        "key": "OutletTemp_Scale_Real",
+        "value": "302"
+      },
+      {
+        "key": "Vibration01_Scale_Real",
+        "value": "22"
+      },
+      {
+        "key": "Vibration02_Scale_Real",
+        "value": "30"
+      },
+      {
+        "key": "Vibration03_Scale_Real",
+        "value": "430"
+      },
+      {
+        "key": "Vibration04_Scale_Real",
+        "value": "700"
+      },
+      {
+        "key": "Acoustic01_Scale_Real",
+        "value": "430"
+      },
+      {
+        "key": "Acoustic02_Scale_Real",
+        "value": "430"
+      },
+      {
+        "key": "LubePressure_Scale_Real",
+        "value": "430"
+      }
+    ]
+  }

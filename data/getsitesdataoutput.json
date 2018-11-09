@@ -1,0 +1,59 @@
+{
+  "result": [
+    {
+      "siteId": "M056",
+      "siteName": "Houston",
+      "siteLocation": "USA_TX",
+      "siveAvgHealth": 65,
+      "healthPercentage": 39.771241830065364,
+      "minSMH": 2200,
+      "maxSMH": 15400,
+      "avgSMH": 7158.823529411765,
+      "minRUL": 2600,
+      "maxRUL": 15800,
+      "avgRUL": 10841.176470588236,
+      "rod": -5.868547605605881,
+      "rodTrend": "increase",
+      "totalTrucks": 15,
+      "numCriticalTrucks": 2,
+      "numStableTrucks": 5,
+      "numGoodTrucks": 8,
+      "totalRepairs": 57,
+      "leastHealth": {
+        "truckId": "t496",
+        "RUL": 15800,
+        "SMH": 2200,
+        "category": "Good",
+        "healthPercentage": 12.222222222222221,
+        "rod": 0.0094402695,
+        "rodTrend": "increase"
+      },
+      "highestROD": {
+        "truckId": "t642",
+        "RUL": 2600,
+        "SMH": 15400,
+        "category": "Critical",
+        "healthPercentage": 85.55555555555556,
+        "rod": 0.062291419,
+        "rodTrend": "increase"
+      },
+      "leastRUL": {
+        "truckId": "t642",
+        "RUL": 2600,
+        "SMH": 15400,
+        "category": "Critical",
+        "healthPercentage": 85.55555555555556,
+        "rod": 0.062291419,
+        "rodTrend": "increase"
+      },
+      "MaximumRepairs": {
+        "truckId": "t259",
+        "RUL": 11900,
+        "healthPercentage": 38,
+        "rod": 0.00803889281658048,
+        "rodTrend": "increase",
+        "requests": 3
+      }
+    }
+  ]
+}

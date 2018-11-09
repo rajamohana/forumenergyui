@@ -1,0 +1,111 @@
+<div class="dropdown-cnt">
+    <!-- Currently selected item -->
+    <div ng-click="toggleDropDown($event)" class="sel-itm-cnt">
+        <div class="sel-itm-inner-cnt left-tabs">
+           <a href="" class="selected-dropdown">
+			   <span class="tab-inner-left fixed-left-dropdown sel-itm-img-cnt">
+					<span class="icon-truck-tab">
+						<svg ng-if="category === 'all'">
+							<use xlink:href="#trucks"></use>
+						</svg>
+						<svg ng-if="category === 'critical'">
+							<use xlink:href="#critical"></use>
+						</svg>
+						<svg ng-if="category === 'stable'">
+							<use xlink:href="#stable"></use>
+						</svg>
+						<svg ng-if="category === 'good'">
+							<use xlink:href="#good"></use>
+						</svg>
+				   </span>
+				</span>
+				<span class="sel-itm-txt-cnt tab-inner-right">
+					<div class="sel-itm-num">{{ numTrucks }}</div>
+					<div class="sel-itm-txt">
+                        {{ (category === 'all')      ? 'All Frac-Pumps' : '' }}
+                        {{ (category === 'critical') ? 'Critical'   : '' }}
+                        {{ (category === 'stable')   ? 'Stable'     : '' }}
+                        {{ (category === 'good')     ? 'Good'       : '' }}
+                    </div>
+				</span>
+          		<!-- Dropdown icon -->
+				<span class="dropdown-sitesdetails-view">
+					<svg>
+						<use xlink:href="#dropdown"></use>
+					</svg>
+				</span>
+           
+            </a>
+        </div>
+        
+    </div>
+    <ul class="left-tabs" ng-hide="hideMenu" click-outside="closeDropDown()">
+        <li ng-click="selectCategory('all')" ng-hide="category === 'all'">
+            <a href="">
+                <span class="tab-inner-left fixed-left-dropdown">
+                    <span class="icon-truck-tab icon-sites-all">
+                        <svg>
+                            <use xlink:href="#trucks"></use>
+                        </svg>
+                    </span>
+                </span>
+                <span class="tab-inner-right">
+                    <span class="tab-count">{{ numAllTrucks }}</span>
+                    <span class="tab-inner-content">All Frac-Pumps</span>
+                </span>
+            </a>
+        </li>
+        <li ng-click="selectCategory('critical')" ng-hide="category === 'critical'">
+            <a href="">
+                <!--icons-->
+                <span class="tab-inner-left fixed-left-dropdown">
+                    <span class="icon-truck-tab icon-sites-critical">
+                        <svg>
+                            <use xlink:href="#critical"></use>
+                        </svg>
+                    </span>
+                </span>
+                <!--right content-->
+                <span class="tab-inner-right">
+                    <span class="tab-count">{{ numCriticalTrucks }}</span>
+                    <span class="tab-inner-content">Critical</span>
+                </span>
+            </a>
+        </li>
+        <li ng-click="selectCategory('stable')" ng-hide="category === 'stable'">
+            <a href="">
+            <!--icons-->
+                <span class="tab-inner-left fixed-left-dropdown">
+                    <span class="icon-truck-tab icon-sites-stable">
+                        <svg>
+                            <use xlink:href="#stable"></use>
+                        </svg>
+                    </span>
+                </span>
+                <!--right content-->
+                <span class="tab-inner-right">
+                    <span class="tab-count">{{ numStableTrucks }}</span>
+                    <span class="tab-inner-content">Stable</span>
+                </span>
+            </a>
+        </li>
+        <!--tab-->
+        <li class="" ng-click="selectCategory('good')" ng-hide="category === 'good'">
+            <a href="">
+            <!--icons-->
+                <span class="tab-inner-left fixed-left-dropdown">
+                    <span class="icon-truck-tab icon-sites-good">
+                        <svg>
+                            <use xlink:href="#good"></use>
+                        </svg>
+                    </span>
+                </span>
+                <!--right content-->
+                <span class="tab-inner-right">
+                    <span class="tab-count">{{ numGoodTrucks }}</span>
+                    <span class="tab-inner-content">Good</span>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,2613 @@
+{
+  "result": [
+    {
+      "variableName": "Helium Temperature",
+      "paramtype": "Total",
+      "varTrend": "Up",
+      "totalObj": {
+        "total": 54,
+        "numSites": 77
+      },
+      "minOptimal": 45,
+      "maxOptimal": 60,
+      "xLabel": "SMH",
+      "yLabel": "ShifCount",
+      "duration": "11th June 2014 - 20th June 2014",
+      "barGraph": [
+        {
+          "xValue": 100,
+          "yValue": 63
+        },
+        {
+          "xValue": 200,
+          "yValue": 65
+        },
+        {
+          "xValue": 300,
+          "yValue": 69
+        },
+        {
+          "xValue": 400,
+          "yValue": 68
+        },
+        {
+          "xValue": 500,
+          "yValue": 65
+        },
+        {
+          "xValue": 600,
+          "yValue": 62
+        },
+        {
+          "xValue": 700,
+          "yValue": 65
+        },
+        {
+          "xValue": 800,
+          "yValue": 68
+        },
+        {
+          "xValue": 900,
+          "yValue": 68
+        },
+        {
+          "xValue": 1000,
+          "yValue": 69
+        },
+        {
+          "xValue": 1100,
+          "yValue": 67
+        },
+        {
+          "xValue": 1200,
+          "yValue": 67
+        },
+        {
+          "xValue": 1300,
+          "yValue": 61
+        },
+        {
+          "xValue": 1400,
+          "yValue": 62
+        },
+        {
+          "xValue": 1500,
+          "yValue": 64
+        },
+        {
+          "xValue": 1600,
+          "yValue": 63
+        },
+        {
+          "xValue": 1700,
+          "yValue": 62
+        },
+        {
+          "xValue": 1800,
+          "yValue": 66
+        },
+        {
+          "xValue": 1900,
+          "yValue": 67
+        },
+        {
+          "xValue": 2000,
+          "yValue": 70
+        },
+        {
+          "xValue": 2100,
+          "yValue": 66
+        },
+        {
+          "xValue": 2200,
+          "yValue": 63
+        },
+        {
+          "xValue": 2300,
+          "yValue": 55
+        },
+        {
+          "xValue": 2400,
+          "yValue": 65
+        },
+        {
+          "xValue": 2500,
+          "yValue": 63
+        },
+        {
+          "xValue": 2600,
+          "yValue": 65
+        },
+        {
+          "xValue": 2700,
+          "yValue": 59
+        },
+        {
+          "xValue": 2800,
+          "yValue": 67
+        },
+        {
+          "xValue": 2900,
+          "yValue": 68
+        },
+        {
+          "xValue": 3000,
+          "yValue": 66
+        },
+        {
+          "xValue": 3100,
+          "yValue": 62
+        },
+        {
+          "xValue": 3200,
+          "yValue": 65
+        },
+        {
+          "xValue": 3300,
+          "yValue": 59
+        },
+        {
+          "xValue": 3400,
+          "yValue": 57
+        },
+        {
+          "xValue": 3500,
+          "yValue": 57
+        },
+        {
+          "xValue": 3600,
+          "yValue": 70
+        },
+        {
+          "xValue": 3700,
+          "yValue": 62
+        },
+        {
+          "xValue": 3800,
+          "yValue": 59
+        },
+        {
+          "xValue": 3900,
+          "yValue": 65
+        },
+        {
+          "xValue": 4000,
+          "yValue": 53
+        },
+        {
+          "xValue": 4100,
+          "yValue": 67
+        },
+        {
+          "xValue": 4200,
+          "yValue": 63
+        },
+        {
+          "xValue": 4300,
+          "yValue": 59
+        },
+        {
+          "xValue": 4400,
+          "yValue": 65
+        },
+        {
+          "xValue": 4500,
+          "yValue": 67
+        },
+        {
+          "xValue": 4600,
+          "yValue": 64
+        },
+        {
+          "xValue": 4700,
+          "yValue": 65
+        },
+        {
+          "xValue": 4800,
+          "yValue": 61
+        },
+        {
+          "xValue": 4900,
+          "yValue": 67
+        },
+        {
+          "xValue": 5000,
+          "yValue": 70
+        },
+        {
+          "xValue": 5100,
+          "yValue": 69
+        },
+        {
+          "xValue": 5200,
+          "yValue": 67
+        },
+        {
+          "xValue": 5300,
+          "yValue": 67
+        },
+        {
+          "xValue": 5400,
+          "yValue": 69
+        },
+        {
+          "xValue": 5500,
+          "yValue": 69
+        },
+        {
+          "xValue": 5600,
+          "yValue": 67
+        },
+        {
+          "xValue": 5700,
+          "yValue": 63
+        },
+        {
+          "xValue": 5800,
+          "yValue": 65
+        },
+        {
+          "xValue": 5900,
+          "yValue": 66
+        },
+        {
+          "xValue": 6000,
+          "yValue": 73
+        },
+        {
+          "xValue": 6100,
+          "yValue": 67
+        },
+        {
+          "xValue": 6200,
+          "yValue": 64
+        },
+        {
+          "xValue": 6300,
+          "yValue": 67
+        },
+        {
+          "xValue": 6400,
+          "yValue": 73
+        },
+        {
+          "xValue": 6500,
+          "yValue": 76
+        },
+        {
+          "xValue": 6600,
+          "yValue": 75
+        },
+        {
+          "xValue": 6700,
+          "yValue": 74
+        },
+        {
+          "xValue": 6800,
+          "yValue": 81
+        },
+        {
+          "xValue": 6900,
+          "yValue": 68
+        },
+        {
+          "xValue": 7000,
+          "yValue": 72
+        },
+        {
+          "xValue": 7100,
+          "yValue": 66
+        },
+        {
+          "xValue": 7200,
+          "yValue": 67
+        },
+        {
+          "xValue": 7300,
+          "yValue": 72
+        },
+        {
+          "xValue": 7400,
+          "yValue": 68
+        },
+        {
+          "xValue": 7500,
+          "yValue": 67
+        },
+        {
+          "xValue": 7600,
+          "yValue": 65
+        },
+        {
+          "xValue": 7700,
+          "yValue": 63
+        },
+        {
+          "xValue": 7800,
+          "yValue": 65
+        },
+        {
+          "xValue": 7900,
+          "yValue": 62
+        },
+        {
+          "xValue": 8000,
+          "yValue": 59
+        },
+        {
+          "xValue": 8100,
+          "yValue": 54
+        },
+        {
+          "xValue": 8200,
+          "yValue": 65
+        },
+        {
+          "xValue": 8300,
+          "yValue": 65
+        },
+        {
+          "xValue": 8400,
+          "yValue": 65
+        },
+        {
+          "xValue": 8500,
+          "yValue": 68
+        },
+        {
+          "xValue": 8600,
+          "yValue": 61
+        },
+        {
+          "xValue": 8700,
+          "yValue": 64
+        },
+        {
+          "xValue": 8800,
+          "yValue": 64
+        },
+        {
+          "xValue": 8900,
+          "yValue": 62
+        },
+        {
+          "xValue": 9000,
+          "yValue": 60
+        },
+        {
+          "xValue": 9100,
+          "yValue": 64
+        },
+        {
+          "xValue": 9200,
+          "yValue": 65
+        },
+        {
+          "xValue": 9300,
+          "yValue": 65
+        },
+        {
+          "xValue": 9400,
+          "yValue": 61
+        },
+        {
+          "xValue": 9500,
+          "yValue": 56
+        },
+        {
+          "xValue": 9600,
+          "yValue": 57
+        },
+        {
+          "xValue": 9700,
+          "yValue": 62
+        },
+        {
+          "xValue": 9800,
+          "yValue": 54
+        },
+        {
+          "xValue": 9900,
+          "yValue": 65
+        },
+        {
+          "xValue": 10000,
+          "yValue": 67
+        },
+        {
+          "xValue": 10100,
+          "yValue": 57
+        },
+        {
+          "xValue": 10200,
+          "yValue": 63
+        },
+        {
+          "xValue": 10300,
+          "yValue": 63
+        },
+        {
+          "xValue": 10400,
+          "yValue": 56
+        },
+        {
+          "xValue": 10500,
+          "yValue": 55
+        },
+        {
+          "xValue": 10600,
+          "yValue": 60
+        },
+        {
+          "xValue": 10700,
+          "yValue": 58
+        },
+        {
+          "xValue": 10800,
+          "yValue": 60
+        },
+        {
+          "xValue": 10900,
+          "yValue": 59
+        },
+        {
+          "xValue": 11000,
+          "yValue": 63
+        },
+        {
+          "xValue": 11100,
+          "yValue": 63
+        },
+        {
+          "xValue": 11200,
+          "yValue": 60
+        },
+        {
+          "xValue": 11300,
+          "yValue": 65
+        },
+        {
+          "xValue": 11400,
+          "yValue": 65
+        },
+        {
+          "xValue": 11500,
+          "yValue": 71
+        },
+        {
+          "xValue": 11600,
+          "yValue": 64
+        },
+        {
+          "xValue": 11700,
+          "yValue": 61
+        },
+        {
+          "xValue": 11800,
+          "yValue": 62
+        },
+        {
+          "xValue": 11900,
+          "yValue": 65
+        },
+        {
+          "xValue": 12000,
+          "yValue": 69
+        },
+        {
+          "xValue": 12100,
+          "yValue": 70
+        },
+        {
+          "xValue": 12200,
+          "yValue": 62
+        },
+        {
+          "xValue": 12300,
+          "yValue": 60
+        },
+        {
+          "xValue": 12400,
+          "yValue": 56
+        },
+        {
+          "xValue": 12500,
+          "yValue": 60
+        },
+        {
+          "xValue": 12600,
+          "yValue": 52
+        },
+        {
+          "xValue": 12700,
+          "yValue": 56
+        },
+        {
+          "xValue": 12800,
+          "yValue": 58
+        },
+        {
+          "xValue": 12900,
+          "yValue": 58
+        },
+        {
+          "xValue": 13000,
+          "yValue": 61
+        },
+        {
+          "xValue": 13100,
+          "yValue": 59
+        },
+        {
+          "xValue": 13200,
+          "yValue": 58
+        },
+        {
+          "xValue": 13300,
+          "yValue": 66
+        },
+        {
+          "xValue": 13400,
+          "yValue": 62
+        },
+        {
+          "xValue": 13500,
+          "yValue": 62
+        },
+        {
+          "xValue": 13600,
+          "yValue": 58
+        },
+        {
+          "xValue": 13700,
+          "yValue": 65
+        },
+        {
+          "xValue": 13800,
+          "yValue": 60
+        },
+        {
+          "xValue": 13900,
+          "yValue": 65
+        },
+        {
+          "xValue": 14000,
+          "yValue": 64
+        },
+        {
+          "xValue": 14100,
+          "yValue": 63
+        },
+        {
+          "xValue": 14200,
+          "yValue": 61
+        },
+        {
+          "xValue": 14300,
+          "yValue": 58
+        },
+        {
+          "xValue": 14400,
+          "yValue": 54
+        },
+        {
+          "xValue": 14500,
+          "yValue": 58
+        },
+        {
+          "xValue": 14600,
+          "yValue": 62
+        },
+        {
+          "xValue": 14700,
+          "yValue": 62
+        },
+        {
+          "xValue": 14800,
+          "yValue": 49
+        },
+        {
+          "xValue": 14900,
+          "yValue": 50
+        },
+        {
+          "xValue": 15000,
+          "yValue": 57
+        },
+        {
+          "xValue": 15100,
+          "yValue": 56
+        },
+        {
+          "xValue": 15200,
+          "yValue": 55
+        },
+        {
+          "xValue": 15300,
+          "yValue": 54
+        },
+        {
+          "xValue": 15400,
+          "yValue": 55
+        },
+        {
+          "xValue": 15500,
+          "yValue": 56
+        },
+        {
+          "xValue": 15600,
+          "yValue": 61
+        },
+        {
+          "xValue": 15700,
+          "yValue": 59
+        },
+        {
+          "xValue": 15800,
+          "yValue": 53
+        },
+        {
+          "xValue": 15900,
+          "yValue": 55
+        },
+        {
+          "xValue": 16000,
+          "yValue": 58
+        },
+        {
+          "xValue": 16100,
+          "yValue": 57
+        },
+        {
+          "xValue": 16200,
+          "yValue": 56
+        },
+        {
+          "xValue": 16300,
+          "yValue": 57
+        },
+        {
+          "xValue": 16400,
+          "yValue": 57
+        },
+        {
+          "xValue": 16500,
+          "yValue": 58
+        },
+        {
+          "xValue": 16600,
+          "yValue": 55
+        },
+        {
+          "xValue": 16700,
+          "yValue": 55
+        },
+        {
+          "xValue": 16800,
+          "yValue": 52
+        },
+        {
+          "xValue": 16900,
+          "yValue": 55
+        },
+        {
+          "xValue": 17000,
+          "yValue": 56
+        },
+        {
+          "xValue": 17100,
+          "yValue": 55
+        },
+        {
+          "xValue": 17200,
+          "yValue": 54
+        },
+        {
+          "xValue": 17300,
+          "yValue": 54
+        },
+        {
+          "xValue": 17400,
+          "yValue": 54
+        },
+        {
+          "xValue": 17500,
+          "yValue": 54
+        },
+        {
+          "xValue": 17600,
+          "yValue": 54
+        },
+        {
+          "xValue": 17700,
+          "yValue": 53
+        },
+        {
+          "xValue": 17800,
+          "yValue": 55
+        },
+        {
+          "xValue": 17900,
+          "yValue": 57
+        },
+        {
+          "xValue": 18000,
+          "yValue": 55
+        },
+        {
+          "xValue": 18100,
+          "yValue": 57
+        },
+        {
+          "xValue": 18200,
+          "yValue": 60
+        },
+        {
+          "xValue": 18300,
+          "yValue": 56
+        },
+        {
+          "xValue": 18400,
+          "yValue": 57
+        },
+        {
+          "xValue": 18500,
+          "yValue": 61
+        },
+        {
+          "xValue": 18600,
+          "yValue": 59
+        },
+        {
+          "xValue": 18700,
+          "yValue": 59
+        },
+        {
+          "xValue": 18800,
+          "yValue": 62
+        },
+        {
+          "xValue": 18900,
+          "yValue": 55
+        },
+        {
+          "xValue": 19000,
+          "yValue": 42
+        },
+        {
+          "xValue": 19100,
+          "yValue": 61
+        },
+        {
+          "xValue": 19200,
+          "yValue": 56
+        },
+        {
+          "xValue": 19300,
+          "yValue": 62
+        },
+        {
+          "xValue": 19400,
+          "yValue": 61
+        },
+        {
+          "xValue": 19500,
+          "yValue": 68
+        },
+        {
+          "xValue": 19600,
+          "yValue": 57
+        },
+        {
+          "xValue": 19700,
+          "yValue": 56
+        },
+        {
+          "xValue": 19800,
+          "yValue": 53
+        },
+        {
+          "xValue": 19900,
+          "yValue": 62
+        },
+        {
+          "xValue": 20000,
+          "yValue": 60
+        },
+        {
+          "xValue": 20100,
+          "yValue": 49
+        },
+        {
+          "xValue": 20200,
+          "yValue": 50
+        },
+        {
+          "xValue": 20300,
+          "yValue": 58
+        },
+        {
+          "xValue": 20400,
+          "yValue": 66
+        },
+        {
+          "xValue": 20500,
+          "yValue": 56
+        },
+        {
+          "xValue": 20600,
+          "yValue": 58
+        },
+        {
+          "xValue": 20700,
+          "yValue": 59
+        },
+        {
+          "xValue": 20800,
+          "yValue": 65
+        },
+        {
+          "xValue": 20900,
+          "yValue": 64
+        },
+        {
+          "xValue": 21000,
+          "yValue": 64
+        },
+        {
+          "xValue": 21100,
+          "yValue": 62
+        },
+        {
+          "xValue": 21200,
+          "yValue": 66
+        },
+        {
+          "xValue": 21300,
+          "yValue": 63
+        }
+      ]
+    },
+    {
+      "variableName": "Helium Usage Trend",
+      "paramtype": "Avg",
+      "varTrend": "Down",
+      "avgObj": {
+        "truckAvg": 44,
+        "siteAvg": 51
+      },
+      "minOptimal": 45,
+      "maxOptimal": 60,
+      "xLabel": "SMH",
+      "yLabel": "Payload",
+      "duration": "11th June 2014 - 20th June 2014",
+      "barGraph": [
+        {
+          "xValue": 100,
+          "yValue": 63
+        },
+        {
+          "xValue": 200,
+          "yValue": 65
+        },
+        {
+          "xValue": 300,
+          "yValue": 69
+        },
+        {
+          "xValue": 400,
+          "yValue": 68
+        },
+        {
+          "xValue": 500,
+          "yValue": 65
+        },
+        {
+          "xValue": 600,
+          "yValue": 62
+        },
+        {
+          "xValue": 700,
+          "yValue": 65
+        },
+        {
+          "xValue": 800,
+          "yValue": 68
+        },
+        {
+          "xValue": 900,
+          "yValue": 68
+        },
+        {
+          "xValue": 1000,
+          "yValue": 69
+        },
+        {
+          "xValue": 1100,
+          "yValue": 67
+        },
+        {
+          "xValue": 1200,
+          "yValue": 67
+        },
+        {
+          "xValue": 1300,
+          "yValue": 61
+        },
+        {
+          "xValue": 1400,
+          "yValue": 62
+        },
+        {
+          "xValue": 1500,
+          "yValue": 64
+        },
+        {
+          "xValue": 1600,
+          "yValue": 63
+        },
+        {
+          "xValue": 1700,
+          "yValue": 62
+        },
+        {
+          "xValue": 1800,
+          "yValue": 66
+        },
+        {
+          "xValue": 1900,
+          "yValue": 67
+        },
+        {
+          "xValue": 2000,
+          "yValue": 70
+        },
+        {
+          "xValue": 2100,
+          "yValue": 66
+        },
+        {
+          "xValue": 2200,
+          "yValue": 63
+        },
+        {
+          "xValue": 2300,
+          "yValue": 55
+        },
+        {
+          "xValue": 2400,
+          "yValue": 65
+        },
+        {
+          "xValue": 2500,
+          "yValue": 63
+        },
+        {
+          "xValue": 2600,
+          "yValue": 65
+        },
+        {
+          "xValue": 2700,
+          "yValue": 59
+        },
+        {
+          "xValue": 2800,
+          "yValue": 67
+        },
+        {
+          "xValue": 2900,
+          "yValue": 68
+        },
+        {
+          "xValue": 3000,
+          "yValue": 66
+        },
+        {
+          "xValue": 3100,
+          "yValue": 62
+        },
+        {
+          "xValue": 3200,
+          "yValue": 65
+        },
+        {
+          "xValue": 3300,
+          "yValue": 59
+        },
+        {
+          "xValue": 3400,
+          "yValue": 57
+        },
+        {
+          "xValue": 3500,
+          "yValue": 57
+        },
+        {
+          "xValue": 3600,
+          "yValue": 70
+        },
+        {
+          "xValue": 3700,
+          "yValue": 62
+        },
+        {
+          "xValue": 3800,
+          "yValue": 59
+        },
+        {
+          "xValue": 3900,
+          "yValue": 65
+        },
+        {
+          "xValue": 4000,
+          "yValue": 53
+        },
+        {
+          "xValue": 4100,
+          "yValue": 67
+        },
+        {
+          "xValue": 4200,
+          "yValue": 63
+        },
+        {
+          "xValue": 4300,
+          "yValue": 59
+        },
+        {
+          "xValue": 4400,
+          "yValue": 65
+        },
+        {
+          "xValue": 4500,
+          "yValue": 67
+        },
+        {
+          "xValue": 4600,
+          "yValue": 64
+        },
+        {
+          "xValue": 4700,
+          "yValue": 65
+        },
+        {
+          "xValue": 4800,
+          "yValue": 61
+        },
+        {
+          "xValue": 4900,
+          "yValue": 67
+        },
+        {
+          "xValue": 5000,
+          "yValue": 70
+        },
+        {
+          "xValue": 5100,
+          "yValue": 69
+        },
+        {
+          "xValue": 5200,
+          "yValue": 67
+        },
+        {
+          "xValue": 5300,
+          "yValue": 67
+        },
+        {
+          "xValue": 5400,
+          "yValue": 69
+        },
+        {
+          "xValue": 5500,
+          "yValue": 69
+        },
+        {
+          "xValue": 5600,
+          "yValue": 67
+        },
+        {
+          "xValue": 5700,
+          "yValue": 63
+        },
+        {
+          "xValue": 5800,
+          "yValue": 65
+        },
+        {
+          "xValue": 5900,
+          "yValue": 66
+        },
+        {
+          "xValue": 6000,
+          "yValue": 73
+        },
+        {
+          "xValue": 6100,
+          "yValue": 67
+        },
+        {
+          "xValue": 6200,
+          "yValue": 64
+        },
+        {
+          "xValue": 6300,
+          "yValue": 67
+        },
+        {
+          "xValue": 6400,
+          "yValue": 73
+        },
+        {
+          "xValue": 6500,
+          "yValue": 76
+        },
+        {
+          "xValue": 6600,
+          "yValue": 75
+        },
+        {
+          "xValue": 6700,
+          "yValue": 74
+        },
+        {
+          "xValue": 6800,
+          "yValue": 81
+        },
+        {
+          "xValue": 6900,
+          "yValue": 68
+        },
+        {
+          "xValue": 7000,
+          "yValue": 72
+        },
+        {
+          "xValue": 7100,
+          "yValue": 66
+        },
+        {
+          "xValue": 7200,
+          "yValue": 67
+        },
+        {
+          "xValue": 7300,
+          "yValue": 72
+        },
+        {
+          "xValue": 7400,
+          "yValue": 68
+        },
+        {
+          "xValue": 7500,
+          "yValue": 67
+        },
+        {
+          "xValue": 7600,
+          "yValue": 65
+        },
+        {
+          "xValue": 7700,
+          "yValue": 63
+        },
+        {
+          "xValue": 7800,
+          "yValue": 65
+        },
+        {
+          "xValue": 7900,
+          "yValue": 62
+        },
+        {
+          "xValue": 8000,
+          "yValue": 59
+        },
+        {
+          "xValue": 8100,
+          "yValue": 54
+        },
+        {
+          "xValue": 8200,
+          "yValue": 65
+        },
+        {
+          "xValue": 8300,
+          "yValue": 65
+        },
+        {
+          "xValue": 8400,
+          "yValue": 65
+        },
+        {
+          "xValue": 8500,
+          "yValue": 68
+        },
+        {
+          "xValue": 8600,
+          "yValue": 61
+        },
+        {
+          "xValue": 8700,
+          "yValue": 64
+        },
+        {
+          "xValue": 8800,
+          "yValue": 64
+        },
+        {
+          "xValue": 8900,
+          "yValue": 62
+        },
+        {
+          "xValue": 9000,
+          "yValue": 60
+        },
+        {
+          "xValue": 9100,
+          "yValue": 64
+        },
+        {
+          "xValue": 9200,
+          "yValue": 65
+        },
+        {
+          "xValue": 9300,
+          "yValue": 65
+        },
+        {
+          "xValue": 9400,
+          "yValue": 61
+        },
+        {
+          "xValue": 9500,
+          "yValue": 56
+        },
+        {
+          "xValue": 9600,
+          "yValue": 57
+        },
+        {
+          "xValue": 9700,
+          "yValue": 62
+        },
+        {
+          "xValue": 9800,
+          "yValue": 54
+        },
+        {
+          "xValue": 9900,
+          "yValue": 65
+        },
+        {
+          "xValue": 10000,
+          "yValue": 67
+        },
+        {
+          "xValue": 10100,
+          "yValue": 57
+        },
+        {
+          "xValue": 10200,
+          "yValue": 63
+        },
+        {
+          "xValue": 10300,
+          "yValue": 63
+        },
+        {
+          "xValue": 10400,
+          "yValue": 56
+        },
+        {
+          "xValue": 10500,
+          "yValue": 55
+        },
+        {
+          "xValue": 10600,
+          "yValue": 60
+        },
+        {
+          "xValue": 10700,
+          "yValue": 58
+        },
+        {
+          "xValue": 10800,
+          "yValue": 60
+        },
+        {
+          "xValue": 10900,
+          "yValue": 59
+        },
+        {
+          "xValue": 11000,
+          "yValue": 63
+        },
+        {
+          "xValue": 11100,
+          "yValue": 63
+        },
+        {
+          "xValue": 11200,
+          "yValue": 60
+        },
+        {
+          "xValue": 11300,
+          "yValue": 65
+        },
+        {
+          "xValue": 11400,
+          "yValue": 65
+        },
+        {
+          "xValue": 11500,
+          "yValue": 71
+        },
+        {
+          "xValue": 11600,
+          "yValue": 64
+        },
+        {
+          "xValue": 11700,
+          "yValue": 61
+        },
+        {
+          "xValue": 11800,
+          "yValue": 62
+        },
+        {
+          "xValue": 11900,
+          "yValue": 65
+        },
+        {
+          "xValue": 12000,
+          "yValue": 69
+        },
+        {
+          "xValue": 12100,
+          "yValue": 70
+        },
+        {
+          "xValue": 12200,
+          "yValue": 62
+        },
+        {
+          "xValue": 12300,
+          "yValue": 60
+        },
+        {
+          "xValue": 12400,
+          "yValue": 56
+        },
+        {
+          "xValue": 12500,
+          "yValue": 60
+        },
+        {
+          "xValue": 12600,
+          "yValue": 52
+        },
+        {
+          "xValue": 12700,
+          "yValue": 56
+        },
+        {
+          "xValue": 12800,
+          "yValue": 58
+        },
+        {
+          "xValue": 12900,
+          "yValue": 58
+        },
+        {
+          "xValue": 13000,
+          "yValue": 61
+        },
+        {
+          "xValue": 13100,
+          "yValue": 59
+        },
+        {
+          "xValue": 13200,
+          "yValue": 58
+        },
+        {
+          "xValue": 13300,
+          "yValue": 66
+        },
+        {
+          "xValue": 13400,
+          "yValue": 62
+        },
+        {
+          "xValue": 13500,
+          "yValue": 62
+        },
+        {
+          "xValue": 13600,
+          "yValue": 58
+        },
+        {
+          "xValue": 13700,
+          "yValue": 65
+        },
+        {
+          "xValue": 13800,
+          "yValue": 60
+        },
+        {
+          "xValue": 13900,
+          "yValue": 65
+        },
+        {
+          "xValue": 14000,
+          "yValue": 64
+        },
+        {
+          "xValue": 14100,
+          "yValue": 63
+        },
+        {
+          "xValue": 14200,
+          "yValue": 61
+        },
+        {
+          "xValue": 14300,
+          "yValue": 58
+        },
+        {
+          "xValue": 14400,
+          "yValue": 54
+        },
+        {
+          "xValue": 14500,
+          "yValue": 58
+        },
+        {
+          "xValue": 14600,
+          "yValue": 62
+        },
+        {
+          "xValue": 14700,
+          "yValue": 62
+        },
+        {
+          "xValue": 14800,
+          "yValue": 49
+        },
+        {
+          "xValue": 14900,
+          "yValue": 50
+        },
+        {
+          "xValue": 15000,
+          "yValue": 57
+        },
+        {
+          "xValue": 15100,
+          "yValue": 56
+        },
+        {
+          "xValue": 15200,
+          "yValue": 55
+        },
+        {
+          "xValue": 15300,
+          "yValue": 54
+        },
+        {
+          "xValue": 15400,
+          "yValue": 55
+        },
+        {
+          "xValue": 15500,
+          "yValue": 56
+        },
+        {
+          "xValue": 15600,
+          "yValue": 61
+        },
+        {
+          "xValue": 15700,
+          "yValue": 59
+        },
+        {
+          "xValue": 15800,
+          "yValue": 53
+        },
+        {
+          "xValue": 15900,
+          "yValue": 55
+        },
+        {
+          "xValue": 16000,
+          "yValue": 58
+        },
+        {
+          "xValue": 16100,
+          "yValue": 57
+        },
+        {
+          "xValue": 16200,
+          "yValue": 56
+        },
+        {
+          "xValue": 16300,
+          "yValue": 57
+        },
+        {
+          "xValue": 16400,
+          "yValue": 57
+        },
+        {
+          "xValue": 16500,
+          "yValue": 58
+        },
+        {
+          "xValue": 16600,
+          "yValue": 55
+        },
+        {
+          "xValue": 16700,
+          "yValue": 55
+        },
+        {
+          "xValue": 16800,
+          "yValue": 52
+        },
+        {
+          "xValue": 16900,
+          "yValue": 55
+        },
+        {
+          "xValue": 17000,
+          "yValue": 56
+        },
+        {
+          "xValue": 17100,
+          "yValue": 55
+        },
+        {
+          "xValue": 17200,
+          "yValue": 54
+        },
+        {
+          "xValue": 17300,
+          "yValue": 54
+        },
+        {
+          "xValue": 17400,
+          "yValue": 54
+        },
+        {
+          "xValue": 17500,
+          "yValue": 54
+        },
+        {
+          "xValue": 17600,
+          "yValue": 54
+        },
+        {
+          "xValue": 17700,
+          "yValue": 53
+        },
+        {
+          "xValue": 17800,
+          "yValue": 55
+        },
+        {
+          "xValue": 17900,
+          "yValue": 57
+        },
+        {
+          "xValue": 18000,
+          "yValue": 55
+        },
+        {
+          "xValue": 18100,
+          "yValue": 57
+        },
+        {
+          "xValue": 18200,
+          "yValue": 60
+        },
+        {
+          "xValue": 18300,
+          "yValue": 56
+        },
+        {
+          "xValue": 18400,
+          "yValue": 57
+        },
+        {
+          "xValue": 18500,
+          "yValue": 61
+        },
+        {
+          "xValue": 18600,
+          "yValue": 59
+        },
+        {
+          "xValue": 18700,
+          "yValue": 59
+        },
+        {
+          "xValue": 18800,
+          "yValue": 62
+        },
+        {
+          "xValue": 18900,
+          "yValue": 55
+        },
+        {
+          "xValue": 19000,
+          "yValue": 42
+        },
+        {
+          "xValue": 19100,
+          "yValue": 61
+        },
+        {
+          "xValue": 19200,
+          "yValue": 56
+        },
+        {
+          "xValue": 19300,
+          "yValue": 62
+        },
+        {
+          "xValue": 19400,
+          "yValue": 61
+        },
+        {
+          "xValue": 19500,
+          "yValue": 68
+        },
+        {
+          "xValue": 19600,
+          "yValue": 57
+        },
+        {
+          "xValue": 19700,
+          "yValue": 56
+        },
+        {
+          "xValue": 19800,
+          "yValue": 53
+        },
+        {
+          "xValue": 19900,
+          "yValue": 62
+        },
+        {
+          "xValue": 20000,
+          "yValue": 60
+        },
+        {
+          "xValue": 20100,
+          "yValue": 49
+        },
+        {
+          "xValue": 20200,
+          "yValue": 50
+        },
+        {
+          "xValue": 20300,
+          "yValue": 58
+        },
+        {
+          "xValue": 20400,
+          "yValue": 66
+        },
+        {
+          "xValue": 20500,
+          "yValue": 56
+        },
+        {
+          "xValue": 20600,
+          "yValue": 58
+        },
+        {
+          "xValue": 20700,
+          "yValue": 59
+        },
+        {
+          "xValue": 20800,
+          "yValue": 65
+        },
+        {
+          "xValue": 20900,
+          "yValue": 64
+        },
+        {
+          "xValue": 21000,
+          "yValue": 64
+        },
+        {
+          "xValue": 21100,
+          "yValue": 62
+        },
+        {
+          "xValue": 21200,
+          "yValue": 66
+        },
+        {
+          "xValue": 21300,
+          "yValue": 63
+        }
+      ]
+    },
+    {
+      "variableName": "Helium Level",
+      "paramtype": "Overload",
+      "varTrend": "Up",
+      "overLoadObj": {
+        "total": 13,
+        "siteAvg": 16,
+        "overLoadCount": 35,
+        "overload_10_20_percent": 5,
+        "overload_greater_than_20percent": 2
+      },
+      "minOptimal": 30,
+      "maxOptimal": 40,
+      "xLabel": "SMH",
+      "yLabel": "Payload",
+      "duration": "11th June 2014 - 20th June 2014",
+      "barGraph": [
+        {
+          "xValue": 100,
+          "yValue": 63
+        },
+        {
+          "xValue": 200,
+          "yValue": 65
+        },
+        {
+          "xValue": 300,
+          "yValue": 69
+        },
+        {
+          "xValue": 400,
+          "yValue": 68
+        },
+        {
+          "xValue": 500,
+          "yValue": 65
+        },
+        {
+          "xValue": 600,
+          "yValue": 62
+        },
+        {
+          "xValue": 700,
+          "yValue": 65
+        },
+        {
+          "xValue": 800,
+          "yValue": 68
+        },
+        {
+          "xValue": 900,
+          "yValue": 68
+        },
+        {
+          "xValue": 1000,
+          "yValue": 69
+        },
+        {
+          "xValue": 1100,
+          "yValue": 67
+        },
+        {
+          "xValue": 1200,
+          "yValue": 67
+        },
+        {
+          "xValue": 1300,
+          "yValue": 61
+        },
+        {
+          "xValue": 1400,
+          "yValue": 62
+        },
+        {
+          "xValue": 1500,
+          "yValue": 64
+        },
+        {
+          "xValue": 1600,
+          "yValue": 63
+        },
+        {
+          "xValue": 1700,
+          "yValue": 62
+        },
+        {
+          "xValue": 1800,
+          "yValue": 66
+        },
+        {
+          "xValue": 1900,
+          "yValue": 67
+        },
+        {
+          "xValue": 2000,
+          "yValue": 70
+        },
+        {
+          "xValue": 2100,
+          "yValue": 66
+        },
+        {
+          "xValue": 2200,
+          "yValue": 63
+        },
+        {
+          "xValue": 2300,
+          "yValue": 55
+        },
+        {
+          "xValue": 2400,
+          "yValue": 65
+        },
+        {
+          "xValue": 2500,
+          "yValue": 63
+        },
+        {
+          "xValue": 2600,
+          "yValue": 65
+        },
+        {
+          "xValue": 2700,
+          "yValue": 59
+        },
+        {
+          "xValue": 2800,
+          "yValue": 67
+        },
+        {
+          "xValue": 2900,
+          "yValue": 68
+        },
+        {
+          "xValue": 3000,
+          "yValue": 66
+        },
+        {
+          "xValue": 3100,
+          "yValue": 62
+        },
+        {
+          "xValue": 3200,
+          "yValue": 65
+        },
+        {
+          "xValue": 3300,
+          "yValue": 59
+        },
+        {
+          "xValue": 3400,
+          "yValue": 57
+        },
+        {
+          "xValue": 3500,
+          "yValue": 57
+        },
+        {
+          "xValue": 3600,
+          "yValue": 70
+        },
+        {
+          "xValue": 3700,
+          "yValue": 62
+        },
+        {
+          "xValue": 3800,
+          "yValue": 59
+        },
+        {
+          "xValue": 3900,
+          "yValue": 65
+        },
+        {
+          "xValue": 4000,
+          "yValue": 53
+        },
+        {
+          "xValue": 4100,
+          "yValue": 67
+        },
+        {
+          "xValue": 4200,
+          "yValue": 63
+        },
+        {
+          "xValue": 4300,
+          "yValue": 59
+        },
+        {
+          "xValue": 4400,
+          "yValue": 65
+        },
+        {
+          "xValue": 4500,
+          "yValue": 67
+        },
+        {
+          "xValue": 4600,
+          "yValue": 64
+        },
+        {
+          "xValue": 4700,
+          "yValue": 65
+        },
+        {
+          "xValue": 4800,
+          "yValue": 61
+        },
+        {
+          "xValue": 4900,
+          "yValue": 67
+        },
+        {
+          "xValue": 5000,
+          "yValue": 70
+        },
+        {
+          "xValue": 5100,
+          "yValue": 69
+        },
+        {
+          "xValue": 5200,
+          "yValue": 67
+        },
+        {
+          "xValue": 5300,
+          "yValue": 67
+        },
+        {
+          "xValue": 5400,
+          "yValue": 69
+        },
+        {
+          "xValue": 5500,
+          "yValue": 69
+        },
+        {
+          "xValue": 5600,
+          "yValue": 67
+        },
+        {
+          "xValue": 5700,
+          "yValue": 63
+        },
+        {
+          "xValue": 5800,
+          "yValue": 65
+        },
+        {
+          "xValue": 5900,
+          "yValue": 66
+        },
+        {
+          "xValue": 6000,
+          "yValue": 73
+        },
+        {
+          "xValue": 6100,
+          "yValue": 67
+        },
+        {
+          "xValue": 6200,
+          "yValue": 64
+        },
+        {
+          "xValue": 6300,
+          "yValue": 67
+        },
+        {
+          "xValue": 6400,
+          "yValue": 73
+        },
+        {
+          "xValue": 6500,
+          "yValue": 76
+        },
+        {
+          "xValue": 6600,
+          "yValue": 75
+        },
+        {
+          "xValue": 6700,
+          "yValue": 74
+        },
+        {
+          "xValue": 6800,
+          "yValue": 81
+        },
+        {
+          "xValue": 6900,
+          "yValue": 68
+        },
+        {
+          "xValue": 7000,
+          "yValue": 72
+        },
+        {
+          "xValue": 7100,
+          "yValue": 66
+        },
+        {
+          "xValue": 7200,
+          "yValue": 67
+        },
+        {
+          "xValue": 7300,
+          "yValue": 72
+        },
+        {
+          "xValue": 7400,
+          "yValue": 68
+        },
+        {
+          "xValue": 7500,
+          "yValue": 67
+        },
+        {
+          "xValue": 7600,
+          "yValue": 65
+        },
+        {
+          "xValue": 7700,
+          "yValue": 63
+        },
+        {
+          "xValue": 7800,
+          "yValue": 65
+        },
+        {
+          "xValue": 7900,
+          "yValue": 62
+        },
+        {
+          "xValue": 8000,
+          "yValue": 59
+        },
+        {
+          "xValue": 8100,
+          "yValue": 54
+        },
+        {
+          "xValue": 8200,
+          "yValue": 65
+        },
+        {
+          "xValue": 8300,
+          "yValue": 65
+        },
+        {
+          "xValue": 8400,
+          "yValue": 65
+        },
+        {
+          "xValue": 8500,
+          "yValue": 68
+        },
+        {
+          "xValue": 8600,
+          "yValue": 61
+        },
+        {
+          "xValue": 8700,
+          "yValue": 64
+        },
+        {
+          "xValue": 8800,
+          "yValue": 64
+        },
+        {
+          "xValue": 8900,
+          "yValue": 62
+        },
+        {
+          "xValue": 9000,
+          "yValue": 60
+        },
+        {
+          "xValue": 9100,
+          "yValue": 64
+        },
+        {
+          "xValue": 9200,
+          "yValue": 65
+        },
+        {
+          "xValue": 9300,
+          "yValue": 65
+        },
+        {
+          "xValue": 9400,
+          "yValue": 61
+        },
+        {
+          "xValue": 9500,
+          "yValue": 56
+        },
+        {
+          "xValue": 9600,
+          "yValue": 57
+        },
+        {
+          "xValue": 9700,
+          "yValue": 62
+        },
+        {
+          "xValue": 9800,
+          "yValue": 54
+        },
+        {
+          "xValue": 9900,
+          "yValue": 65
+        },
+        {
+          "xValue": 10000,
+          "yValue": 67
+        },
+        {
+          "xValue": 10100,
+          "yValue": 57
+        },
+        {
+          "xValue": 10200,
+          "yValue": 63
+        },
+        {
+          "xValue": 10300,
+          "yValue": 63
+        },
+        {
+          "xValue": 10400,
+          "yValue": 56
+        },
+        {
+          "xValue": 10500,
+          "yValue": 55
+        },
+        {
+          "xValue": 10600,
+          "yValue": 60
+        },
+        {
+          "xValue": 10700,
+          "yValue": 58
+        },
+        {
+          "xValue": 10800,
+          "yValue": 60
+        },
+        {
+          "xValue": 10900,
+          "yValue": 59
+        },
+        {
+          "xValue": 11000,
+          "yValue": 63
+        },
+        {
+          "xValue": 11100,
+          "yValue": 63
+        },
+        {
+          "xValue": 11200,
+          "yValue": 60
+        },
+        {
+          "xValue": 11300,
+          "yValue": 65
+        },
+        {
+          "xValue": 11400,
+          "yValue": 65
+        },
+        {
+          "xValue": 11500,
+          "yValue": 71
+        },
+        {
+          "xValue": 11600,
+          "yValue": 64
+        },
+        {
+          "xValue": 11700,
+          "yValue": 61
+        },
+        {
+          "xValue": 11800,
+          "yValue": 62
+        },
+        {
+          "xValue": 11900,
+          "yValue": 65
+        },
+        {
+          "xValue": 12000,
+          "yValue": 69
+        },
+        {
+          "xValue": 12100,
+          "yValue": 70
+        },
+        {
+          "xValue": 12200,
+          "yValue": 62
+        },
+        {
+          "xValue": 12300,
+          "yValue": 60
+        },
+        {
+          "xValue": 12400,
+          "yValue": 56
+        },
+        {
+          "xValue": 12500,
+          "yValue": 60
+        },
+        {
+          "xValue": 12600,
+          "yValue": 52
+        },
+        {
+          "xValue": 12700,
+          "yValue": 56
+        },
+        {
+          "xValue": 12800,
+          "yValue": 58
+        },
+        {
+          "xValue": 12900,
+          "yValue": 58
+        },
+        {
+          "xValue": 13000,
+          "yValue": 61
+        },
+        {
+          "xValue": 13100,
+          "yValue": 59
+        },
+        {
+          "xValue": 13200,
+          "yValue": 58
+        },
+        {
+          "xValue": 13300,
+          "yValue": 66
+        },
+        {
+          "xValue": 13400,
+          "yValue": 62
+        },
+        {
+          "xValue": 13500,
+          "yValue": 62
+        },
+        {
+          "xValue": 13600,
+          "yValue": 58
+        },
+        {
+          "xValue": 13700,
+          "yValue": 65
+        },
+        {
+          "xValue": 13800,
+          "yValue": 60
+        },
+        {
+          "xValue": 13900,
+          "yValue": 65
+        },
+        {
+          "xValue": 14000,
+          "yValue": 64
+        },
+        {
+          "xValue": 14100,
+          "yValue": 63
+        },
+        {
+          "xValue": 14200,
+          "yValue": 61
+        },
+        {
+          "xValue": 14300,
+          "yValue": 58
+        },
+        {
+          "xValue": 14400,
+          "yValue": 54
+        },
+        {
+          "xValue": 14500,
+          "yValue": 58
+        },
+        {
+          "xValue": 14600,
+          "yValue": 62
+        },
+        {
+          "xValue": 14700,
+          "yValue": 62
+        },
+        {
+          "xValue": 14800,
+          "yValue": 49
+        },
+        {
+          "xValue": 14900,
+          "yValue": 50
+        },
+        {
+          "xValue": 15000,
+          "yValue": 57
+        },
+        {
+          "xValue": 15100,
+          "yValue": 56
+        },
+        {
+          "xValue": 15200,
+          "yValue": 55
+        },
+        {
+          "xValue": 15300,
+          "yValue": 54
+        },
+        {
+          "xValue": 15400,
+          "yValue": 55
+        },
+        {
+          "xValue": 15500,
+          "yValue": 56
+        },
+        {
+          "xValue": 15600,
+          "yValue": 61
+        },
+        {
+          "xValue": 15700,
+          "yValue": 59
+        },
+        {
+          "xValue": 15800,
+          "yValue": 53
+        },
+        {
+          "xValue": 15900,
+          "yValue": 55
+        },
+        {
+          "xValue": 16000,
+          "yValue": 58
+        },
+        {
+          "xValue": 16100,
+          "yValue": 57
+        },
+        {
+          "xValue": 16200,
+          "yValue": 56
+        },
+        {
+          "xValue": 16300,
+          "yValue": 57
+        },
+        {
+          "xValue": 16400,
+          "yValue": 57
+        },
+        {
+          "xValue": 16500,
+          "yValue": 58
+        },
+        {
+          "xValue": 16600,
+          "yValue": 55
+        },
+        {
+          "xValue": 16700,
+          "yValue": 55
+        },
+        {
+          "xValue": 16800,
+          "yValue": 52
+        },
+        {
+          "xValue": 16900,
+          "yValue": 55
+        },
+        {
+          "xValue": 17000,
+          "yValue": 56
+        },
+        {
+          "xValue": 17100,
+          "yValue": 55
+        },
+        {
+          "xValue": 17200,
+          "yValue": 54
+        },
+        {
+          "xValue": 17300,
+          "yValue": 54
+        },
+        {
+          "xValue": 17400,
+          "yValue": 54
+        },
+        {
+          "xValue": 17500,
+          "yValue": 54
+        },
+        {
+          "xValue": 17600,
+          "yValue": 54
+        },
+        {
+          "xValue": 17700,
+          "yValue": 53
+        },
+        {
+          "xValue": 17800,
+          "yValue": 55
+        },
+        {
+          "xValue": 17900,
+          "yValue": 57
+        },
+        {
+          "xValue": 18000,
+          "yValue": 55
+        },
+        {
+          "xValue": 18100,
+          "yValue": 57
+        },
+        {
+          "xValue": 18200,
+          "yValue": 60
+        },
+        {
+          "xValue": 18300,
+          "yValue": 56
+        },
+        {
+          "xValue": 18400,
+          "yValue": 57
+        },
+        {
+          "xValue": 18500,
+          "yValue": 61
+        },
+        {
+          "xValue": 18600,
+          "yValue": 59
+        },
+        {
+          "xValue": 18700,
+          "yValue": 59
+        },
+        {
+          "xValue": 18800,
+          "yValue": 62
+        },
+        {
+          "xValue": 18900,
+          "yValue": 55
+        },
+        {
+          "xValue": 19000,
+          "yValue": 42
+        },
+        {
+          "xValue": 19100,
+          "yValue": 61
+        },
+        {
+          "xValue": 19200,
+          "yValue": 56
+        },
+        {
+          "xValue": 19300,
+          "yValue": 62
+        },
+        {
+          "xValue": 19400,
+          "yValue": 61
+        },
+        {
+          "xValue": 19500,
+          "yValue": 68
+        },
+        {
+          "xValue": 19600,
+          "yValue": 57
+        },
+        {
+          "xValue": 19700,
+          "yValue": 56
+        },
+        {
+          "xValue": 19800,
+          "yValue": 53
+        },
+        {
+          "xValue": 19900,
+          "yValue": 62
+        },
+        {
+          "xValue": 20000,
+          "yValue": 60
+        },
+        {
+          "xValue": 20100,
+          "yValue": 49
+        },
+        {
+          "xValue": 20200,
+          "yValue": 50
+        },
+        {
+          "xValue": 20300,
+          "yValue": 58
+        },
+        {
+          "xValue": 20400,
+          "yValue": 66
+        },
+        {
+          "xValue": 20500,
+          "yValue": 56
+        },
+        {
+          "xValue": 20600,
+          "yValue": 58
+        },
+        {
+          "xValue": 20700,
+          "yValue": 59
+        },
+        {
+          "xValue": 20800,
+          "yValue": 65
+        },
+        {
+          "xValue": 20900,
+          "yValue": 64
+        },
+        {
+          "xValue": 21000,
+          "yValue": 64
+        },
+        {
+          "xValue": 21100,
+          "yValue": 62
+        },
+        {
+          "xValue": 21200,
+          "yValue": 66
+        },
+        {
+          "xValue": 21300,
+          "yValue": 63
+        }
+      ]
+      
+      
+    }
+  ]
+}

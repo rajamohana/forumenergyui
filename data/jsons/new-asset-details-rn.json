@@ -1,0 +1,168 @@
+{
+    "result": [
+        {
+            "assetId": "t642",
+            "assetName": "Iron Roughneck",
+            "assetType": "ironroughneck",
+            "siteId": "site@123",
+            "siteName": "site123",
+            "siteType": "rig",
+            "siteLocation": "Houston",
+            "assetHealthData": [
+                {
+                    "name": "healthPercentage",
+                    "displayName": "Health",
+                    "value": 85.55556,
+                    "units": "percentage"
+                },
+                {
+                    "name": "Cycles",
+                    "displayName": "Cycles till Today ",
+                    "value": 15400
+                },
+                {
+                    "name": "ROD",
+                    "displayName": "ROD",
+                    "value": 0.062291419,
+                    "units": "percentage",
+                    "trend": "increase"
+                },
+                {
+                    "name": "averagecycletime",
+                    "displayName": "Avg. Cycle Time",
+                    "value": 168
+                },
+                {
+                    "name": "cyclesperday",
+                    "displayName": "Cycles Per Day",
+                    "value": 100
+                },
+                {
+                    "name": "runtime",
+                    "displayName": "Run Time Cycles",
+                    "value": 100
+                },
+                {
+                    "name": "overloadevents",
+                    "displayName": "Overload Events",
+                    "value": 100
+                },
+                {
+                    "name": "abuseevents",
+                    "displayName": "Abuse Events",
+                    "value": 100
+                }
+            ],
+            "assetMetaData": [
+                {
+                    "name": "ourProjection",
+                    "displayName": "Projection RUL",
+                    "life": "16/02/2016",
+                    "RUL": "17100 Cycles"
+                }
+            ],
+            "healthGraphs": {
+                "graphDisplayName": "Usage Trend",
+                "xLabel": "SMH",
+                "yLabel": "Health Score",
+                "xMax": 20000,
+                "xNumIntrevals": 100,
+                "yMax": 1,
+                "yNumIntrevals": 0.1,
+                "xAxisToday": 15400,
+                "yAxisToday": 0.0913925584,
+                "healthGraph": [
+                    {
+                        "xAxis": 19900,
+                        "xAxisDate": "1313798400000",
+                        "yAxis": -0.2198781121,
+                        "yAxisMin": 0,
+                        "yAxisMax": 0.029588288586
+                    },
+                    {
+                        "xAxis": 20000,
+                        "xAxisDate": "1313884800000",
+                        "yAxis": -0.2198781121,
+                        "yAxisMin": 0,
+                        "yAxisMax": 0.026996016666
+                    }
+                ],
+                "trendGraph": [
+                    {
+                        "xAxis": 8700,
+                        "xAxisDate": "1304121600000",
+                        "yAxis": 0.5293185077999999
+                    },
+                    {
+                        "xAxis": 8800,
+                        "xAxisDate": "1304208000000",
+                        "yAxis": 0.52339009072
+                    }
+                ],
+                "siteAvgGraph": [
+                    {
+                        "xAxis": 19800,
+                        "xAxisDate": "1313712000000",
+                        "yAxis": -5.662294616905555
+                    },
+                    {
+                        "xAxis": 20000,
+                        "xAxisDate": "1313884800000",
+                        "yAxis": -5.667746536738889
+                    }
+                ],
+                "binOrDate": "Date"
+            },
+            "deteriorationGraphs": {
+                "graphDisplayName": "Deterioration Trend",
+                "xLabel": "SMH",
+                "yLabel": "Deterioration Rate",
+                "xMax": 20000,
+                "xNumIntrevals": 100,
+                "yMax": 0.01,
+                "yNumIntrevals": 0.0001,
+                "xAxisToday": 15400,
+                "yAxisToday": 0.062291419,
+                "minOptimalValue": 0.0199739,
+                "maxOptimalValue": 0.001135739,
+                "healthGraph": [
+                    {
+                        "xAxis": 19900,
+                        "xAxisDate": "1313798400000",
+                        "yAxis": -100
+                    },
+                    {
+                        "xAxis": 20000,
+                        "xAxisDate": "1313884800000",
+                        "yAxis": -100
+                    }
+                ],
+                "trendGraph": [
+                    {
+                        "xAxis": 19900,
+                        "xAxisDate": "1313798400000",
+                        "yAxis": -100
+                    },
+                    {
+                        "xAxis": 20000,
+                        "xAxisDate": "1313884800000",
+                        "yAxis": -100
+                    }
+                ],
+                "siteAvgGraph": [
+                    {
+                        "xAxis": 19800,
+                        "xAxisDate": "1313712000000",
+                        "yAxis": 0
+                    },
+                    {
+                        "xAxis": 20000,
+                        "xAxisDate": "1313884800000",
+                        "yAxis": 0
+                    }
+                ],
+                "binOrDate": "Date"
+            }
+        }
+    ]
+}

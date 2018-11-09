@@ -1,0 +1,420 @@
+.insights-container {
+    padding-bottom: 35px;
+    .insights-header {
+        display: flex;
+        align-items: center;
+        height: 37px;
+        padding-left: 25px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #2b4d55;
+        .site-name a {
+            color: #fff;
+            cursor: pointer;
+        }
+        .truck {
+            cursor: pointer;
+        }
+        .truck-svg{
+            width: 25px;
+            height: 15px;
+            fill: #fff;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
+			margin-left: 1px;
+            margin-top:4px;
+        }
+        .back-button {
+			width: 7px;
+			height: 14px;
+			margin-left: 10px;
+			margin-right: 8px;
+            fill: #fff;
+			display: inline-block;
+			vertical-align: middle;
+        }
+        .curr-variable-text {
+            color: #fff;
+            font-family: $openbold;
+			font-size: 16px;
+        }
+		.truck-name{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.payload-dropdown{
+			padding: 15px 8px;
+			ul{
+				overflow-y: auto;
+			}
+		}
+    }
+    .categories-holder {
+        display: inline-block;
+        cursor: pointer;
+        .icon-dropdown {
+            width: 12px;
+            height: 8px;
+            display: inline-block;
+            vertical-align: middle;
+            margin: 1px 0 0 5px;
+            fill: #fff;
+        }
+		.dropdown{
+			vertical-align: middle;
+		}
+    }
+    .insights-body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .mileage-graph {
+        margin-top: 40px;
+        h4 {
+            color: $darkgray;
+            font-size: 20px;
+            font-family: $opensembold;
+            margin-left: 50px;
+            margin-bottom: 22px;
+        }
+    }
+    .number-line {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 20px;
+        border-bottom: 1px solid lightgray;
+    }
+	.mileage-dropdown{
+		.dropdown-menu{
+			top: 28px;
+			right: -9px;
+			width: 223px;
+			max-height: 355px;
+//			overflow-y: auto;
+			z-index: 97;
+			li{
+				padding:10px 0px;
+        word-wrap: break-word;
+				&:hover{
+					color: #009ca6;
+				}
+			}
+		}
+	}
+    .rotate-svg {
+        transform: rotate(180deg);
+    }
+}
+
+/*Insights metric baar*/
+.metric-card-content-top {
+    width: 100%;
+    padding: 10px 0 2px 0px;
+	display: table;
+    table-layout: fixed;
+	height: 90px;
+}
+.metric-sites-columns{
+	display: inline-block;
+	width:36%;
+	vertical-align: middle;
+	border-right: 1px solid $darkgray;
+	padding:0 20px 0 30px;
+	
+	&:last-child {
+		border-right: none;
+	}
+}
+.metric-sites-columns--modified{
+	width: 25%;
+	padding: 0 40px;
+	border-left: 1px solid $darkgray;
+	&:last-child {
+	}
+	
+}
+.sites-column-one{
+	width: 20%;
+	padding-left: 0;
+}
+.sites-column-four{
+	width: 30%;
+	border-right: none;
+	padding-right: 0;
+}
+.dashboard-circle-bar {
+}
+.last-title-dash{
+	font-size: 16px;
+    font-family: OpenSansRegular;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.metric-dashboard-metrics-title {
+	font-family: $opensembold;
+	font-size: 12px;
+	color: #252c36;
+	margin-bottom: 14px;
+	text-align: left;
+	width: 185px;
+	display: inline-block;
+}
+.metric-smh-growth {
+	display: table;
+//	table-layout: fixed;
+	width: 100%;
+}
+.metric-smh-data {
+	display: table-cell;
+	text-align: center;
+	padding: 0 15px;
+	border-right: 1px solid #3798a4;
+	:nth-child(1) {
+		color: $darkgray;
+		font-size: 12px;
+		font-family: $opensembold;
+	}
+	:nth-child(2) {
+		color: rgba(58,68,84,0.6);
+		font-size: 12px;
+		padding-top: 8px;
+	}
+	&:nth-child(3) {
+		border-right: none;
+	}
+	span {
+		display: block;
+		
+	}
+	&:first-child{
+		text-align: left;
+		padding-left: 0;
+	}
+}
+.metric-donuts {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+    .total-donut-cnt {
+        width: 70px;
+    }
+    .overload-donut-cnt {
+        width: 70px;
+    }
+	.donut-text {
+		margin-top: 8px;
+		font-size: 12px;
+		margin-left: 10px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.donut-container {
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+.metric-graph-results {
+	margin-top: 34px;
+}
+.single-variabel {
+    width: 50%;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-around;
+    border-bottom: 1px solid rgba(27,27,27,0.3);
+    padding-bottom: 00px;
+	padding-top: 10px;
+	vertical-align: top;
+	height: calc(50vh - 75px);
+	
+    &:nth-child(1),
+    &:nth-child(2) {
+        border-top: none;
+    }
+    &:nth-child(odd) {
+        border-right: 1px solid rgba(27,27,27,0.3);
+		padding-right: 20px;
+    }
+	&:nth-child(even) {
+		padding-left: 30px;
+	}
+//	&:nth-last-child(2){
+//		border-bottom: none;
+//	}
+	&:last-child{
+		// border-bottom: none;
+	}
+}
+.metric-graph {
+	margin-right: 0;
+	min-width: 140px;
+	width: auto;
+	padding-right: 10px;
+}
+.metric-heading {
+	font-size: 0;
+	position: relative;
+	padding: 10px;
+	padding-top: 20px;
+	
+	.expand-icon {
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+		position: absolute;
+		top: 10px;
+		right: 0px;
+        cursor: pointer;
+		
+		svg {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+}
+.metric-main-hdg {
+	font-size: 14px;
+	color: #4bb3ba;
+	font-family: $openbold;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.metric-uparrow {
+	width: 18px;
+	height: 19px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 11px;
+}
+.metric-sub-hdg {
+	color: $darkgray;
+	font-size: 12px;
+	font-family: $openreg;
+	display: inline-block;
+	vertical-align: middle;
+}
+.legend-table{
+	margin-top: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+.legend-info{
+	color: $darkgray;
+	font-size: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	display: block;
+}
+.legend-type{
+	width:10px;
+	height:10px;
+	margin-right:6px;
+	    display: inline-block;
+    vertical-align: middle;
+}
+.legend-insight-count{
+	font-family: $opensembold;
+	color: #28acf8;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.legend-insight-subtype{
+	font-size: 12px;
+	font-family: $openreg;
+}
+.clr-yellow{
+	background: #f4bb0e;
+}
+.clr-purple{
+	background: #9014fa;
+}
+.insights-popup {
+    .metric-main-hdg {
+		font-size: 16px;
+		padding-bottom: 20px;
+    }
+	.legend-info{ 
+		font-size: 12px;
+	}
+	.legend-type {
+		width: 10px;
+		height: 10px;
+	}
+	.metric-heading {
+		font-size: 14px;
+	}
+	.legend-insight-count {
+		font-size: 18px;
+	}
+	.popup-cnt {
+		background: linear-gradient(#f5f4ef, #a3cee0 130%);
+	}
+	.zoom-head-container {
+		padding: 20px 0 0 40px;
+	}
+	.total-donut-cnt {
+		width: 130px;
+	}
+	.metric-card-content-top {
+		padding-bottom: 20px;
+	}
+	.metric-dashboard-metrics-title {
+		font-size: 14px;
+	}
+	.metric-sites-columns {
+		width: 30%;
+	}
+	.metric-sub-hdg {
+		font-size: 12px;
+	}
+	.metric-smh-data {
+		span {
+			&:nth-child(1) {
+				font-size: 20px;
+			}
+		
+			&:nth-child(2) {
+				font-size: 14px;
+			}
+		}
+	}
+	.insites-areachart-container{
+		padding: 0px 60px 40px 50px;
+	}
+	.metric-donuts {
+		.donut-text {
+			font-size: 14px;
+			text-align: center;
+			display: block;
+			vertical-align: initial;
+		}
+	}
+    .row-label {
+        font-size: 12px;
+    }
+}
+.valu-graph-label{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+}
+.valu-graph-subLabel{
+	.valu-graph-subLabel-count{
+		margin-left: 10px;
+		font-family: $openbold;
+	}
+}
+.area-chart-wrap{
+	height: calc(100% - 15px);
+	.height100per{
+		height: 100%;
+	}
+	position: relative;
+}
+.dash-clr{
+	// color: rgba(27, 27, 27, 0.3);
+}

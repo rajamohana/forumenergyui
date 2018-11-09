@@ -1,0 +1,36 @@
+
+donut {
+    display: block;
+
+    .upper-text {
+        fill: #2aaef9;
+    }
+    .upper-left-text {
+        font-size: 38px;
+        font-family: $opensembold;
+    }
+
+    .overload-text {
+        fill: #2aaef9;
+        font-size: 25px;
+        font-family: $opensembold;
+    }
+	
+	.upper-right-text {
+		font-size: 18px;	
+	}
+
+    .lower-text {
+        font-size: 12px;
+    }
+	
+	.small-donut {
+		 .upper-left-text {
+			font-size: 18px;
+		}
+
+		.upper-right-text {
+			font-size: 12px;	
+		}
+	}
+}

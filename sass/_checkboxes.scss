@@ -1,0 +1,126 @@
+/*check for global*/
+.checkbox-btn-group input[type="checkbox"]{
+    position: absolute;
+    visibility: hidden;
+	width: 28px;
+    height: 28px;
+}
+
+.checkbox-button{
+    display: block;
+	margin-bottom: 10px;
+}
+.checkbox-button > span{
+	display: block;
+	padding-left: 29px;
+}
+.checkbox-button > span::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../assets/images/tick.svg');
+	background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 14px;
+	margin-left: -29px;
+    background-size: 9px 9px;
+	border-radius: 50%;
+}
+
+input[type="checkbox"]:unchecked {
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + span::before{
+  background-image: url('../assets/images/tick.svg');
+	background-repeat: no-repeat;
+  background-size: 9px 9px;
+  border-radius: 100%;
+}
+/*checkbox css*/
+.checkbox-wrapper{
+	margin-left: 36px;
+	margin-top: 10px;
+	input[type="checkbox"]{
+		width: 17px;
+		height: 17px;
+	}
+	input[type="checkbox"]:checked + span::before{
+		background-image:url("../assets/images/tick.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 8px 8px;
+    border-radius: 100%;
+	}
+
+	.checkbox-button{
+		display: inline-block;
+		padding-right: 10px;
+		&>span{
+			&::before{
+				background-image: none;
+				width: 17px;
+				height: 17px;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+.checkbox-button{
+	&.health-avg-check{
+		&>span{
+			&::before{
+			background-color: #ea148c;
+      border-radius: 100%;
+			}
+		}
+	}
+	&.health-check{
+		&>span{
+			&::before{
+			background-color: #65318f;
+      border-radius: 100%;
+			}
+		}
+	}
+	&.rul-check{
+		&>span{
+			&::before{
+			background-color: #3ed1db;
+      border-radius: 100%;
+			}
+		}
+	}
+	&.optimal-check{
+		&>span{
+			&::before{
+			background-color: #bac936;
+      border-radius: 100%;
+			}
+		}
+	}
+	&.rul-site-avg-check{
+		&>span{
+			&::before{
+			background-color: #d78219;
+      border-radius: 100%;
+			}
+		}
+	}
+  &.deterioration-site-avg-check{
+    &>span{
+      &::before{
+      background-color: #d78219;
+      }
+    }
+  }
+  &.today-check{
+    &>span{
+      &::before{
+      background-color: #a2a2a1;
+      border-radius: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+    "result": [
+        {
+            "assetGrpId": "site34",
+            "assetGrpName": "site@12324",
+            "assetGrpType": "frac",
+            "category": "Stable",
+            "operationalDate": "11/08/2011",
+            "healthData": {
+                "healthPercentage": 38.36363636363637,
+                "siteAvgHealth": 65,
+                "fluidEndHealth": 34,
+                "powerEndHEalth": 54
+            },
+            "assetsData": {
+                "fracpumps": {
+                    "count": 15,
+                    "good": 8,
+                    "stable": 3,
+                    "critical": 4
+                }
+            },
+            "assetGrpMetaData": [
+                {
+                    "name": "numberoffracpumps",
+                    "displayName": "Frac Pumps",
+                    "value": 15
+                },
+                {
+                    "name ": "RUL",
+                    "displayName": "Avg. RUL",
+                    "value": 1160
+                },
+                {
+                    "name ": "Hours",
+                    "displayName": "Avg. Hours",
+                    "value": 1190
+                },
+                {
+                    "name ": "ROD",
+                    "displayName": "ROD",
+                    "value": 0.0047495641,
+                    "trend": "increase",
+                    "units": "percentage"
+                }
+            ],
+            "assetgrpMajorAssets": [
+                {
+                    "heading": "Least Health",
+                    "assetid": "assetId1263",
+                    "assetName": "assiet1236",
+                    "assetType": "frac",
+                    "metaData": [
+                        {
+                            "name": "RUL",
+                            "displayName": "Hours",
+                            "value": 12345
+                        },
+                        {
+                            "name": "SMH",
+                            "displayName": "Health",
+                            "value": 12,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": 0.5,
+                            "units": "percentage",
+                            "trend": "increase"
+                        }
+                    ]
+                },
+                {
+                    "heading": "High Runtime",
+                    "assetid": "assetId1234",
+                    "assetName": "assiet1234",
+                    "assetType": "frac",
+                    "metaData": [
+                        {
+                            "name": "RUL",
+                            "displayName": "Hours",
+                            "value": 14
+                        },
+                        {
+                            "name": "SMH",
+                            "displayName": "Health",
+                            "value": 134,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": 0.3,
+                            "units": "percentage",
+                            "trend": "increase"
+                        }
+                    ]
+                },
+                {
+                    "heading": "Highest Detorioration",
+                    "assetid": "assetId1235",
+                    "assetName": "assiet1235",
+                    "assetType": "frac",
+                    "metaData": [
+                        {
+                            "name": "RUL",
+                            "displayName": "Hours",
+                            "value": 1234
+                        },
+                        {
+                            "name": "SMH",
+                            "displayName": "Health",
+                            "value": 1234,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": 0.4,
+                            "units": "percentage",
+                            "trend": "increase"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

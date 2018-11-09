@@ -1,0 +1,29 @@
+line-dashed-line {
+    
+    display: block;
+
+    .part-failure-check > span::before {
+        background-color: #ea148c;
+    } 
+    
+    .non-part-failure-check > span::before {
+        background-color: #662d91;
+    } 
+    
+    svg {
+        font: 12px $openreg;
+        fill: #3a4554;
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #3a4554;
+      shape-rendering: crispEdges;
+    }
+
+    .y.axis line {
+        stroke: #3a4554;
+    }
+
+}

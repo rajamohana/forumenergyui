@@ -1,0 +1,33 @@
+//Example to show what you can have here
+@mixin keyframes($animation-name) {
+	@-webkit-keyframes #{$animation-name} {
+		@content;
+	}
+	@-moz-keyframes #{$animation-name} {
+		@content;
+	}
+	@-ms-keyframes #{$animation-name} {
+		@content;
+	}
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+//placeholder
+@mixin placeHolder(){
+    &::-webkit-input-placeholder {
+       @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+       @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+       @content;
+    }
+
+    &:-ms-input-placeholder {  
+       @content;
+    }
+}

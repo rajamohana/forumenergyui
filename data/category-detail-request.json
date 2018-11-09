@@ -1,0 +1,10 @@
+{
+    "userId": 101,
+    "siteId": "M056",
+    "truckId": "SSP00259",
+    "categoryId": "Temperature Sensorss",
+    "sensorNames": [
+        "InletTemp_Scale_Real",
+        "OutletTemp_Scale_Real"
+    ]
+}

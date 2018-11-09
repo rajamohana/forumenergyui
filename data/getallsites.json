@@ -1,0 +1,124 @@
+{
+    "result": [
+        {
+            "siteId": "site200",
+            "siteName": "Forum Drilling Rig 200",
+            "siteLocation": "Savannah, GA",
+            "siteType": "rig",
+            "category": "Stable",
+            "operationalDate": "11/08/2011",
+            "healthPercentage": 41.36363636363637,
+            "siteAvgHealth": 65,
+            "roughneck": 1,
+            "catwalk": 1,
+            "assets":[
+                {
+                    "name": "roughneck",
+                    "value": 1,
+                    "displayName": "Iron Roughneck"
+                },
+                {
+                    "name": "catwalk",
+                    "value": 1,
+                    "displayName": "Catwalk"
+                }
+            ]
+        },
+        {
+            "siteId": "t260",
+            "siteName": "Forum Frac Spread 1",
+            "siteLocation": "Savannah, GA",
+            "siteType": "frac",
+            "category": "Zombie",
+            "operationalDate": "15/08/2013",
+            "healthPercentage": 38.36363636363637,
+            "siteAvgHealth": 65,
+            "fracpumps": 7,
+            "assets":[
+                {
+                    "name": "fracpumps",
+                    "value": 7,
+                    "displayName": "Frac Pumps"
+                }
+            ]
+        },
+        {
+            "siteId": "t264",
+            "siteName": "Forum Frac Spread 3",
+            "siteLocation": "Graham, GA",
+            "siteType": "frac",
+            "category": "Good",
+            "operationalDate": "1/08/2009",
+            "healthPercentage": 88.36363636363637,
+            "siteAvgHealth": 65,
+            "fracpumps": 23,
+            "assets":[
+                {
+                    "name": "fracpumps",
+                    "value": 23,
+                    "displayName": "Frac Pumps"
+                }
+            ]
+        },
+        {
+            "siteId": "t266",
+            "siteName": "Forum Frac Spread 7",
+            "siteLocation": "freed, GA",
+            "siteType": "frac",
+            "category": "Critical",
+            "operationalDate": "31/09/2016",
+            "healthPercentage": 91.36363636363637,
+            "siteAvgHealth": 65,
+            "fracpumps": 17,
+            "assets":[
+                {
+                    "name": "fracpumps",
+                    "value": 17,
+                    "displayName": "Frac Pumps"
+                }
+            ]
+        },
+        {
+            "siteId": "t266",
+            "siteName": "Forum Drilling Rig 203",
+            "siteLocation": "freed, GA",
+            "siteType": "rig",
+            "category": "Critical",
+            "operationalDate": "31/09/2016",
+            "healthPercentage": 91.36363636363637,
+            "siteAvgHealth": 65,
+            "catwalk": 1,
+            "roughneck": 1,
+            "assets":[
+                {
+                    "name": "catwalk",
+                    "value": 1,
+                    "displayName": "Catwalk"
+                },
+                {
+                    "name": "roughneck",
+                    "value": 1,
+                    "displayName": "Iron Roughneck "
+                }
+            ]
+        },
+        {
+            "siteId": "t266",
+            "siteName": "Forum Drilling Rig 213",
+            "siteLocation": "freed, GA",
+            "siteType": "rig",
+            "category": "Critical",
+            "operationalDate": "31/09/2016",
+            "healthPercentage": 91.36363636363637,
+            "siteAvgHealth": 65,
+            "roughneck": 1,
+            "assets":[
+                {
+                    "name": "roughneck",
+                    "value": 1,
+                    "displayName": "Iron Roughneck "
+                }
+            ]
+        }
+    ]
+}

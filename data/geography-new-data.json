@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "siteId": 1,
+            "siteName": "Forum Frac Spread 1",
+            "siteType": "frac",
+            "assetName": "Forum Frac Spread 1",
+            "location": "Houston",
+            "category": "Stable",
+            "coordinates": {
+                "x": -95.366302,
+                "y": 29.761993
+            },
+            "assetData": {
+                "totalAssets": 7,
+                "good": 1,
+                "stable": 5,
+                "critical": 1
+            },
+            "dataToShowOnHover": [
+                {
+                    "name": "noofassets",
+                    "displayName": "No.of Assets",
+                    "value": 7
+                },
+                {
+                    "name": "operationaldate",
+                    "displayName": "Operational Date",
+                    "value": "2018-04-15T11:45:23.000+0000"
+                },
+                {
+                    "name": "health",
+                    "displayName": "Health",
+                    "value": 45.32928685710372
+                },
+                {
+                    "name": "ROD",
+                    "displayName": "ROD",
+                    "value": 11.812857
+                },
+                {
+                    "name": "RUL",
+                    "displayName": "RUL",
+                    "value": 448.318571
+                }
+            ]
+        },
+        {
+            "siteId": 6,
+            "siteName": "Forum Drilling Rig 200",
+            "siteType": "rig",
+            "assetName": "Forum Drilling Rig 200",
+            "location": "Salt Lake City",
+            "category": "Stable",
+            "coordinates": {
+                "x": 0,
+                "y": 0
+            },
+            "assetData": { // here only the structure changed.
+                "catwalk": {
+                    "totalAssets": 1,
+                    "good": 0,
+                    "stable": 0,
+                    "critical": 1
+                },
+                "roughneck": {
+                    "totalAssets": 1,
+                    "good": 1,
+                    "stable": 0,
+                    "critical": 0
+                }
+            },
+            "dataToShowOnHover": [
+                {
+                    "name": "noofassets",
+                    "displayName": "No.of Assets",
+                    "value": 2
+                },
+                {
+                    "name": "operationaldate",
+                    "displayName": "Operational Date",
+                    "value": "2018-04-16T07:10:53.000+0000"
+                },
+                {
+                    "name": "health",
+                    "displayName": "Health",
+                    "value": 65.430602474834
+                },
+                {
+                    "name": "ROD",
+                    "displayName": "ROD",
+                    "value": 10.4
+                },
+                {
+                    "name": "RUL",
+                    "displayName": "RUL",
+                    "value": 143608.91
+                }
+            ]
+        }
+    ]
+}

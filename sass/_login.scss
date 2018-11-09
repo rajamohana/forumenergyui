@@ -1,0 +1,122 @@
+/*login css*/
+.login-main{
+	width:100%;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+}
+.login-left{
+	margin-right: 30.5%;
+	background: url(../assets/images/login-image.png) no-repeat right top $darkgray;
+	background-position: right top;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+	height: inherit;
+	img{
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+img.login-loader {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+
+.login-left-small{
+	display: none;
+}
+.login-right{
+	width:30.5%;
+	background: $darkgray;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+}
+.login-error-msg {
+	padding:0 50px 30px 50px;
+}
+.login-error {
+	color: #d09430;
+	height: 15px;
+}
+.forgotPassword-success {
+	color: #3DB97A;
+}
+
+/*logo*/
+.logo{
+	padding: 80px 56px 90px 50px;
+	text-align: left;
+}
+/*subtitle*/
+.login-title{
+	padding:0 50px 60px 50px;
+}
+.login-logo-svg{
+	width: 261px;
+	height: 108px;
+	fill: rgba(255,255,255,0.7);
+	display: inline-block;
+}
+.sub-title{
+	color: #ffffff;
+	font-size: 34px;
+	margin-bottom: 5px;
+}
+.sub-title-type{
+	color: #ffffff;
+	font-size: 16px;
+}
+/*login form*/
+.login-form{
+	padding: 0 50px;
+	position: relative;
+}
+.login-row{
+	padding-bottom: 34px;
+	input{
+		color: #ffffff;
+		margin: 0;
+	}
+}
+.login-btn-row{
+	padding-top: 16px;
+	padding-bottom: 13px;
+}
+.large-button{
+	height: 58px;
+	line-height: 58px;
+	font-size: 22px;
+	color: #ffffff;
+	position: relative;
+}
+.button-text{
+	background: transparent;
+	color: rgba(255,255,255,0.5);
+	font-size: 14px;
+	text-align: center;
+	cursor: default;
+	span{
+		cursor: pointer;
+	}
+}
+.login-left-large{
+	display: inline-block;;
+}
+//@media (min-width:1024px) and (max-width:1032px){
+//	.login-left-large{
+//		display: none;
+//	}
+//	.login-left-small{
+//		display: inline-block;;
+//	}
+//	.login-left{
+//		background: url(../assets/images/login-small-truck.png) no-repeat right top;
+//	}
+//
+//}

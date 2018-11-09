@@ -1,0 +1,67 @@
+@media (min-width:1024px) and (max-width:1199px){
+	.sites-column-four{
+		width: 17%;
+	}
+	.dashboard-cards{
+		margin: 0 38px;
+	}
+	.truck-column{
+		&:nth-last-child(1){
+			width: 80px;
+		}
+	}
+	.metric-sites-columns{
+		padding: 0 15px;
+	}
+	.sites-small-button{
+		font-size: 14px;
+		padding: 0 4px;
+		width: 80px;
+	}
+	.legend-info{
+		display: block;
+	}
+	.metric-graph{
+		width: 240px;
+		padding-right: 15px;
+	}
+	.slide-count-label{
+		padding-right: 45px;
+	}
+	.sites-card-section {
+		.second-col{
+			width: 130px;
+			
+		}
+	}
+	.sites-columns{
+		width: 20%;
+		padding: 0 20px;
+		.smh-growth{
+			width: auto;
+		}
+	}
+	.truck-column{
+		&.fifth-col{
+			padding-right: 30px;
+		}
+		&.sixth-col{
+			width: 120px;
+		}
+		&.second-col{
+			width: 150px;
+			padding-right: 20px;
+		}
+	}
+	.truck-expand {
+		.truck-details-list-head{
+			.list-head-count{
+			font-size: 20px;
+				}
+			&:nth-of-type(2),&:nth-of-type(5){
+				padding-right: 20px;
+			}
+		}
+	}
+	
+}

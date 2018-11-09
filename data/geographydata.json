@@ -1,0 +1,400 @@
+{
+    "result": [
+        {
+            "assetLocations": [
+                {
+                    "Name": "Forum Frac Spread 7",
+                    "type": "fracpump",
+                    "siteId": "site@123",
+                    "AssetName": "Frac Pump",
+                    "health": 23,
+                    "operationalDate": "12/23/2016",
+                    "Location": "houston",
+                    "category": "stable",
+                    "Coordinates": {
+                        "X": 153,
+                        "Y": 500
+                    },
+                    "assetData": {
+                        "totalAssets": 11,
+                        "Good": 3,
+                        "Stable": 6,
+                        "Critical": 4
+                    },
+                    "dataToShowOnHover": [
+                        {
+                            "name ": "SMH ",
+                            "displayName": "Avg. Health",
+                            "value": 60,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": "12",
+                            "units": "percentage"
+                        },
+                        {
+                            "name ": "AvgDurationHrs",
+                            "displayName": "Avg. Hours",
+                            "value": 1190
+                        },
+                        {
+                            "name ": "operationaldate",
+                            "displayName": "Operational Start Date",
+                            "value": "12/12/2018"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Forum Drilling Rig 203",
+                    "type": "catwalk",
+                    "siteId": "site@1234",
+                    "AssetName": "Cat Walk",
+                    "health": 37,
+                    "operationalDate": "12/23/2016",
+                    "Location": "houston",
+                    "category": "good",
+                    "Coordinates": {
+                        "X": 75,
+                        "Y": 914
+                    },
+                    "assetData": {
+                        "catwalk": {
+                            "totalAssets": 1,
+                            "Good": 0,
+                            "Stable": 0,
+                            "Critical": 1
+                        },
+                        "roughneck": {
+                            "totalAssets": 1,
+                            "Good": 1,
+                            "Stable": 0,
+                            "Critical": 0
+                        }
+                    },
+                    "dataToShowOnHover": {
+                        "catwalk": [
+                            {
+                                "name": "noofassets",
+                                "displayName": "No.of Assets",
+                                "value": 11
+                            },
+                            {
+                                "name": "operationaldate",
+                                "displayName": "Operational Date",
+                                "value": "11/12/2016"
+                            },
+                            {
+                                "name": "health",
+                                "displayName": "Health",
+                                "value": 45
+                            },
+                            {
+                                "name": "ROD",
+                                "displayName": "ROD",
+                                "value": 11
+                            },
+                            {
+                                "name": "RUL",
+                                "displayName": "RUL",
+                                "value": 234
+                            }
+                        ],
+                        "roughneck": [
+                            {
+                                "name": "noofassets",
+                                "displayName": "No.of Assets",
+                                "value": 11
+                            },
+                            {
+                                "name": "operationaldate",
+                                "displayName": "Operational Date",
+                                "value": "11/12/2016"
+                            },
+                            {
+                                "name": "health",
+                                "displayName": "Health",
+                                "value": 45
+                            },
+                            {
+                                "name": "ROD",
+                                "displayName": "ROD",
+                                "value": 11
+                            },
+                            {
+                                "name": "RUL",
+                                "displayName": "RUL",
+                                "value": 234
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Name": "Forum Frac Spread 2",
+                    "type": "fracpump",
+                    "siteId": "site@1234",
+                    "AssetName": "Frac Pump",
+                    "health": 63,
+                    "operationalDate": "12/23/2016",
+                    "Location": "houston",
+                    "category": "critical",
+                    "Coordinates": {
+                        "X": 231,
+                        "Y": 145
+                    },
+                    "assetData": {
+                        "totalAssets": 15,
+                        "Good": 3,
+                        "Stable": 6,
+                        "Critical": 8
+                    },
+                    "dataToShowOnHover": [
+                        {
+                            "name ": "SMH ",
+                            "displayName": "Avg. Health",
+                            "value": 60,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": "12",
+                            "units": "percentage"
+                        },
+                        {
+                            "name ": "AvgDurationHrs",
+                            "displayName": "Avg. Hours",
+                            "value": 1190
+                        },
+                        {
+                            "name ": "operationaldate",
+                            "displayName": "Operational Start Date",
+                            "value": "12/12/2018"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Forum Drilling Rig 207",
+                    "type": "roughneck",
+                    "siteId": "site@1234",
+                    "AssetName": "Iron RoughNeck",
+                    "health": 87,
+                    "operationalDate": "12/23/2016",
+                    "Location": "houston",
+                    "category": "stable",
+                    "Coordinates": {
+                        "X": 321,
+                        "Y": 395
+                    },
+                    "assetData": {
+                        "totalAssets": 1,
+                        "Good": 1,
+                        "Stable": 0,
+                        "Critical": 0
+                    },
+                    "dataToShowOnHover": [
+                        {
+                            "name ": "SMH ",
+                            "displayName": "Avg. Health",
+                            "value": 60,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": "12",
+                            "units": "percentage"
+                        },
+                        {
+                            "name ": "AvgDurationHrs",
+                            "displayName": "Avg. Hours",
+                            "value": 1190
+                        },
+                        {
+                            "name ": "operationaldate",
+                            "displayName": "Operational Start Date",
+                            "value": "12/12/2018"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Forum Frac Spread 1",
+                    "type": "fracpump",
+                    "siteId": "site@1234",
+                    "AssetName": "Frac Pump",
+                    "health": 23,
+                    "operationalDate": "12/23/2016",
+                    "Location": "houston",
+                    "category": "critical",
+                    "Coordinates": {
+                        "X": 258,
+                        "Y": 654
+                    },
+                    "assetData": {
+                        "totalAssets": 11,
+                        "Good": 3,
+                        "Stable": 6,
+                        "Critical": 4
+                    },
+                    "dataToShowOnHover": [
+                        {
+                            "name ": "SMH ",
+                            "displayName": "Avg. Health",
+                            "value": 60,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": "12",
+                            "units": "percentage"
+                        },
+                        {
+                            "name ": "AvgDurationHrs",
+                            "displayName": "Avg. Hours",
+                            "value": 1190
+                        },
+                        {
+                            "name ": "operationaldate",
+                            "displayName": "Operational Start Date",
+                            "value": "12/12/2018"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Forum Drilling Rig 232",
+                    "type": "roughneck",
+                    "siteId": "site@1234",
+                    "AssetName": "Iron Roughneck",
+                    "health": 13,
+                    "operationalDate": "12/23/2016",
+                    "Location": "houston",
+                    "category": "good",
+                    "Coordinates": {
+                        "X": 564,
+                        "Y": 235
+                    },
+                    "assetData": {
+                        "totalAssets": 1,
+                        "Good": 0,
+                        "Stable": 0,
+                        "Critical": 1
+                    },
+                    "dataToShowOnHover": [
+                        {
+                            "name ": "SMH ",
+                            "displayName": "Avg. Health",
+                            "value": 60,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": "12",
+                            "units": "percentage"
+                        },
+                        {
+                            "name ": "AvgDurationHrs",
+                            "displayName": "Avg. Hours",
+                            "value": 1190
+                        },
+                        {
+                            "name ": "operationaldate",
+                            "displayName": "Operational Start Date",
+                            "value": "12/12/2018"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Forum Drilling Rig 200",
+                    "type": "catwalk",
+                    "siteId": "site@1234",
+                    "AssetName": "Cat Walk",
+                    "health": 47,
+                    "operationalDate": "12/23/2016",
+                    "Location": "houston",
+                    "category": "stable",
+                    "Coordinates": {
+                        "X": 387,
+                        "Y": 877
+                    },
+                    "assetData": {
+                        "totalAssets": 1,
+                        "Good": 1,
+                        "Stable": 0,
+                        "Critical": 0
+                    },
+                    "dataToShowOnHover": [
+                        {
+                            "name ": "SMH ",
+                            "displayName": "Avg. Health",
+                            "value": 60,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": "12",
+                            "units": "percentage"
+                        },
+                        {
+                            "name ": "AvgDurationHrs",
+                            "displayName": "Avg. Hours",
+                            "value": 1190
+                        },
+                        {
+                            "name ": "operationaldate",
+                            "displayName": "Operational Start Date",
+                            "value": "12/12/2018"
+                        }
+                    ]
+                },
+                {
+                    "Name": "Forum Frac Spread 67",
+                    "type": "fracpump",
+                    "siteId": "site@1234",
+                    "AssetName": "Frac Pump",
+                    "health": 27,
+                    "operationalDate": "12/23/2016",
+                    "Location": "houston",
+                    "category": "critical",
+                    "Coordinates": {
+                        "X": 123,
+                        "Y": 243
+                    },
+                    "assetData": {
+                        "totalAssets": 21,
+                        "Good": 13,
+                        "Stable": 6,
+                        "Critical": 4
+                    },
+                    "dataToShowOnHover": [
+                        {
+                            "name ": "SMH ",
+                            "displayName": "Avg. Health",
+                            "value": 60,
+                            "units": "percentage"
+                        },
+                        {
+                            "name": "ROD",
+                            "displayName": "ROD",
+                            "value": "12",
+                            "units": "percentage"
+                        },
+                        {
+                            "name ": "AvgDurationHrs",
+                            "displayName": "Avg. Hours",
+                            "value": 1190
+                        },
+                        {
+                            "name ": "operationaldate",
+                            "displayName": "Operational Start Date",
+                            "value": "12/12/2018"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+<div>
+  <div class="progress-bar-title">
+    <span class="das-trucks-count" ng-class="type && 'progress-bar-title-' + type">{{trucks}}</span>
+    <span class="das-trucks-type" ng-class="type && 'progress-bar-title-' + type">{{type | firstLetterCapital}}</span>
+  </div>
+  <div class="progress">
+    <div class="progress-bar" ng-class="type && 'progress-bar-' + type" role="progressbar"
+    ng-style="{width: (percent < 100 ? percent : 100) + '%'}"
+    aria-valuenow="{{value}}" aria-valuemin="0"
+    aria-valuemax="{{max}}" aria-valuetext="{{percent | number:0}}%"
+    aria-labelledby="{{::title}}" ng-transclude></div>
+  </div>
+</div>

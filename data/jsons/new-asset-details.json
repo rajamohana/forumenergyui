@@ -1,0 +1,149 @@
+{
+    "result": [
+        {
+            "assetId": "t259",
+            "assetName": "Frac Pump",
+            "assetType": "fracpump",
+            "siteId": "site@123",
+            "siteName": "Houston",
+            "siteType": "frac",
+            "siteLocation": "Houston",
+            "assetHealthData": [
+                {
+                    "name": "healthPercentage",
+                    "displayName": "Health",
+                    "value": 85.55555555555556,
+                    "units": "percentage"
+                },
+                {
+                    "name": "SMH",
+                    "displayName": "Hours till Today ",
+                    "value": 15400
+                },
+                {
+                    "name": "usageHours",
+                    "displayName": "Hours (week)",
+                    "value": 168,
+                    "units": "percentage"
+                },
+                {
+                    "name": "ROD",
+                    "displayName": "ROD",
+                    "value": 0.062291419,
+                    "units": "percentage",
+                    "trend": "increase"
+                },
+                {
+                    "name": "totaltimecavitation",
+                    "displayName": "Total Time Cavitation",
+                    "value": 100
+                },
+                {
+                    "name": "cavitationevents",
+                    "displayName": "Cavitation Events",
+                    "value": 33
+                },
+                {
+                    "name": "totalevents",
+                    "displayName": "Total Events",
+                    "value": 43
+                },
+                {
+                    "name": "MTBA",
+                    "displayName": "MTBA",
+                    "value": 100
+                }
+            ],
+            "assetMetaData": [
+                {
+                    "name": "ourProjection",
+                    "displayName": "Projection RUL",
+                    "life": "16/02/2016",
+                    "RUL": "17100 Hours"
+                }
+            ],
+            "healthGraphs": {
+                "graphDisplayName": "Usage Trend",
+                "xLabel": "SMH",
+                "yLabel": "Health Score",
+                "xMax": 20000,
+                "xNumIntrevals": 100,
+                "yMax": 1,
+                "yNumIntrevals": 0.1,
+                "xAxisToday": 15400,
+                "yAxisToday": 0.0913925584,
+                "healthGraph": [
+                    {
+                        "xAxis": 100,
+                        "xAxisDate": "1296691200000",
+                        "yAxis": 0.9938365584,
+                        "yAxisMin": -100,
+                        "yAxisMax": -100
+                    }
+                ],
+                "trendGraph": [
+                    {
+                        "xAxis": 100,
+                        "xAxisDate": "1296691200000",
+                        "yAxis": 0.9873246799666666
+                    }
+                ],
+                "siteAvgGraph": [
+                    {
+                        "xAxis": 20000,
+                        "xAxisDate": "1313884800000",
+                        "yAxis": -5.667746536738889
+                    }
+                ],
+                "binOrDate": "Date"
+            },
+            "deteriorationGraphs": {
+                "graphDisplayName": "Deterioration Trend",
+                "xLabel": "SMH",
+                "yLabel": "Deterioration Rate",
+                "xMax": 20000,
+                "xNumIntrevals": 100,
+                "yMax": 0.01,
+                "yNumIntrevals": 0.0001,
+                "xAxisToday": 15400,
+                "yAxisToday": 0.062291419,
+                "minOptimalValue": 0.0199739,
+                "maxOptimalValue": 0.001135739,
+                "healthGraph": [
+                    {
+                        "xAxis": 100,
+                        "xAxisDate": "1296691200000",
+                        "yAxis": 0
+                    }
+                ],
+                "trendGraph": [
+                    {
+                        "xAxis": 100,
+                        "xAxisDate": "1296691200000",
+                        "yAxis": 0.0065669947
+                    }
+                ],
+                "siteAvgGraph": [
+                    {
+                        "xAxis": 100,
+                        "xAxisDate": "1296691200000",
+                        "yAxis": 0
+                    }
+                ],
+                "binOrDate": "Date"
+            },
+            "sensors": [
+                {
+                    "name": "Sensors_1", // must be identifier or else send another identifier
+                    "status": "active",
+                    "description": "This is for pressure sensing"
+                },
+                {
+                    "name": "Sensors_2",
+                    "status": "inactive",
+                    "description": "This is for temperature sensing"
+                }
+            ]
+        }
+    ]
+}

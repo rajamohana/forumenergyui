@@ -1,0 +1,123 @@
+<div class="insights-container">
+
+    <div class="insights-content">
+        <div class="site-main-wrap">
+            <div class="sites-wrapper">
+                <div class="insights-header">
+                    <div class="site-name">
+                        <a ng-click="goToState('cyient.protected.allassets')" ui-sref-opts="{reload: true}">
+                            All Assets
+                        </a>
+                        <span class="back-button">
+                            <svg>
+                                <use xlink:href="#forward-arrow"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="truck" ng-click="navigateToOverview()">
+                        <span class="truck-svg">
+                            <svg>
+                                <use xlink:href="#frac-pump" ng-if="assetType == 'fracpump'"></use>
+                                <use xlink:href="#catwalk" ng-if="assetType == 'catwalk'"></use>
+                                <use xlink:href="#iron-neck" ng-if="assetType == 'ironroughneck'"></use>
+                            </svg>
+                        </span>
+                        <span class="truck-name">{{ truckId }}</span>
+                    </div>
+                    <!-- <div class="truck" ng-click="navigateToTruckDetails()">
+                        <a class="scenario-link">
+                            <span class="back-button">
+                                <svg>
+                                    <use xlink:href="#forward-arrow"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <span class="truck-name">{{ partName }}</span>
+                    </div> -->
+
+                    <div class="categories-holder">
+                        <a class="scenario-link">
+                            <span class="back-button">
+                                <svg>
+                                    <use xlink:href="#forward-arrow"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <span uib-dropdown class="mileage-dropdown">
+                            {{categoryId}}
+                        </span>
+                        <!-- <a uib-dropdown class="mileage-dropdown">
+                            <span uib-dropdown-toggle>
+                                <span class="curr-variable-text">
+                                    {{ categories[currIndex] | limitTo: 25 }} {{ categories[currIndex] > 25 ? '...' : '' }}
+                                </span>
+                                <span class="icon-dropdown">
+                                    <svg>
+                                        <use xlink:href="#dropdown"></use>
+                                    </svg>
+                                </span>
+                            </span>
+                            <div uib-dropdown-menu class="payload-dropdown">
+                                <span class="icon-truck icon-mark">
+                                    <svg>
+                                        <use xlink:href="#mark"></use>
+                                    </svg>
+                                </span>
+                                <ul>
+                                    <li ng-repeat="category in categories track by $index" ng-click="changeCategory($index)">
+                                        {{ category }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sites-wrapper">
+            <!-- variables container -->
+            <div class="insights-body">
+
+                <!-- Div for single variable -->
+                <div class="single-variabel" ng-repeat="variable in variables" scroll-to-when="firstTimeCall && (variableName === variable.name)"
+                    scroll-to-delay="500" on-finish-render="ngRepeatFinished">
+                    <!-- Header -->
+                    <div class="metric-heading">
+                        <span class="metric-main-hdg">{{ variable.displayName[0].displayName }} </span>
+                        <span class="expand-icon" ng-click="showGraphPopup(variable)">
+                            <svg>
+                                <use xlink:href="#full-expand"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="area-chart-wrap">
+                        <area-chart height="100%" compressed-mode="true" trip-vals="variable.Graph"
+                            band-min="variable.minOptimal" band-max="variable.maxOptimal" xlabel="variable.xLabel" ylabel="variable.yLabel">
+                        </area-chart>
+                    </div>
+
+                    <popup class="insights-popup" ng-if="variable.showPopup" on-close="closePopup(variable)">
+                        <div class="zoom-head-container">
+                            <div class="metric-heading">
+                                <span class="metric-main-hdg">{{ variable.displayName[0].displayName }}</span>
+                            </div>
+                        </div>
+                        <div class="insites-areachart-container">
+                            <area-chart compressed-mode="false" trip-vals="popupData.popupLineGraph"
+                                band-min="popupData.minOptimal" band-max="popupData.maxOptimal" xlabel="popupData.xLabel" ylabel="popupData.yLabel">
+                            </area-chart>
+                        </div>
+                    </popup>
+
+                </div>
+                <!-- End of div for single variable -->
+
+            </div>
+            <!-- end of variables container -->
+
+        </div>
+
+
+    </div>
+</div>

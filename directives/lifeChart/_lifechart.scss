@@ -1,0 +1,132 @@
+//colors
+$color_celeste_approx: #cbcccd;
+$color_pelorous_approx: #43bbbb;
+$color_health_avg: #ea148c;
+$color_health: #66328f;
+$color_site_avg: #898989;
+$color_grid_line: #99bebb;
+$color_axis_line: #86a6a9;
+$color_rul_area: #3ed1db;
+$color_rul_separator: #479fa5;
+$color_optimal_value: #a5d179;
+$color_today_line: #7c9398;
+$color_intersection_point: #467adb;
+
+//fonts
+$font_0: $openreg;
+
+//urls
+$url_0: url(#area-gradient);
+
+//@extend-elements
+//original selectors
+//.lifeChartAxis path, .lifeChartAxis line
+%extend_1 {
+	fill: none;
+	stroke: $color_axis_line;
+	stroke-width: 1px;
+	shape-rendering: crispEdges;
+}
+// svg.life-graph-RUL {
+//     display: block;
+//     margin: auto;
+// }
+// svg.life-graph-ROD {
+//     display: block;
+//     margin: auto;
+// }
+life-chart {
+    display: block;
+}
+.lifeChartAxis {
+	font: 12px $font_0;
+	fill:$darkgray;
+	//Instead of the line below you could use @include user-select($select)
+	user-select: none;
+	path {
+		@extend %extend_1;
+	}
+	line {
+		@extend %extend_1;
+	}
+}
+.y {
+	.lifeChartAxis path{
+		display: none;
+	}
+}
+.lifeChartLine.healthLine{
+	fill: none;
+	stroke: $color_health;
+	stroke-width: 2px;
+}
+.lifeChartLine.trendLine {
+	fill: none;
+	stroke: $color_health_avg;
+	stroke-width: 1px;
+}
+.lifeChartLine.siteAvgLine {
+	fill: none;
+	stroke-width: 2px;
+}
+.lifeChartLabels {
+	font-size: 14px;
+	font-family: $openreg;
+	fill:$darkgray;
+}
+.optimalArea {
+	fill: $color_optimal_value;
+	stroke: none;
+}
+.dots {
+	fill: $color_intersection_point;
+}
+.rulArea {
+	fill: $color_rul_area;
+	stroke: none;
+}
+.todayLine {
+	stroke: $color_today_line;
+	stroke-width: 2px;
+}
+.hoverLine {
+	fill: none;
+	stroke: #d9940b;
+	stroke-width: 1px;
+}
+.horizontalGrid {
+	stroke: $color_grid_line;
+	stroke-width: 1px;
+}
+.graph-container.checkbox-wrapper {
+ margin-left: 36px;
+ margin-top: 10px;
+}
+.rul-legends{
+  .checkbox-wrapper{
+    margin:0;
+		font-size: 12px;
+  }
+}
+.deterioration-legends{
+  .checkbox-wrapper{
+    margin:0;
+		font-size: 12px;
+		.checkbox-button{
+			padding-right: 20px;
+		}
+  }
+}
+.rulLabelLine {
+	stroke: $color_axis_line;
+	stroke-width: 1px;
+}
+.rulLineLabel {
+	font: $font_0;
+	font-size: 10px;
+	color: $color_axis_line;
+}
+.graph-value {
+	width: auto;
+	display: inline-block;
+}

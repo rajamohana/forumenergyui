@@ -1,0 +1,1381 @@
+/*close button styles*/
+.expand-close{
+    display: none;
+}
+
+.expand-container[state="cyient.protected.sitedetails.whatifscenario"]{
+    width: 100%;
+}
+
+/*truck expand styles*/
+.truck-expand{
+    /*truck header styles*/
+    .truck-header{
+        color: #41464b;
+        padding-bottom: 30px;
+    }
+    .createdscenari-title{
+        font-family: $opensembold;
+        font-size: 14px;
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: bottom;
+        a{
+            color: #0695fa;
+            font-size: 14px;
+            text-decoration: underline;
+            font-family: $opensembold;
+            cursor: pointer;
+
+        }
+    }
+    .truck{
+        margin-bottom: 8px;
+    }
+    .truck-name{
+        font-family: $openbold;
+        font-size: 20px;
+        color: #545456;
+        padding-left: 6px;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    .truck-svg{
+        display: inline-block;
+        vertical-align: bottom;
+        width: 25px;
+        height: 15px;
+    }
+    .truck-expire{
+        font-size: 14px;
+        color: $darkgray;
+        font-family: $opensembold;
+        margin-right: 6px;
+    }
+    .truck-purshase{
+        font-size: 12px;
+        font-family: $openreg;
+        color: $darkgray;
+    }
+    .truck-scenario{
+        margin-top: 10px;
+    }
+    .scenario-count{
+        color: #41464b;
+        font-family: $opensembold;
+        font-size: 14px;
+        padding-right: 8px;
+        margin-left: 8px;
+    }
+    .scenario-text{
+        color: #4d5964;
+        font-family: $openreg;
+        font-size: 14px;
+        padding-right: 6px;
+    }
+    .scenario-link{
+        color: #129fa8;
+        border: 1px solid #129fa8;
+        height: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background: transparent;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: $openreg;
+    }
+    /*truck graph styles*/
+    .truck-graph{
+        &.first-clumn{
+        }
+    }
+    .popup-ROD .chart-legends{
+        left: 0px;
+        top: -10px;
+        width: auto;
+    }
+    .popup-RUL .chart-legends {
+        left: 0px;
+        top: -10px;
+        width: auto;
+    }
+    .popup-RUL .chart-legends .checkbox-btn-group {
+        display: inline-flex
+    }
+    .popup-RUL {
+        .rul-graph-container {
+            height: 500px;
+        }
+    }
+    .popup-ROD {
+        .rod-graph-container {
+            // height: 500px;
+        }
+    }
+    .rod-graph-container{
+        height: 400px;
+        // margin-top: 20px;
+        position: relative;
+        padding-top: 20px;
+    }
+    .rul-graph-container {
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+    .chart-legends {
+        // position: absolute;
+        // right: 0;
+        // width: auto;
+        // top: 50px;
+    }
+    .life-1 {
+        display: inline-block;
+        padding-right: 20px;
+    }
+    .truck-categories {
+        // overflow: hidden;
+    }
+    .truck-category {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #bdbfc0;
+        padding-bottom: 10px;
+    }
+    .more-categories {
+        padding-top: 15px;
+        margin-bottom: 2px;
+        font-family: $opensembold;
+        color: #3a4554;
+    }
+
+    /*truck features styles*/
+    .truck-features{
+        margin-top: 50px;
+        &.first-feature{
+            margin-top: 70px;
+        }
+    }
+    .feature{
+        padding: 15px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        background-color: #ffffff;
+        cursor: pointer;
+        min-width: 336px;
+        float: left;
+        border: 1px solid #d9dad8;
+        &:hover{
+            background-color: rgba(75,179,186,0.15);
+            border: 1px solid #4bb3ba;
+        }
+    }
+
+
+    .alertsvg, .tickmark{
+        display: inline-block;
+        vertical-align: middle;
+        height: 22px;
+        width: 22px;
+        margin-right: 6px;
+        fill: #e9b84f;
+    }
+    .tickmark{
+        fill: #57b6c4;
+    }
+
+    .truck-details-list-head{
+        display: flex;
+        //		table-layout: fixed;
+        width: 100%;
+        align-items: flex-end;
+        // border-bottom: 1px solid #557177;
+        padding: 20px 0px 20px 0;
+        justify-content: space-between;
+    }
+    .truck-details-list-head.align-for-catwalk {
+        display: block;
+        .top {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #c3c5c6;
+        }
+        .bottom {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+    }
+    .topsub-status-right-cat {
+        width: 100%;
+    }
+    .list-head-arrow-holder{
+        position: relative;
+    }
+    .list-head-arrow{
+        //		position: absolute;
+        display: inline-block;
+        left: 100%;
+        margin-left: 6px;
+        fill: #61e0d7;
+        width: 20px;
+        height: 20px;
+        top: 6px;
+        &.fill-warning{
+            fill: #ffb8c2;
+        }
+        &.fill-warning-graph{
+            // fill: #003946;
+            fill: #eaeaea;
+            cursor: pointer;
+        }
+        &.arrow-gray{
+            fill:  #e8ebef;
+        }
+
+    }
+    .list-head-arrow-small-icon{
+        width: 18px;
+        height: 18px;
+    }
+    .list-head-count{
+        font-size: 18px;
+        font-family: $opensembold;
+        color: #fff;
+        margin-bottom: 3px;
+    }
+    .list-head-count-heading{
+        font-size: 20px;
+    }
+    .list-head-column {
+        //		display: table-cell;
+        //		vertical-align: bottom;
+    }
+    .head-column-label{
+        font-size: 13px;
+        color: #eaeaea;
+        opacity: 0.6;
+    }
+}
+.graph-results{
+    margin-left: 36px;
+    border-bottom: 1px solid #d0d1d0;
+
+}
+.graph-result{
+    min-width: 80px;
+    padding-right: 48px;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+.result-value{
+    font-size: 14px;
+    color: #707d8e;
+}
+.result-name{
+    font-size: 18px;
+    color: $darkgray;
+    font-family: $opensembold;
+    padding-left: 6px;
+}
+.truck-graph-title{
+    font-size: 16px;
+    color: #3a4554;
+    font-family: $opensembold;
+    // padding-bottom: 40px;
+    position: relative;
+    top: 14px;  
+    // display: flex;
+    // justify-content: flex-end;
+    .expand-icon {
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        cursor: pointer;
+    }
+}
+.popup-overlay{
+    .truck-graph-title{
+        padding-bottom: 15px;
+    }
+}
+
+.truck-details-panels{
+    // margin-top: 15px;
+    padding: 20px 30px 20px 0;
+    border-top: 1px solid #557177;
+    display: flex;
+    width: 100%;
+}
+.truck-details-panels-list-wrapper{
+    padding-right: 15px;
+}
+.truck-details-panels-list{
+    display: inline-block;
+    vertical-align: middle;
+    // width: 27%;
+    &:last-child{
+        margin-right: 0;
+
+    }
+    &:nth-of-type(3){
+        .truck-details-panels-list-wrapper{
+            padding-right:0px;
+        }
+    }
+}
+
+.details-panels-content{
+    padding:0 25px 0px 0px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+.top-metrics-timestamp{
+    font-size: 14px;
+    color: #fff;
+}
+.dpanel-right-content{
+    font-size: 18px;
+    font-family: $opensembold;
+    color: #fff;
+    padding-left: 49px;
+    display: block;
+}
+.panels-content-iconholder{
+    width: 39px;
+    height: 39px;
+    float: left;
+}
+.panels-content-icon{
+    width: 39px;
+    height: 39px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: #8d9d90;
+}
+.top-metrics{
+    .count{
+        margin: 0 10px 0 0;
+    }
+}
+.dpanel-right-label{
+    font-size: 13px;
+    color: #eaeaea;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+.box-notice{
+    position: absolute;
+    right: 100px;
+    background: #d9e164;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 15px 10px 15px;
+    background: url('../assets/images/notice-box.png') no-repeat left top;
+    top: 0px;
+    width: 138px;
+    height: 67px;
+    .box-count{
+        font-size: 22px;
+        color: $darkgray;
+        margin-bottom: 3px;
+    }
+    .sub-title{
+        font-size: 12px;
+        color: $darkgray;
+    }
+}
+/*expand truck*/
+.expand-truck{
+    padding: 0px 0px 0px 0px;
+    .sites-card-section{
+        position: fixed;
+        left: calc((100% - 1366px) / 2);
+        top: 70px;
+        -webkit-transition: width 1s,top 1s;
+        -moz-transition: width 1s,top 1s;
+        -o-transition: width 1s,top 1s;
+        transition: width 1s,top 1s;
+        z-index: 2;
+        &.sites-card-section--modified {
+            top: 58px;
+        }
+    }
+
+    .sitecards-wrapper{
+        width: 100%;
+        -webkit-transition: width 1s;
+        -moz-transition: width 1s;
+        -o-transition: width 1s;
+        transition: width 1s;
+    }
+    .topsection{
+        background: #e8e7e3;
+        padding: 18px 26px;
+    }
+    .bread-crumb{
+        padding: 0px;
+        ul{
+            li{
+                a{
+                    color: #fff;
+                    fill:#fff;
+                }
+                &.active{
+                    a,.back-arrow-breadcrum{
+                        fill:#fff;
+                    }
+                }
+            }
+        }
+    }
+    .tab-navigation{
+        display: none;
+    }
+    .expand-panel{
+        left: 0px;
+        width: 100%;
+        display: inline-block;
+        -webkit-transition: left 1s;
+        -moz-transition: left 1s;
+        -o-transition: left 1s;
+        transition: left 1s;
+    }
+    .expand-container{
+        width: 100%;
+        background:transparent;
+    }
+    .two-column-view{
+        display: block;
+    }
+    .collaps-menu{
+        width: 100%;
+        -webkit-transition: width 1s;
+        -moz-transition: width 1s;
+        -o-transition: width 1s;
+        transition: width 1s;
+    }
+    .sel-itm-cnt{
+        overflow: hidden;
+        .selected-dropdown{
+            width: 220px;
+            padding-top: 0;
+        }
+    }
+    .expand-close{
+        display: block;
+        position: absolute;
+        right: 43px;
+        top: 15px;
+        z-index: 10;
+        .close-button{
+            display: inline-block;
+            height: 14px;
+            width: 14px;
+            fill: #626b75;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/*parameters metric css*/
+.truck-feature-heading{
+    margin-bottom: 20px;
+}
+.feature-heading-iconholder{
+    width: 76px;
+    height: 76px;
+    display: table-cell;
+}
+.feature-heading-icon{
+    width: 76px;
+    height: 76px;
+    display: inline-block;
+    vertical-align: middle;
+    fill: #4bb3ba;
+}
+.feature-heading-right-content{
+    font-size: 22px;
+    font-family: $openbold;
+    color: $darkgray;
+    padding-left: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.feature-heading-right-title {
+}
+.hover_pointer {
+    cursor: pointer;
+}
+.feature-heading-right-time{
+    font-size: 18px;
+    color: $darkgray;
+    margin-top: 10px;
+    font-family: $openreg;
+}
+.feature-list-card{
+    border: 1px solid #bcbdbe;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.feature-card-top{
+    background: #e3e2df;
+    padding: 17px;
+}
+.card-top-title{
+    font-size: 22px;
+    color: #4bb3ba;
+    font-family: $opensembold;
+    margin-bottom: 15px;
+}
+
+.card-top-title-sub{
+    position: relative;
+}
+.feature-card-arrow{
+    width: 24px;
+    height: 24px;
+    fill: #00a89c;
+    //position: absolute;
+    top:5px;
+    left: 100%;
+    margin-left: 10px;
+    display: inline-block;
+}
+.feature-card-bottom{
+    background: #f5f4ef;
+    padding: 17px;
+}
+/*card bottom left*/
+.card-top-bottom-left{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+.card-bottom-left-count{
+    font-size: 24px;
+    font-family: $opensembold;
+    margin-bottom:8px;
+    color: #3b4148;
+    .left-count-sub{
+        font-size: 14px;
+        font-family: $openreg;
+        padding-left: 10px;
+    }
+    .left-count-time{
+        color: #676e78;
+        font-size: 16px;
+    }
+}
+.truckdetails-category-grouplist {
+    font-size: 14px;
+    // color: #357cdc;
+    // text-decoration: underline;
+    .truckdetails-category-grouplist-icon {
+        display: inline-block;
+        margin-left: 10px;
+        position: absolute;
+        right: 20px;
+        top: 48px;
+        cursor: pointer;
+        svg {
+            height: 12px;
+            width: 12px;
+        }
+        &.active {
+            transform: rotate(180deg);
+            // transition: transform linear 250ms;
+        }
+    }
+}
+.truck-category {
+    & > div {
+        opacity: 1;
+    }
+    & > div.ng-enter {
+        transition: 250ms linear all;
+        opacity: 0.5;
+    }
+    & > div.ng-enter-active {
+        opacity: 1;
+    }
+}
+.truck-category {
+    .left-count-sub {
+        margin-right: 10px;
+    }
+}
+.card-top-bottom-right{
+    border-left:1px solid #7e848c;
+    margin-left:15px;
+    padding-left:15px;
+    display: inline-block;
+    vertical-align: middle;
+    .bottom-right-content{
+        margin-bottom: 8px;
+    }
+    .overload-count{
+        font-size: 18px;
+        color: #3b4148;
+        font-family: $opensembold;
+        padding-right:10px;
+    }
+    .overload-description{
+        font-size: 14px;
+        color: #3b4148;
+    }
+}
+.feature-details{
+    margin-bottom: 30px;
+    color: $darkgray;
+    .property-value{
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .property-name{
+        font-size: 14px;
+        color: #707d8e;
+    }
+    .property{
+        color: $darkgray;
+        min-width: 70px;
+        padding-right: 15px;
+        display: inline-block;
+    }
+    .property-value{
+        margin-top: 6px;
+        .count{
+            padding-left: 8px;
+        }
+    }
+    .site{
+        padding-left: 0px;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #dadcdf;
+    }
+}
+.feature-head{
+    font-size: 16px;
+    font-family: $opensembold;
+    color: $darkgray;
+    .feature-name, .feature-value,.list-circle-icon{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .list-circle-icon{
+        height: 10px;
+        width: 10px;
+        margin-right: 6px;
+        background: #5f6873;
+        border-radius: 50%;
+    }
+}
+
+/*collapse expand*/
+.collapse-expanded{
+    .sitecards-wrapper{
+        width: 0px;
+    }
+    .collaps-menu{
+        width: 0px;
+        dropdown{
+            border: 0px;
+        }
+    }
+    .left-tabs{
+        display: none;
+    }
+    .expand-panel{
+        left: 0;
+        width: 100%;
+    }
+    .truck-expand{
+        width: 100%;
+    }
+    .whatif-expand{
+        width: 100%;
+    }
+    .insights-expand{
+        width: 100%;
+    }
+    .collapse-truck{
+        display: none;
+    }
+    .expand-collapse-truck{
+        fill: #003946;
+        display: inline-block;
+    }
+    .sites-card-section{
+        width: 2.4%;
+    }
+}
+/*topsub-status-panel*/
+.truckdetails-topsection{
+    background: #2b4d55;
+    padding-left: 25px;
+    // padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.topsub-status-panel{
+    // padding: 0 0 15px 0;
+}
+// .topsub-status-left{
+//     border: 3px solid #d0a82e;
+//     border-radius: 3px;
+//     background-color: #fff;
+//     display: inline-block;
+//     vertical-align: middle;
+//     margin-right: 35px;
+// }
+.topsub-status-right{
+    display: inline-block;
+    vertical-align: middle;
+    // min-width: 80%;
+    // max-width: 100%;
+    width: 100%;
+}
+.truckkdetails-breadcrumbs{
+    background: #2b4d55;
+    padding: 8px 45px 8px 25px;
+    .truck-svg {
+        display: inline-block;
+        vertical-align: middle;
+        width: 25px;
+        height: 25px;
+        margin-top:-3px;
+    }
+    .location-grp{
+        width: 12px;
+        fill: white;
+    }
+    .truck-name{
+        color: #fff;
+    }
+    .info-icon{
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        vertical-align: middle;
+        fill:#3c4756;
+    }
+    @media screen and (max-width: 1366px){
+        padding-top: 20px;
+    }
+}
+.part-details-wis {
+    text-align: right;
+    font-size: 16px;
+    color: #e88829;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .part-details-wis-img {
+        width: 21px;
+        height: 24px;
+        fill: #e88829;
+    }
+    .part-details-wis-txt {
+        cursor: pointer;
+        margin-left: 10px;
+    }
+}
+.usage-trend-section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // padding-left: 45px;
+    // padding-right: 40px;
+
+    .asset-toggle-container {
+        padding: 10px 0; 
+    }
+    
+    .asset-toggle-parent {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid #2b4d55;
+        border-radius: 8px;
+        color: #3a4554;
+        font-family: $opensembold;
+        font-size: 16px;
+        .asset-toggle-siwtch {
+            cursor: pointer;
+            padding: 7px 10px;
+            border-radius: 5px;
+            &.active {
+                background-color: #2b4d55;
+                color: #fff;
+            }
+        }
+    }
+
+    .img-preview-section {
+        width: 65%;
+        // height: 350px;
+        padding-left: 30px;
+        // border-right: 1px solid #c7c9c9;
+        .asset-preview-image-container {
+            position: relative;
+            margin: 20px 0;
+            .asset-preview-tooltip {
+                // box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.26) inset;
+                width: 220px;
+                padding: 20px;
+                font-size: 11px;
+                background-color: #fff;
+                position: absolute;
+                top: -999;
+                left: -999;
+                z-index: 2;
+                display: none;
+                border-radius: 8px;
+                background-color:#d1d7e1;
+                border: 1px solid #fff;
+                pointer-events: none;
+                transform: translate(calc(-50% - 10px), calc(-100% - 10px));
+                .close {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    svg {
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+                .tip {
+                    width: 0;
+                    height: 0;
+                    border: 10px solid #d1d7e1;
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+                    position: absolute;
+                    border-bottom-color: transparent;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .sensor-heading {
+                font-size: 14px;
+                font-family: $opensembold;
+                margin: 5px 0;
+            }
+            .sensor-desc {
+                margin: 5px 0;
+            }
+        }
+        #asset-preview-image {
+            // height: 290px;
+            width: 367px;
+            margin: auto;
+            background-size: cover;
+            position: relative;
+            .point-map {
+                position: absolute;   
+                cursor: pointer;
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+                &.sensor {
+                    &.active {
+                        svg {
+                            fill: #62A6FF;
+                        }
+                    }
+                    &.inactive {
+                        svg {
+                            fill: #000;
+                        }
+                    }
+                }
+                &.consumable {
+                    &.active {
+                        svg {
+                            fill: green;
+                        }
+                    }
+                    &.moderate {
+                        svg {
+                            fill: orange;
+                        }
+                    }
+                    &.critical {
+                        svg {
+                            fill: red;
+                        }
+                    }
+                }
+            }
+            .point-map:hover {
+                fill: #718674;
+            }
+            // .point-map.systemPressure {
+            //     bottom: 60px;
+            //     left: 110px;
+            // }
+            // .point-map.armInclinometer {
+            //     bottom: 72px;
+            //     right: 177px;
+            // }
+            // .point-map.multiSensor {
+            //     top: 120px;
+            //     left: 160px;
+            // }
+            // .point-map.skateEncoder {
+            //     top: 30px;
+            //     left: 260px;
+            // }
+            // .point-map.troughLoadCells1 {
+            //     top: 30px;
+            //     left: 390px;
+            // }
+            // .point-map.troughLoadCells2 {
+            //     top: 20px;
+            //     right: 75px;
+            // }
+            
+            .point-map.part1 {
+                top: 50px;
+                right: 245px;
+            }
+            .point-map.part2 {
+                top: 122px;
+                right: 273px;
+            }
+            .point-map.part3 {
+                top: 229px;
+                right: 159px;
+            }
+            .point-map.part4 {
+                top: 155px;
+                right: 342px;
+            }
+            .point-map.part5 {
+                top: 230px;
+                right: 198px;
+            }
+            .point-map.part6 {
+                top: 150px;
+                right: 42px;
+            }
+            .point-map.part7 {
+                top: 128px;
+                right: 86px;
+            }
+            .point-map.part8 {
+                top: 180px;
+                right: 111px;
+            }
+            .point-map.part9 {
+                top: 287px;
+                right: 206px;
+            }
+            .point-map.part10 {
+                top: 135px;
+                left: 130px; 
+            }
+
+            .point-map.cpart1 {
+                top: 76px;
+                right: 248px;
+            }
+            .point-map.cpart2 {
+                top: 11px;
+                right: 244px;
+            }
+            .point-map.cpart3 {
+                top: 30px;
+                right: 166px;
+            }
+            .point-map.cpart4 {
+                top: 43px;
+                right: 84px;
+            }
+            .point-map.cpart5 {
+                top: 141px;
+                right: 167px;
+            }
+            .point-map.cpart6 {
+                top: 139px;
+                right: 234px;
+            }
+            .point-map.cpart7 {
+                top: 62px;
+                left: 77px;
+            }
+            .point-map.cpart8 {
+                top: 229px;
+                left: 199px;
+            }
+
+            .point-map.rpart1 {
+                top: 180px;
+                right: 310px;
+
+            }
+            .point-map.rpart2 {
+                top: 221px;
+                right: 310px;
+            }
+            .point-map.rpart3 {
+                top: 263px;
+                right: 310px;
+            }
+            .point-map.rpart4 {
+                top: 485px;
+                right: 75px;
+            }
+            .point-map.rpart5 {
+                top: 48px;
+                right: 277px;
+            }
+            .point-map.rpart6 {
+                top: 0px;
+                right: 130px;
+            }
+            .point-map.rpart7 {
+                top: 99px;
+                right: 143px
+            }
+            .point-map.rpart8 {
+                top: 300px;
+                right: 0px;
+            }
+            
+        }
+        
+        #overview-legend {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin: 0 20px;
+            .legend-item {
+                margin: 5px;
+                display: flex;
+                align-items: center;
+                .legend-point-map {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: #ffdd33;
+                    cursor: pointer;
+                    margin-right: 15px;
+                    float: left;
+                    &.good {
+                        background-color: #77d664;
+                    }
+                    &.monitor {
+                        background-color: #eeab44;
+                    }
+                    &.critical {
+                        background-color: #f77476;
+                    }
+                    &.active {
+                        background-color: #679EFF;
+                    }
+                    &.inactive {
+                        background-color: #000;
+                    }
+                }
+                .legend-point-map.blue {
+                    border-radius: 0px;
+                    transform: rotate(45deg);
+                    background-color: #5555ff;
+                }
+            }
+            .overview-legend-type {
+                margin-bottom: 5px;
+                display: flex;
+                align-items: center;
+                .part-icon {
+                    margin-right: 5px;
+                    svg {
+                        width: 25px;
+                        height:25px;
+                    }
+                }
+            }
+        }
+        .overview-legend-item {
+            padding: 20px 20px 0 20px;
+        }
+    }
+    .details-section {
+        width: calc(35% - 30px);
+        padding-left: 30px;
+        // border-left: 1px solid #aaaeb1;
+        // height: 300px;
+
+        .part-details {
+            width: 500px;
+            height: auto;
+            font-family: sans-serif;
+        }
+        .part-details-top-section {
+            width: 100%;
+            // height: 80px;
+            // border-bottom: 1px solid #bdbfc0;
+
+            .part-image {
+                    width: 70px;
+                    height: 70px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    margin: auto 10px;
+                    float: left;
+            }
+
+            .part-name {
+                color: #043945;
+                font-size: 20px;
+                font-family: $opensembold;
+                // margin-bottom: 5px;
+                // height: 100%;
+                // line-height: 70px;
+                // margin-left: -50%;
+                padding: 15px;
+                text-align: left;
+            }
+        }
+
+        .part-details-values-section {
+            width: 100%;
+            // margin-top: 10px;
+        }
+
+        .part-parameters {
+            border-bottom: 2px solid #d7d8d6;
+            padding: 15px;
+            // margin: 5px 0;
+            display: inline-block;
+            width: 100%;
+
+            &:last-child {
+                border: none;
+            }
+
+            .part-parameter-name {	
+                width: 50%;
+                float: left;
+                font-size: 16px;
+                color: #025d72;
+            }
+            .part-parameter-value{
+                width: 50%;
+                float:left;
+                font-size: 14px;
+                text-align: right;
+                color: #3a4554;
+            }
+        }
+
+    }
+
+    
+
+}
+.scroll-wrapper--modified{
+    margin: 20px;
+}
+.usage-graph-division {
+    // width: 62%;
+}
+.categories-list {
+    // width: 500px;
+    width: 38%;
+    border-left: 1px solid #aaaeb1;
+    padding-left: 30px;
+    .truck-category{
+        border-bottom: 1px solid #bdbfc0;
+        margin: 0 0 0 0;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        padding: 15px;
+        // padding-left: 0px;
+        .truck-sub-category {
+            padding: 5px 0;
+            display: flex;
+            align-items: flex-end;
+        }
+        &:hover{
+            background: rgba(145, 165, 153, 0.3);
+        }
+    }
+    .category-heading{
+        padding-bottom: 15px;
+        font-size: 19px;
+        font-family: $opensembold;
+        color: #3a4554;
+    }
+    .feature-card-arrow{
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .card-bottom-left-count{
+        font-size: 16px;
+        font-family: $opensembold;
+        color: #3b4148;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-bottom: 0;
+    }
+    .feature-card-title {
+        font-size: 14px;
+        color: #3a4554;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 8px;
+    }
+    .dropdown-menu {
+        top: -191px;
+        right: 0px;
+        width: 100%;
+        .icon-dropdown {
+            fill: #323232;
+        }
+    }
+}
+.category-list-items{
+    // height: calc(100vh - 300px);
+    // overflow-y: auto;
+    padding-bottom: 50px;
+}
+.truckdetails-category-title{
+    color: #025d72;
+    font-size: 16px;
+    font-family: $opensembold;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+.feature-card-title{
+    font-size: 14px;
+    color: #003946;
+}
+.usage-graph-division{
+    &>.truck-graph {
+        margin: 0 30px;
+    }
+    // height: 300px;
+    // margin: 0 30px;
+}
+.more-categories{
+    .dropdown-menu li {
+        width: 100%;
+        padding: 8px;
+    }
+    .more-categories-list-name{
+        font-size: 14px;
+        color: #025d72;
+        font-family: $opensembold;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .more-categories-paramlist{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-size: 14px;
+        color: #357cdc;
+        text-decoration: underline;
+    }
+    .morelist-icon-truck{
+        fill:#858b92;
+    }
+    .morelist-icon-truck-tip{
+        fill: #fff;
+        top: 98%;
+        left: 118px;
+        fill: white;
+    }
+
+}
+.popup-cnt-main{
+    .truck-graph{
+        padding: 20px 40px;
+        padding-bottom: 60px;
+    }
+}
+/*info icon css*/
+.info-icon-wrapper{
+    display: inline-block;
+    position: relative;
+}
+.info-icon{
+    cursor: pointer;
+}
+.info-content-wrapper{
+    position: absolute;
+    left: 50%;
+    font-size: 12px;
+    color: #003946;
+    top: 29px;
+    z-index: 9;
+    font-family: $openreg;
+    transform: translate(-50%, 0);
+}
+.info-content-tip{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 99;
+    fill: white;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(180deg);
+    top: -10px;
+}
+.info-content-subsection{
+    background: #fff;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    line-height: 16px;
+}
+.info-content-close{
+    display: inline-block;
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    fill: rgba(58, 69, 84, 0.8);
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.asset-details-trend-heding {
+    font-size: 20px;
+    font-family: $openbold;
+    margin-bottom: 20px;
+    color: #003946;
+}
+
+.catwalk_preview {
+    width: 700px !important;
+    position: static !important;
+}
+.catwalk_tooltip{
+    transform: translate(calc(50% - 10px), calc(-100% - 10px)) !important;
+}

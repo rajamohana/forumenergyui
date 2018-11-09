@@ -1,0 +1,36 @@
+{
+  "name": "cyient",
+  "description": "Project Cyient",
+  "main": "app.js",
+  "keywords": [
+    "cyient"
+  ],
+  "authors": [
+    "Divami Design Labs"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^3.5.17",
+    "angular": "^1.5.5",
+    "angular-resource": "^1.5.5",
+    "angular-messages": "^1.5.5",
+    "angular-ui-router": "^0.2.18",
+    "jquery": "^2.2.3",
+    "angular-click-outside": "^2.8.3",
+    "angular-animate": "1.5.5",
+    "angular-cookies": "1.5.5",
+    "d3-tip": "^0.6.7",
+    "lodash": "^4.13.1",
+    "ng-websocket": "0.2.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.5.5"
+  }
+}

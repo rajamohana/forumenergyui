@@ -1,0 +1,207 @@
+
+area-chart {
+
+    display: block;
+
+    .inner-container {
+//        background: linear-gradient(#f5f4ef, #a3cee0 40%);
+        // position: relative;
+    }
+	
+	.checkbox-wrapper {
+		margin-top: 0;
+	}
+	.checkbox-button {
+		& > span {
+			padding-left: 20px;
+		}
+        span {
+			font-size: 12px;
+			display: inline-block;
+			vertical-align: middle;
+        }
+	   &.trips-avg-check > span::before {
+			background-color: #4bb3ba;
+	   }
+
+	   &.trips-check > span::before {
+			background-color: #2aaef9;
+	   }
+
+	   &.optimal-check > span::before {
+			background-color: rgba(23, 131, 152, 0.5);
+	   }
+
+	   &.site-avg-check > span::before {
+			background-color: #4bb3ba;
+	   }
+	}
+
+
+    .hovered-val {
+        font-family: $openbold;
+		// margin-left: 12px;
+		width: 43px;
+    }
+
+    svg {
+        font: 12px $openreg;
+        fill: $darkgray;
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: $darkgray;
+      shape-rendering: crispEdges;
+    }
+
+    .brush .extent {
+      stroke: #fff;
+      fill: white;
+      fill-opacity: 0;
+      shape-rendering: crispEdges;
+    }
+
+    .label-text {
+        font-size: 14px;
+        fill: $darkgray;
+        font-family: $opensembold;
+    }
+
+    .y.axis line {
+        stroke: $darkgray;
+    }
+
+    .main-area {
+        stroke-width: 5px;
+    }
+
+    .band-rect {
+        // clip-path: url(#areachart-clip);
+        fill: rgba(23, 131, 152, 0.5);
+    }
+
+    .trips-avg-line {
+      fill: none;
+      stroke: #4bb3ba;
+      stroke-width: 1px;
+      // clip-path: url(#areachart-clip);
+    }
+
+    .site-avg-line {
+      fill: none;
+      stroke: #4bb3ba;
+      // stroke-dasharray: 4, 4;
+      stroke-width: 1px;
+      // clip-path: url(#areachart-clip);
+    }
+
+    .trips-grp {
+      // clip-path: url(#areachart-clip);
+    }
+
+    .bar {
+        fill: #14a6fa;
+        stroke-width: 0.5px;
+        stroke: #fff;
+    }
+
+    .trip-circles {
+        fill: #000;
+        fill-opacity: 0;
+    }
+
+    .tripavg-circles-hover {
+        stroke-width: 2px;
+        stroke: #4bb3ba;
+        fill: #fff;
+    }
+
+    .siteavg-circles-hover {
+        stroke-width: 2px;
+        stroke: #4bb3ba;
+        color: #4bb3ba;
+    }
+
+    .hide-node {
+        visibility: hidden;
+    }
+
+    .mini-area {
+        fill: #cccccc;
+    }
+
+    .mini-arc {
+        stroke-width: 1px;
+        fill: none;
+        stroke: #4bb3ba;
+    }
+
+    .brush-lbgc, .brush-rbgc {
+        fill: #000;
+        fill-opacity: 0.2;
+    }
+
+    .compressed {
+        // display: flex;
+        flex-direction: row-reverse;
+        height: 100%;
+        // height: calc(50vh - 110px);
+        overflow-y: hidden;
+		svg {
+            font-size: 10px;
+            height: 100%;
+		}
+        .checkbox-wrapper {
+            margin-left: 10px;
+            margin-top: auto;
+            margin-bottom: 35px;
+            width: 200px;
+			margin-right: 10px;
+        }
+        .checkbox-btn-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .checkbox-button {
+            padding-right: 0px;
+			margin-bottom: 10px;
+			padding-left: 10px;
+        }
+        .svg-container {
+            flex: 1;
+            height: 100%;
+        }
+        .context-cnt {
+            display: none;
+        }
+        .label-text {
+            font-size: 10px;
+        }
+    }
+
+}
+.trip-val-area{
+    // position: absolute;
+    // top: -25px;
+    // left: 260px;
+    display: block;
+    color: #e6ad01;
+    padding-left: 10px;
+}
+
+.insights-popup{
+    .metric-heading{
+        padding-bottom: 0px;
+    }
+    .trip-val-area{
+        // position: absolute;
+        // top: 27px;
+        // left: 434px;
+        display: block;
+        color: #e6ad01;
+        padding-left: 0px;
+        padding-bottom: 10px;
+    }
+}

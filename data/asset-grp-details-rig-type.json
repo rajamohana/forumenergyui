@@ -1,0 +1,69 @@
+{
+    "result": [
+        {
+            "assetGrpId": "site34",
+            "assetGrpName": "site@12324",
+            "assetGrpType": "rig",
+            "category": "Stable",
+            "operationalDate": "11/08/2011",
+            "healthData": {
+                "healthPercentage": 38.36363636363637,
+                "siteAvgHealth": 65
+            },
+            "assetGrpMetaData": [
+                
+            ],
+            "assetsData": [
+                {
+                    "assetId": "asset123",
+                    "assetName": "aset @123",
+                    "assetType": "ironroughneck",
+                    "category": "Stable",
+                    "expectedLife": 1870,
+                    "SMH": 123,
+                    "RUL": 123,
+                    "operationalDate": "12 / 3 / 2016",
+                    "healthGraph": {
+                        "healthPercentage": 4.36363636363637,
+                        "avgHealth": 34
+                    },
+                    "progressGraph": {
+                        "xAxisToday": 12,
+                        "yAxisToday": 2.345,
+                        "graphData": [
+                            {
+                                "xAxis": 0,
+                                "xAxisDate": "23.213412321",
+                                "yAxis": 0.9772759838111111
+                            },
+                            {
+                                "xAxis": 1,
+                                "xAxisDate": "12.342334",
+                                "yAxis": 0.9772759838111111
+                            },
+                            {
+                                "xAxis": 4,
+                                "xAxisDate": "12.234345",
+                                "yAxis": 0.9772759838111111
+                            }
+                        ]
+                    },
+                    "metaData": [
+                        {
+                            "name": "SMH",
+                            "value": 123,
+                            "displayName": "Hours"
+                        },
+                        {
+                            "name": "ROD",
+                            "value": 123,
+                            "displayName": "ROD",
+                            "units": "percentage"
+                        }
+                    ]
+                }
+            ],
+            "siteMetaData": []
+        }
+    ]
+}

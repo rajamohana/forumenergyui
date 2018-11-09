@@ -1,0 +1,828 @@
+/* Dashboard Page Start */
+.siteoverview-container {
+    // margin: 30px;
+    // margin-top: 0px;
+
+}
+.siteoverview-wrapper {
+    // max-width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+/* Dashboard Page Start */
+.dashboard-container {
+    width: 100%;
+    background: $darkgray;
+}
+.dashboard-wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: 0 auto;
+    background: $darkgray;
+    padding-top: 70px;
+    background: $darkgray;
+}
+
+/* header start */
+.dashboard-header {
+    margin: 0 auto;
+    background: $darkgray;
+    max-width: 1366px;
+    height: 70px;
+    padding: 6px 30px 6px 30px;
+    border-bottom: 1px solid rgba(24, 35, 51, 0.5);
+    display: flex;
+    align-items: flex-end;
+	width: 100%;
+	transition: height 0.5s ease;
+	&.dashboard-header--modified {
+		height: 58px;
+	}
+}
+.dashboard-logo {
+    vertical-align: middle;
+    display: table-cell;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 20%;
+    .dashboard-logo-img {
+        width: 50%;
+    }
+}
+.dashboard-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    vertical-align: middle;
+    font-family: $openreg;
+    color: rgba(255,255,255,0.6);
+    padding-top: 0px;
+    text-align: right;
+    width: 60%;
+    height: 100%;
+	transition: padding-top 0.5s ease;
+    ul {
+      vertical-align: middle;
+  		li{
+  			display: inline-block;
+  			vertical-align: middle;
+  			//margin-right: 25px;
+  			&:last-child{
+  				margin-right: 6px;
+  			}
+            .hdg-name {
+                font-size: 12px;
+            }
+  		}
+      a {
+          color: rgba(255,255,255,0.6);
+          vertical-align: super;
+      }
+    }
+    .profile-photo {
+        display: inline-block;
+		vertical-align: middle;
+        a {
+            display: inline-block;
+            vertical-align: bottom;
+			img{
+				width: 54px;
+				height: 54px;
+				transition: width 0.5s ease, height 0.5s ease;
+			}
+        }
+		&.profile-photo--modified {
+			a {
+				img {
+					width: 34px;
+					height: 34px;
+				}
+			}
+		}
+    }
+	&.dashboard-nav--modified {
+		padding-top: 0;
+	}
+}
+
+.header-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: $opensembold;
+    color: #bfbfbf;
+    width: 30%;
+    margin-bottom: -9px;
+    .header-links-item {
+        cursor: pointer;
+        // padding-right: 50px;
+        &.active {
+            color: #d1a918;
+            &::after {
+                content: "";
+                display: inline-block;
+                width: calc(100% + 14px);
+                height: 5px;
+                transform: translateX(-7px);
+                background-color: #d1a918;
+            }
+        }
+    }
+}
+.icon-truck {
+    fill: rgba(255,255,255,0.7);
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+/* header end */
+
+/* sites data start*/
+.siteoverview-sub-header {
+    width: 100%;
+//    position: fixed;
+    // background: $darkgray;
+//    top: 93PX;
+//	padding-top: 93px;
+}
+.sites-data {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 20px 25px;
+    font-size: 0;
+}
+.sites-info {
+    width: 16%;
+    padding: 5px 15px 6px 15px;
+    display: inline-block;
+//    border-right: 1px solid #111519;
+    &:first-child {
+        border-right: 1px solid rgba(0,0,0,0.7);
+    }
+}
+/*icons*/
+.icon-tick {
+    fill: rgba(255,255,255,0.7);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.icon-sites-dashboard{
+	width: 36px;
+	height: 21px;
+}
+.icon-sites-trucks-dashboard{
+	width: 50px;
+	height: 46px;
+    svg {
+        stroke: #ffffff;
+        stroke-width: 2px;
+    }
+}
+.icon-critical-dashboard{
+	width: 28px;
+	height: 32px;
+}
+.icon-stable-dashboard{
+	width: 50px;
+	height: 46px;
+    svg {
+        stroke: #ffffff;
+        stroke-width: 2px;
+    }
+}
+.icon-good-dashboard{
+	width: 50px;
+	height: 46px;
+    svg {
+        stroke: #ffffff;
+        stroke-width: 2px;
+    }
+}
+.sites-content {
+    display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+    .number {
+        font-size: 28px;
+        font-family: $openbold;
+        color: #8491a1;
+        display: block;
+        text-align: left;
+        margin-bottom: 4px;
+    }
+    .brt {
+        color: #c4c8cc;
+    }
+    .text {
+        padding-top: 4px;
+        color: rgba(255,255,255,0.7);
+        font-size: 14px;
+    }
+}
+/* sites data end*/
+
+/* cards start*/
+.so-card-header{
+	display: inline-block;
+    margin-bottom: 30px;
+    // padding-bottom: 3px;
+    //border-bottom: 1px solid #8491a1;
+}
+.so-card-title {
+    vertical-align: baseline;
+    display: table-cell;
+    color: #003946;
+    font-family: $opensembold;
+    font-size: 22px;
+    padding-right: 8px;
+}
+.so-card-location {
+    display: table-cell;
+    // cursor: pointer;
+    font-size: 14px;
+    span {
+        display: inline-block;
+        padding-left: 3px;
+        color: #444546;
+    }
+    .icon-dd {
+        width: 12px;
+        height: 9px;
+        fill: rgba(255, 255, 255, 0.7);
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+}
+.so-card-dropdown {
+  display: table-cell;
+//   cursor: pointer;
+  span {
+    display: inline-block;
+    //margin-left: 10px;
+  }
+  .dropdown-menu {
+    width: 250px;
+    left: 0px;
+    .card-header {
+      border: none;
+      margin: 0;
+    }
+    .card-title {
+      color: rgb(1, 215, 229);
+    }
+    .card-location span {
+      color: #6e6e70;
+    }
+  }
+  .icon-mark {
+    right: 52px;
+  }
+  &.open > .dropdown-menu {
+    margin-top: 10px;
+  }
+}
+.so-icon-loc {
+    fill: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    width: 21px;
+    height: 30px;
+    vertical-align: bottom;
+    margin-bottom: 2px;
+}
+
+/* card content start*/
+.so-cards {
+    margin:0;
+}
+.dashboard-card {
+    margin-bottom: 16px;
+    .truckkdetails-breadcrumbs {
+        padding-top: 15px;
+        @media screen and (max-width: 1366px){
+            // padding-top: 35px;
+        }
+    }
+}
+.card-content {
+    background: #f5f4ef;
+	// box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.35);
+}
+
+.so-card-content-top {
+    background: #294d56;
+    width: 100%;
+    padding: 25px 30px;
+	// display: table;
+    table-layout: fixed;
+    color: #fff;
+    /*sites column-dashboard top*/
+    .so-sites-columns{
+        display: table-cell;
+        width: 20%;
+        vertical-align: bottom;
+        // border-right: 1px solid #3a4555;
+        padding:0 20px 4px 20px;
+    }
+}
+.so-sites-columns.sites-column-one{
+	width: 20%;
+    padding-left: 0;
+    padding-bottom: 0;
+	text-align: left;
+}
+.sites-column-four{
+	width: 30%;
+	border-right: none;
+	padding-right: 0;
+}
+.dashboard-circle-bar {
+}
+.last-column-content{
+	min-height: 36px
+}
+.last-title-dash{
+	font-size: 16px;
+    font-family: OpenSansRegular;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.so-down-arrow-last{
+	position: absolute;
+    top: -6px;
+    width: 20px;
+    height: 20px;
+    fill: #56c4af;
+    left: 100%;
+    margin-left: 5px;
+
+}
+.progress-styles1 {
+    .progress-percent {
+        font-family: $openlit;
+        font-size: 24px;
+        fill: #eaeaea !important;
+    }
+    .progress-health, .startpoint, .endpoint {
+        fill: #eaeaea;
+        //fill: rgba(255,255,255,0.6);
+    }
+    .progress-health {
+        font-size: 12px;
+    }
+    .startpoint, .endpoint {
+        font-size: 12px;
+    }
+    svg {
+        margin-top: -12px;
+    }
+}
+.so-metrics-title {
+	// font-family: $openreg;
+	// font-size: 20px;
+	// color: #fccc1c;
+	// margin-bottom: 15px;
+	// text-align: left;
+    // width: 185px;
+    font-family: OpenSansRegular;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 3px;
+}
+.smh-growth {
+	display: table;
+//	table-layout: fixed;
+	width: 100%;
+}
+.so-smh-data {
+	display: table-cell;
+	text-align: left;
+	// padding-left: 10px;
+	// padding-right: 10px;
+	//padding-left: 15px;
+    // border-right: 1px solid #3a4555;
+    font-size: 14px;
+    color: #eaeaea;
+    opacity: 0.6;
+	:nth-child(1) {
+		// color: #fff;
+		font-size: 16px;
+	}
+	:nth-child(2) {
+		// color: rgba(255,255,255,0.6);
+		font-size: 12px;
+		padding-top: 8px;
+	}
+	&:nth-child(3) {
+		border-right: none;
+	}
+	span {
+		display: block;
+
+	}
+	&:first-child{
+		text-align: left;
+		padding-left: 0;
+
+	}
+}
+
+.so-card-bottom {
+    background: #f5f4ef;
+    width: 100%;
+    vertical-align: top;
+    padding: 20px 30px;
+	display: table;
+    table-layout: fixed;
+    // cursor: pointer;
+    // margin: 30px;
+	.heading {
+    color: #003946;
+    font-family: $openreg;
+    font-size: 22px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+}
+.so-total-trucks {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .health-graph {
+        display: inline-block;
+        width: 30%;
+    }
+    .frac-health-graph {
+        display: flex;
+        align-items: center;
+        width: 56%;
+    }
+}
+.so-critical-assets.frac-health-label {
+    display: table-cell;
+    vertical-align: middle;
+    // width: 30%;
+    .truck-details {
+        display: flex;
+        align-items: flex-start;
+        .truck-params {
+            padding: 12px 0 12px 0;
+            padding-right: 35px;
+            width: auto;
+        }
+    }
+}
+
+.so-card-bottom-right{
+    // display: table-cell;
+    margin: 40px 0;
+}
+.so-card-health-column{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .card-health-detoriation {
+        .so-critical-assets {
+            &.critical-assets-mod {
+                padding-bottom: 0;
+            }
+        }
+    }
+	&.first-column{
+
+    }
+    .so-card-health-detoriation {
+        display: table-cell;
+        margin-right: 60px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+
+.card-sites-total-count{
+	font-size: 16px;
+	font-family: $openreg;
+	color: rgba(36,42,52,0.8);
+}
+.total-repair-count{
+	display: inline-block;
+	vertical-align: baseline;
+	margin-left: 15px;
+}
+.total-repair-report{
+	width: 20px;
+	height: 20px;
+	fill: #009ca6;
+	display: inline-block;
+	margin-left: 12px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+.card-trucks-health{
+
+}
+.so-card-list-truck-icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: 25px;
+	height: 15px;
+	fill: #3a4555;
+	margin-right: 6px;
+	// margin-left: 10px;
+    // margin-top: 3px;
+}
+.list-rod-content{
+	position: relative;
+	display: inline-block;
+}
+.card-list-downarrow-icon{
+	display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 21px;
+    fill: #3cc1a8;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	margin-left: 5px;
+}
+.so-card-bottom-middle{
+    // margin-top: -14px;
+}
+.so-card-bottom-middle-progress {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .heading {
+        display: inline-block;
+        margin-right: 40px;
+    }
+    .so-total-trucks {
+    // width: 17.5%;
+        // width: 200px;
+        display: inline-block;
+        vertical-align: top;
+    // padding-top: 30px;
+    a {
+        margin-top: 5px;
+        margin-right: 40px;
+        display: inline-block;
+        width: 200px;
+		&:first-child{
+			// margin-top: 0;
+		}
+    }
+    .progress-padding {
+    }
+}
+}
+.truck-id{
+	font-family: $opensembold;
+	color: #6e6e70;
+	font-size: 16px;
+	display: inline-block;
+    vertical-align: middle;
+}
+.so-critical-assets {
+    // width: 100%;
+    display: table-cell;
+    // padding: 0px 15px 25px 55px;
+    .assets-header {
+        padding-bottom: 3px;
+        .assets-heading {
+            color: #545456;
+            font-family: $openreg;
+            font-size: 14px;
+            display: inline-block;
+            cursor: pointer;
+            .assets-heading-id {
+                font-size: 16px;
+                font-family: $openbold;
+                margin-top: 20px;
+            }
+            .assets-heading-name {
+                font-size: 14px;
+                color:  #545456;
+            }
+        }
+        a {
+        padding-left: 8px;
+        color: #009ca6;
+			cursor: pointer;
+        }
+    }
+    .truck-details {
+      background-color: rgba(225,225,222, 0.1);
+        border-bottom: 1px solid rgba(136, 142, 148, 0.3);
+		display: table;
+//		width: 100%;
+		table-layout: fixed;
+        .truck-id {
+            padding-top: 6px;
+            display: table-caption;
+			width: 100%;
+            font-family: $openbold;
+            color:  #06959e;
+			font-size: 16px;
+            span {
+                cursor: pointer;
+            }
+        }
+        .truck-params {
+            padding: 7px 0 12px 0;
+            display: table-cell;
+			width: 96px;
+            vertical-align: top;
+            &:nth-child(3) {
+            }
+            &:nth-child(4) {
+            }
+            .truck-num {
+                font-size: 18px;
+                color: #41464b;
+            }
+            .truck-txt {
+                padding-top: 3px;
+                font-size: 12px;
+                color: #4d5964;
+            }
+            .icon-size {
+                width: 22px;
+                height: 22px;
+                fill: #57b6c4;
+            }
+        }
+    }
+    :last-child {
+        border-bottom: none;
+    }
+}
+.zero-critical {
+    .icon-zero-critical {
+        width: 47px;
+        height: 54px;
+        fill: rgba(58, 69, 84, 0.2);
+        display: inline-block;
+        vertical-align: middle;
+        margin: 35px 0 17px 0;
+    }
+    span {
+        display: block;
+        color: rgba(58, 69, 84, 0.5);
+        font-size: 16px;
+    }
+}
+.no-trucks {
+    padding: 20px 15px 0px 0px;
+    .icon-no-trucks {
+        width: 80px;
+        height: 47px;
+        fill: rgba(58, 69, 84, 0.4);
+        display: inline-block;
+        vertical-align: middle;
+        margin: 35px 0 17px 0;
+    }
+    span {
+        display: block;
+        color: rgba(58, 69, 84, 0.6);
+        font-size: 20px;
+    }
+}
+
+.so-card-bottom-assets {
+    display: flex;
+    padding: 40px 0;
+    border-top: 1px solid #c6cac7;
+    .so-card-bottom-assets-item {
+        padding: 15px 0;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:last-child {
+            border-left: 2px solid #cfd3ce;
+            padding-left: 20px;
+            margin-left: 20px;
+        }
+        .so-asset-name {
+            margin-right: 10px;
+            font-size: 22px;
+            font-family: $opensembold;
+            color: #3a4554;
+        }
+        .so-asset-id {
+            // margin-right: 25px;
+            color: #6e6e70;
+            font-family: $openbold;
+            font-size: 16px;
+            .icon {
+                fill: #3a4555;
+                display: inline-block;
+                vertical-align: bottom;
+            }
+            .data {
+                display: inline-block;
+                vertical-align: bottom;
+            }
+        }
+        .so-asset-data {
+            // margin-right: 25px;
+            color: #41464b;
+            .value {
+                font-size: 18px;
+            }
+            .heading {
+                font-size: 12px;;
+            }
+        }
+    }
+}
+
+.show {
+    display: table-cell;
+}
+.hide {
+    display: none;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.site-overview-breadcrum{
+    background-color: #294d56;
+}
+.info-content-wrap-site{
+    position: absolute;
+    left: 50%;
+    font-size: 12px;
+    color: #003946;
+    /* top: 29px; */
+    z-index: 9;
+    font-family: OpenSansRegular;
+    transform: translate(-50%, 0);
+}
+.info-content-site{
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    position: absolute;
+    z-index: 99;
+    fill: white;
+    top: -5px;
+    left: 2px;
+}
+.view-all-assets{
+    color:  #45b3bb;
+    font-size: 14px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color:  #45b3bb;
+    border-style: solid;
+    padding: 2px 10px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.site-main-wrap{
+    background: #2b4d55;
+}
+
+.so-card-content-top-rig {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.asset-detail{
+    position: relative;
+    top: 5px;
+    .progress-styles2 {
+        .progress-percent{
+            color: white;
+            fill: white !important;
+        }
+        .progress-health{
+            fill: #eaeaea;
+            opacity: 0.6;   
+        }
+        .startpoint{
+            fill: white !important;
+        }
+        .endpoint{
+            fill: white !important;
+        }
+    }
+    
+}
+/* cards end*/
+
+/* Dashboard Page End */
