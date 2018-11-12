@@ -1,5 +1,5 @@
-<div class="truck-expand" ng-show="showView=='overview-expand'">
-    <div ng-if="truck.showTruckDetails">
+<div class="truck-expand" >
+    <div >
         <!--bread crumb-->
         <div class="site-main-wrap">
             <div class="sites-wrapper">
@@ -87,7 +87,7 @@
                                             </span>
                                             <span ng-if="eachData.displayName != 'Health'">
                                                 <span class="list-head-arrow-holder">
-                                                    <span>{{ eachData.value  | setDecimal: (eachData.name == 'ROD' ? 1: 0) |number }}
+                                                    <span>{{ eachData.value  | setDecimal: (eachData.name == 'ROD' ? 1: 0) |number:2 }}
                                                         <span ng-if="eachData.units" class="per-left">
                                                             {{ eachData.units }}
                                                         </span>
@@ -153,7 +153,7 @@
                                                         <!-- <span class="top-metrics-timestamp">{{(eachData.life) | date:'dd -MM- yyyy' || '-'}}</span> -->
                                                     </div>
                                                     <span class="list-head-arrow-holder" ng-if="eachData.name != 'ourProjection'">
-                                                        <span>{{ eachData.value | setDecimal: (eachData.name == 'ROD' ? 1: 0) | number }}
+                                                        <span>{{ eachData.value | setDecimal: (eachData.name == 'ROD' ? 1: 0) | number:2 }}
                                                             <span ng-if="eachData.units" class="per-left">
                                                                 {{ eachData.units }}
                                                             </span>
@@ -185,7 +185,7 @@
                                         </span>
                                         <span ng-if="eachData.displayName != 'Health'">
                                             <span class="list-head-arrow-holder">
-                                                <span>{{ eachData.value }}
+                                                <span>{{ eachData.value | number:2 }}
                                                     <span ng-if="eachData.units" class="per-left">
                                                         {{ eachData.units }}
                                                     </span>

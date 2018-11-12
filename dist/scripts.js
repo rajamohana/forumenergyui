@@ -2764,7 +2764,7 @@ angular.module('cyient.histogram', [])
     );
   }]);
   angular.module('cyient.lifechart', ['directives/lifeChart/lifeChart.html'])
-  .directive('lifeChart', ['_', '$compile', '$timeout', '$document', '$state', '$filter', '$log', function(_, $compile, $timeout, $document, $state, $filter, $log) {
+  .directive('lifeChart', ['$compile', '$timeout', '$document', '$filter', '$log', function( $compile, $timeout, $document, $filter, $log) {
     return {
       restrict: 'E',
       scope: {
@@ -2806,9 +2806,7 @@ angular.module('cyient.histogram', [])
         var maxOptimalValue = scope.data.maxOptimalValue || 0;
 
         scope.inline = 'block';
-        if($state.current.name === "cyient.protected.sitedetails.whatifscenario"){
-          scope.inline = 'inline-flex';
-        }
+        
 
         var isOptimal = false; // boolean for optimal value rectangle
 
@@ -5415,9 +5413,9 @@ angular.module('ui.slimscroll', []).directive('slimscroll', function () {
 	var app = angular.module('cyient', ['ngRoute', 'ngResource', 'ngCookies',
 		'ngMessages', 'ngAnimate', 'ui.bootstrap.dropdown',
 		'cyient.backendservice','cyient.assetService', 'cyient.filters', 'ng.oidcclient',
-		'cyient.login', 'cyient.assetgroups', 'cyient.assetgroupdetails',
+		'cyient.login', 'cyient.assetgroups','cyient.lifechart', 'cyient.assetgroupdetails',
 		'cyient.assets', 'cyient.geography', 'cyient.assetdetails',
-		'cyient.insights','cyient.filters', 'cyient.miniLifechart','cyient.lifechart','cyient.loader'
+		'cyient.insights', 'cyient.miniLifechart','cyient.loader'
 	]);
 
 	app.config(['$routeProvider', function ($routeProvider) {
@@ -6207,7 +6205,6 @@ angular.module('ui.slimscroll', []).directive('slimscroll', function () {
 				cat.limiting = 1;
 			}
 		}
-
 		$scope.navigateToAssetsList = function() {
 			// $state.go('cyient.protected.allassets', null, {reload: true,
 			// inherit: false});
@@ -6227,7 +6224,6 @@ angular.module('ui.slimscroll', []).directive('slimscroll', function () {
 
 			$location.path("/").search(paramObj);
 		}
-
 	}
 })();
 'use strict';

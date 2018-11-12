@@ -3,9 +3,9 @@
 	var app = angular.module('cyient', ['ngRoute', 'ngResource', 'ngCookies',
 		'ngMessages', 'ngAnimate', 'ui.bootstrap.dropdown',
 		'cyient.backendservice','cyient.assetService', 'cyient.filters', 'ng.oidcclient',
-		'cyient.login', 'cyient.assetgroups', 'cyient.assetgroupdetails',
+		'cyient.login', 'cyient.assetgroups','cyient.lifechart', 'cyient.assetgroupdetails',
 		'cyient.assets', 'cyient.geography', 'cyient.assetdetails',
-		'cyient.insights','cyient.filters', 'cyient.miniLifechart','cyient.lifechart','cyient.loader'
+		'cyient.insights', 'cyient.miniLifechart','cyient.loader'
 	]);
 
 	app.config(['$routeProvider', function ($routeProvider) {

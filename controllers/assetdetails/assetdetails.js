@@ -684,7 +684,6 @@
 				cat.limiting = 1;
 			}
 		}
-
 		$scope.navigateToAssetsList = function() {
 			// $state.go('cyient.protected.allassets', null, {reload: true,
 			// inherit: false});

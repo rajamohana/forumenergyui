@@ -208,7 +208,7 @@
                                 <div class="loading-holder" data-loading></div>
                                 <div class="sitecards-wrapper" ng-repeat="truck in trucks.list | orderBy: trucks.orderSymbol + trucks.selectedType ">
                                     <!--card start-->
-                                    <div class="as-sites-card sites-card" ng-class="{selected: trucks.activeMenuItem === $index}" ng-click='openExpandedTruck(truck.assetId, truck.assetType); trucks.setActive($index);'>
+                                    <div class="as-sites-card sites-card" ng-class="{selected: trucks.activeMenuItem === $index}" ng-click='openExpandedTruck(truck, truck.assetType); trucks.setActive($index);'>
                                         <!--first column-->
                                         <div class="dummy-as">
                                             <div class="truck-column first-col small-view asset-info-col">

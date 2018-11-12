@@ -17,125 +17,126 @@
 					<div class="site-main-wrap">
 						<div class="sites-wrapper">
 							<section class="truckkdetails-breadcrumbs">
-								<div class="bread-crumb site-overview-breadcrum" ng-class="{'bread-crumb--modified' : scrolledDown}">
+								<div class="bread-crumb site-overview-breadcrum"
+									ng-class="{'bread-crumb--modified' : scrolledDown}">
 									<ul>
-										<li class="d-inline-block">
-											<a ng-click="navigateBack()">
+										<li class="d-inline-block"><a ng-click="navigateBack()">
 												<span class="bread-crumb-label">Asset groups</span>
-											</a>
-										</li>
-										<li class="d-inline-block">
-											<a>
-												<span class="back-arrow-breadcrum">
-													<svg>
+										</a></li>
+										<li class="d-inline-block"><a> <span
+												class="back-arrow-breadcrum"> <svg>
 														<use xlink:href="#forward-arrow"></use>
 													</svg>
-												</span>
-												<span class="truck-svg location-grp">
-													<svg>
+											</span> <span class="truck-svg location-grp"> <svg>
 														<use xlink:href="#locationgroup"></use>
 													</svg>
-												</span>
-												<span uib-dropdown class="rug-dril">
-													<span uib-dropdown-toggle>
-														<span class="bread-crumb-label">{{currentSiteGroup.assetGrpName}}</span>
+											</span> <span uib-dropdown class="rug-dril"> <span
+													uib-dropdown-toggle> <span class="bread-crumb-label">{{currentSiteGroup.assetGrpName}}</span>
 														<span class="info-icon-wrapper">
 															<div class="info-content-wrap-site">
-																<span class="info-content-site">
-																	<svg>
+																<span class="info-content-site"> <svg>
 																		<use xlink:href="#dropdown"></use>
 																	</svg>
 																</span>
-															</div> 
-														</span>
+															</div>
 													</span>
-													<ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
-														<span class="icon-truck options-icon-mark">
-															<svg>
+												</span>
+													<ul class="dropdown-menu" uib-dropdown-menu
+														aria-labelledby="simple-dropdown">
+														<span class="icon-truck options-icon-mark"> <svg>
 																<use xlink:href="#mark"></use>
 															</svg>
 														</span>
-														<li ng-repeat="frack in frackList" ng-if="currentSiteGroup.assetGrpType == 'frac'" ng-click="changeDropdown(frack)">
-															<span class="more-categories-list-name">{{frack.assetGrpName}}</span>
+														<li ng-repeat="frack in frackList"
+															ng-if="currentSiteGroup.assetGrpType == 'frac'"
+															ng-click="changeDropdown(frack)"><span
+															class="more-categories-list-name">{{frack.assetGrpName}}</span>
 														</li>
-														<li ng-repeat="rig in rigList" ng-if="currentSiteGroup.assetGrpType == 'rig'" ng-click="changeDropdown(rig)">
-															<span class="more-categories-list-name">{{rig.assetGrpName}}</span>
+														<li ng-repeat="rig in rigList"
+															ng-if="currentSiteGroup.assetGrpType == 'rig'"
+															ng-click="changeDropdown(rig)"><span
+															class="more-categories-list-name">{{rig.assetGrpName}}</span>
 														</li>
-														
-													</ul>
-												</span>
-												
-											</a>
 
-											<!--                        <span class="goto-Scenario-actionlink"><a class="" ng-click="truck.gotoWhatIfScenario(truck.truckData.truckId)">go to Scenarios</a></span>-->
-										</li>
-										<li class="d-inline-block" ng-if="currentSiteGroup.assetGrpType == 'frac'">
-											<span class="view-all-assets" ng-click="gotoSiteDetails('All', null)">
-												View All Assets
+													</ul>
 											</span>
+
+										</a> <!--                        <span class="goto-Scenario-actionlink"><a class="" ng-click="truck.gotoWhatIfScenario(truck.truckData.truckId)">go to Scenarios</a></span>-->
 										</li>
+										<li class="d-inline-block"
+											ng-if="currentSiteGroup.assetGrpType == 'frac'"><span
+											class="view-all-assets"
+											ng-click="gotoSiteDetails('All', null)"> View All
+												Assets </span></li>
 									</ul>
 
 									<div class=""></div>
 								</div>
 							</section>
-							<div class="so-card-content-top" ng-if="currentSiteType == 'frac'">
+							<div class="so-card-content-top"
+								ng-if="currentSiteType == 'frac'">
 
-								<div class='dashboard-circle-bar so-sites-columns sites-column-one'>
+								<div
+									class='dashboard-circle-bar so-sites-columns sites-column-one'>
 									<!-- TODO: here label changed to health. So, call need to be changed -->
-									<progress-arc class="progress-styles1" type="type2" avg="" progress="fracsiteData[0].healthData.siteAvgHealth" radius="70" radius-diff="6"
-									 avg="50" hide-pointer="true" label="Health">
-									</progress-arc>
+									<progress-arc class="progress-styles1" type="type2" avg=""
+										progress="fracsiteData[0].healthData.siteAvgHealth"
+										radius="70" radius-diff="6" avg="50" hide-pointer="true"
+										label="Health"> </progress-arc>
 								</div>
-								
-								<div class="so-sites-columns sites-column-four pointer hand"  ng-click="gotoSiteDetails('All', null)">
+
+								<div class="so-sites-columns sites-column-four pointer hand"
+									ng-click="gotoSiteDetails('All', null)">
 									<div class="so-metrics-title">
-										<span class="so-metrics-title">{{ fracsiteData[0].assetsData[0].frackpumps.totalAssets }}</span>
+										<span class="so-metrics-title">{{
+											fracsiteData[0].assetsData[0].frackpumps.totalAssets }}</span>
 									</div>
-									<div class="so-smh-data" title=""> Frac Pumps </div>
+									<div class="so-smh-data" title="">Frac Pumps</div>
 								</div>
-								<div class="so-sites-columns sites-column-four" ng-repeat="eachmetadata in fracsiteData[0].assetGrpMetaData">
+								<div class="so-sites-columns sites-column-four"
+									ng-repeat="eachmetadata in fracsiteData[0].assetGrpMetaData">
 									<div class="so-metrics-title">
-										<span class="so-metrics-title">
-											{{ eachmetadata.value | setDecimal: (eachmetadata.name == 'ROD' ? 1: 0)}}
-											<span ng-if="eachmetadata.units == 'percentage'">%</span>
-											<span class="card-list-downarrow-icon warning" ng-if="eachmetadata.trend === 'decrease'">
-												<svg>
+										<span class="so-metrics-title"> {{ eachmetadata.value |
+											setDecimal: (eachmetadata.name == 'ROD' ? 1: 0)}} <span
+											ng-if="eachmetadata.units == 'percentage'">%</span> <span
+											class="card-list-downarrow-icon warning"
+											ng-if="eachmetadata.trend === 'decrease'"> <svg>
 													<use xlink:href="#down-arrow"></use>
 												</svg>
-											</span>
-											<span class="card-list-downarrow-icon down-growth" ng-if="eachmetadata.trend === 'increase'">
-												<svg>
+										</span> <span class="card-list-downarrow-icon down-growth"
+											ng-if="eachmetadata.trend === 'increase'"> <svg>
 													<use xlink:href="#up-arrow"></use>
 												</svg>
-											</span>
+										</span>
 										</span>
 									</div>
 									<div class="so-smh-data">{{ eachmetadata.displayName }}</div>
 								</div>
 							</div>
-							<div class="so-card-content-top so-card-content-top-rig" ng-if="currentSiteType == 'rig'">
-								<div class='dashboard-circle-bar so-sites-columns sites-column-one'>
+							<div class="so-card-content-top so-card-content-top-rig"
+								ng-if="currentSiteType == 'rig'">
+								<div
+									class='dashboard-circle-bar so-sites-columns sites-column-one'>
 									<!-- TODO: here label changed to health. So, call need to be changed -->
-									<progress-arc class="progress-styles1" type="type2" avg="" progress="rigAvgHealth" radius="70" radius-diff="6"
-									 avg="50" hide-pointer="true" label="Health">
-									</progress-arc>
+									<progress-arc class="progress-styles1" type="type2" avg=""
+										progress="rigAvgHealth" radius="70" radius-diff="6" avg="50"
+										hide-pointer="true" label="Health"> </progress-arc>
 								</div>
-								<div class="so-sites-columns sites-column-four" ng-repeat="eachmetadata in rigAvgData">
+								<div class="so-sites-columns sites-column-four"
+									ng-repeat="eachmetadata in rigAvgData">
 									<div class="so-metrics-title">
-										<span class="so-metrics-title">
-											{{ eachmetadata.value | setDecimal: (eachmetadata.name == 'ROD' ? 1: 0)}}
-											<span ng-if="eachmetadata.units == 'percentage'">%</span>
-											<span class="card-list-downarrow-icon warning" ng-if="eachmetadata.trend === 'decrease'">
-												<svg>
+										<span class="so-metrics-title"> {{ eachmetadata.value |
+											setDecimal: (eachmetadata.name == 'ROD' ? 1: 0)}} <span
+											ng-if="eachmetadata.units == 'percentage'">%</span> <span
+											class="card-list-downarrow-icon warning"
+											ng-if="eachmetadata.trend === 'decrease'"> <svg>
 													<use xlink:href="#down-arrow"></use>
 												</svg>
-											</span>
-											<span class="card-list-downarrow-icon down-growth" ng-if="eachmetadata.trend === 'increase'">
-												<svg>
+										</span> <span class="card-list-downarrow-icon down-growth"
+											ng-if="eachmetadata.trend === 'increase'"> <svg>
 													<use xlink:href="#up-arrow"></use>
 												</svg>
-											</span>
+										</span>
 										</span>
 									</div>
 									<div class="so-smh-data">{{ eachmetadata.displayName }}</div>
@@ -147,7 +148,7 @@
 
 					<!--card-content-right start-->
 					<div class="sites-wrapper">
-						<div ng-if="currentSiteType == 'frac'" class="so-card-bottom" >
+						<div ng-if="currentSiteType == 'frac'" class="so-card-bottom">
 							<div>
 								<div class="so-card-bottom-middle">
 									<!--condition measures start-->
@@ -155,17 +156,27 @@
 										<!-- <div class="heading" ng-click="gotoSiteDetails('All', 'site123', 'fracpumps', null)">{{:: fracsiteData.assetsData.fracpumps.count }} Frac Pumps</div> -->
 										<div class="so-total-trucks">
 											<div class="d-flex-align frac-health-graph">
-												<a class="health-graph" ng-click="$event.stopPropagation(); gotoSiteDetails('Good', null)">
-													<progress-bar class='progress-padding' max="fracsiteData[0].assetsData[0].frackpumps.totalAssets" value="fracsiteData[0].assetsData[0].frackpumps.good" trucks="fracsiteData[0].assetsData[0].frackpumps.good"
-													 textval="Good" type="good" animate="true"></progress-bar>
-												</a>
-												<a class="health-graph" ng-click="$event.stopPropagation(); gotoSiteDetails('Stable', null)">
-													<progress-bar class='progress-padding progress-mar' max="fracsiteData[0].assetsData[0].frackpumps.totalAssets" value="fracsiteData[0].assetsData[0].frackpumps.stable"
-													 trucks="fracsiteData[0].assetsData[0].frackpumps.stable" textval="Stable" type="stable" animate="true"></progress-bar>
-												</a>
-												<a class="health-graph" ng-click="$event.stopPropagation(); gotoSiteDetails('Critical', null)">
-													<progress-bar class='progress-padding' max="fracsiteData[0].assetsData[0].frackpumps.totalAssets" value="fracsiteData[0].assetsData[0].frackpumps.critical" trucks="fracsiteData[0].assetsData[0].frackpumps.critical"
-													 textval="Critical" type="critical" animate="true"></progress-bar>
+												<a class="health-graph"
+													ng-click="$event.stopPropagation(); gotoSiteDetails('Good', null)">
+													<progress-bar class='progress-padding'
+														max="fracsiteData[0].assetsData[0].frackpumps.totalAssets"
+														value="fracsiteData[0].assetsData[0].frackpumps.good"
+														trucks="fracsiteData[0].assetsData[0].frackpumps.good"
+														textval="Good" type="good" animate="true"></progress-bar>
+												</a> <a class="health-graph"
+													ng-click="$event.stopPropagation(); gotoSiteDetails('Stable', null)">
+													<progress-bar class='progress-padding progress-mar'
+														max="fracsiteData[0].assetsData[0].frackpumps.totalAssets"
+														value="fracsiteData[0].assetsData[0].frackpumps.stable"
+														trucks="fracsiteData[0].assetsData[0].frackpumps.stable"
+														textval="Stable" type="stable" animate="true"></progress-bar>
+												</a> <a class="health-graph"
+													ng-click="$event.stopPropagation(); gotoSiteDetails('Critical', null)">
+													<progress-bar class='progress-padding'
+														max="fracsiteData[0].assetsData[0].frackpumps.totalAssets"
+														value="fracsiteData[0].assetsData[0].frackpumps.critical"
+														trucks="fracsiteData[0].assetsData[0].frackpumps.critical"
+														textval="Critical" type="critical" animate="true"></progress-bar>
 												</a>
 											</div>
 										</div>
@@ -175,44 +186,40 @@
 									<div class="so-card-bottom-right">
 										<div class="so-card-health-column first-column">
 											<!--citical assets start-->
-											<div class="so-critical-assets so-card-health-detoriation" ng-repeat="eachAsset in fracsiteData[0].assetgrpMajorAssets">
+											<div class="so-critical-assets so-card-health-detoriation"
+												ng-repeat="eachAsset in fracsiteData[0].assetgrpMajorAssets">
 												<div class="assets-header">
-													<div class="assets-heading" ng-click="$event.stopPropagation(); gotoSiteDetails(null, eachAsset.assetid, eachAsset)">
+													<div class="assets-heading"
+														ng-click="$event.stopPropagation(); openExpandedTruck(eachAsset.assetid, eachAsset.assetType)">
 														<div class="assets-heading-name">
-															{{eachAsset.heading}}
-														</div>
+															{{eachAsset.heading}}</div>
 														<div class="assets-heading-id">
-															<span class="so-card-list-truck-icon">
-																<svg>
+															<span class="so-card-list-truck-icon"> <svg>
 																	<use xlink:href="#frac-pump"></use>
 																</svg>
-															</span>
-															<span class="truck-id">
-																<span>{{:: eachAsset.assetid}}
-																</span>
+															</span> <span class="truck-id"> <span>{{::
+																	eachAsset.assetid}} </span>
 															</span>
 														</div>
 													</div>
 												</div>
 												<!--truck-details1 start-->
 												<div class="truck-details">
-													<div class="truck-params" ng-repeat="metadata in eachAsset.metaData">
+													<div class="truck-params"
+														ng-repeat="metadata in eachAsset.metaData">
 														<div class="truck-num">
-															<span class="list-rod-content">
-																<span>
-																	 {{ metadata.value | setDecimal: (metadata.name == 'ROD' ? 1: 0)}}
-																</span>
-																<span ng-if="metadata.units == 'percentage'">%</span>
-																<span class="card-list-downarrow-icon warning" ng-if="metadata.trend === 'decrease'">
-																	<svg>
+															<span class="list-rod-content"> <span> {{
+																	metadata.value | setDecimal: (metadata.name == 'ROD' ?
+																	1: 0)}} </span> <span ng-if="metadata.units == 'percentage'">%</span>
+																<span class="card-list-downarrow-icon warning"
+																ng-if="metadata.trend === 'decrease'"> <svg>
 																		<use xlink:href="#down-arrow"></use>
 																	</svg>
-																</span>
-																<span class="card-list-downarrow-icon down-growth" ng-if="metadata.trend === 'increase'">
-																	<svg>
+															</span> <span class="card-list-downarrow-icon down-growth"
+																ng-if="metadata.trend === 'increase'"> <svg>
 																		<use xlink:href="#up-arrow"></use>
 																	</svg>
-																</span>
+															</span>
 															</span>
 														</div>
 														<div class="truck-txt">{{ metadata.displayName }}</div>
@@ -226,72 +233,88 @@
 								</div>
 							</div>
 						</div>
-					
-						<div ng-if="currentSiteType == 'rig'" class="" ng-repeat="truck in fracsiteData">
+
+						<div ng-if="currentSiteType == 'rig'" class=""
+							ng-repeat="truck in fracsiteData">
 							<!--card start-->
-							<div class="as-sites-card sites-card" ng-click='openExpandedTruck(truck.assetsData[0].assetId, truck.assetsData[0].assetType);'>
+							<div class="as-sites-card sites-card"
+								ng-click='openExpandedTruck(truck.assetsData[0].assetId, truck.assetsData[0].assetType);'>
 								<!--first column-->
 								<div class="dummy-as">
 									<div class="truck-column first-col small-view asset-info-col">
-										<span class="icon-truck-fill">
-											<svg ng-if="truck.assetsData[0].assetType == 'fracpump'">
+										<span class="icon-truck-fill"> <svg
+												ng-if="truck.assetsData[0].assetType == 'fracpump'">
 												<use xlink:href="#frac-pump"></use>
-											</svg>
-											<svg ng-if="truck.assetsData[0].assetType == 'catwalk'">
+											</svg> <svg ng-if="truck.assetsData[0].assetType == 'catwalk'">
 												<use xlink:href="#catwalk"></use>
-											</svg>
-											<svg ng-if="truck.assetsData[0].assetType == 'ironroughneck'">
+											</svg> <svg
+												ng-if="truck.assetsData[0].assetType == 'ironroughneck'">
 												<use xlink:href="#iron-neck"></use>
 											</svg>
 										</span>
 										<div>
-											<div class="sites-truck-title">{{ truck.assetsData[0].assetType | firstLetterCapital }} {{ '#' + truck.assetsData[0].assetId }}</div>
-											<div class="truck-expected-date">Expected life {{ truck.assetsData[0].expectedLife}}  ( {{truck.assetsData[0].metaData[0].displayName}} )</div>
-											<div class="truck-purshase-date">Operational Start Date: {{ truck.assetsData[0].operationalDate | dateToString}}</div>
+											<div class="sites-truck-title">{{
+												truck.assetsData[0].assetType | firstLetterCapital }} {{ '#'
+												+ truck.assetsData[0].assetId }}</div>
+											<div class="truck-expected-date">Expected life {{
+												truck.assetsData[0].expectedLife}} (
+												{{truck.assetsData[0].metaData[0].displayName}} )</div>
+											<div class="truck-purshase-date">Operational Start
+												Date: {{ truck.assetsData[0].operationalDate |
+												dateToString}}</div>
 										</div>
 									</div>
 									<!--graph column-->
 									<div class="truck-column second-col">
 										<div class="graph-panel">
-											<progress-arc class="progress-styles2" progress="truck.assetsData[0].healthPercentage" type="type2" radius="55" radius-diff="5" avg=""
-											hide-pointer="true" label="Health">
-											</progress-arc>
+											<progress-arc class="progress-styles2"
+												progress="truck.assetsData[0].healthPercentage" type="type2"
+												radius="55" radius-diff="5" avg="" hide-pointer="true"
+												label="Health"> </progress-arc>
 										</div>
 									</div>
-									<div ng-repeat="eachData in truck.assetsData[0].metaData" class="truck-column fifth-col">
+									<div ng-repeat="eachData in truck.assetsData[0].metaData"
+										class="truck-column fifth-col">
 										<div>
 											<div class="sites-rul-count">
-												<span class="sites-card-arrowHolder">{{:: eachData.value | setDecimal: (eachData.name == 'ROD' ? 1: 0) }}
-													<span ng-if="eachData.units =='percentage'">%</span>
-													<!-- <span ng-if="eachData.showChange"> -->
-														<span class="sites-card-downarrow" ng-class="eachData.name == 'ROD'? 'warning': 'down-growth'" ng-if="eachData.trend == 'increase'">
-															<svg>
+												<span class="sites-card-arrowHolder">{{::
+													eachData.value | setDecimal: (eachData.name == 'ROD' ? 1:
+													0) }} <span ng-if="eachData.units =='percentage'">%</span>
+													<!-- <span ng-if="eachData.showChange"> --> <span
+													class="sites-card-downarrow"
+													ng-class="eachData.name == 'ROD'? 'warning': 'down-growth'"
+													ng-if="eachData.trend == 'increase'"> <svg>
 																<use xlink:href="#up-arrow"></use>
 															</svg>
-														</span>
-														<span class="sites-card-downarrow warning" ng-class="eachData.name == 'ROD'? 'down-growth': 'warning'"  ng-if="eachData.trend == 'decrease'">
-															<svg>
+												</span> <span class="sites-card-downarrow warning"
+													ng-class="eachData.name == 'ROD'? 'down-growth': 'warning'"
+													ng-if="eachData.trend == 'decrease'"> <svg>
 																<use xlink:href="#down-arrow"></use>
 															</svg>
-														</span>
-													<!-- </span> -->
+												</span> <!-- </span> -->
 												</span>
 											</div>
 											<div class="sites-rul-label" title="{{eachData.displayName}}">{{eachData.displayName}}</div>
 										</div>
 									</div>
 									<div class="truck-column second-col life-chart-col">
-										<mini-lifechart width="125" height="50" today-x="truck.assetsData[0].progressGraph.xAxisToday" today-y="truck.assetsData[0].progressGraph.yAxisToday"
-										data="truck.assetsData[0].progressGraph.graphData" smh="truck.assetsData[0].progressGraph.graphData[1].xAxis" rul="truck.assetsData[0].progressGraph.graphData[2].xAxis" gradient="true" dot-radius="3"></mini-lifechart>
+										<mini-lifechart width="125" height="50"
+											today-x="truck.assetsData[0].progressGraph.xAxisToday"
+											today-y="truck.assetsData[0].progressGraph.yAxisToday"
+											data="truck.assetsData[0].progressGraph.graphData"
+											smh="truck.assetsData[0].progressGraph.graphData[1].xAxis"
+											rul="truck.assetsData[0].progressGraph.graphData[2].xAxis"
+											gradient="true" dot-radius="3"></mini-lifechart>
 									</div>
-									<div class="truck-column last-col wis-wrapper" ng-click="openWhatIfScenario(truck.assetsData[0].assetId, $event, truck.assetGrpId)">
+									<div class="truck-column last-col wis-wrapper"
+										ng-click="openWhatIfScenario(truck.assetsData[0].assetId, $event, truck.assetGrpId)">
 									</div>
 								</div>
 								<!--button column-->
 							</div>
 							<!--card end-->
 						</div>
-					</div>	
+					</div>
 				</div>
 
 				<!--card-content-right end-->

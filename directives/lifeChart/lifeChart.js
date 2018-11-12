@@ -53,7 +53,7 @@
     );
   }]);
   angular.module('cyient.lifechart', ['directives/lifeChart/lifeChart.html'])
-  .directive('lifeChart', ['_', '$compile', '$timeout', '$document', '$state', '$filter', '$log', function(_, $compile, $timeout, $document, $state, $filter, $log) {
+  .directive('lifeChart', ['$compile', '$timeout', '$document', '$filter', '$log', function( $compile, $timeout, $document, $filter, $log) {
     return {
       restrict: 'E',
       scope: {
@@ -95,9 +95,7 @@
         var maxOptimalValue = scope.data.maxOptimalValue || 0;
 
         scope.inline = 'block';
-        if($state.current.name === "cyient.protected.sitedetails.whatifscenario"){
-          scope.inline = 'inline-flex';
-        }
+        
 
         var isOptimal = false; // boolean for optimal value rectangle
 
